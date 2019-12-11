@@ -1,5 +1,7 @@
 import React from 'react';
 
+import logo from '../../../assets/helmet.png'
+
 class FormLogin extends React.Component {
 
     constructor(props) {
@@ -16,18 +18,21 @@ class FormLogin extends React.Component {
     handleSubmit(event) {
         event.preventDefault();
 
-        fetch(' https://test-api-lokalero.herokuapp.com/login', { method: "POST" })
-
-            .then(response => response.json())
-            .then(data => {
-                // console.table('Réponse :', data.login)
-                console.log('un email a été soumis: ' + this.state.email);
-                console.log('Mot de passe correct: ' + this.state.password);
-                // this.setState({login : data.login});
-                this.setState({email: data.email})
-                this.setState({password: data.password});
-               // console.table('Réponse Bis :', data.login)
-            })
+        fetch(`https://test-api-lokalero.herokuapp.com/login`,{
+            method: 'POST',
+            headers: {'Content-Type':'application/x-www-form-urlencoded'},
+            body: `email=${this.state.email}&password=${this.state.password}`
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.table('Réponse API :', data)
+            console.log('un email a été soumis: ' + this.state.email);
+            console.log('Mot de passe correct: ' + this.state.password);
+            // this.setState({login : data.login});
+            this.setState({email: data.email})
+            this.setState({password: data.password});
+           // console.table('Réponse Bis :', data.login)
+        })
 
     }
 
@@ -39,6 +44,11 @@ render()
         <div className="card">
 
             <div className="container">
+
+                <img
+                    src={logo}
+                    alt=""
+                />
 
                 <h5 className="card-header text-center py-4">
                     <strong>Identifiez-vous</strong>
@@ -53,27 +63,31 @@ render()
                             <label className="col">
                                 Email
                             </label>
-                            <input type="email" className="col form-control-lg" id="email"
-                                   placeholder="Entrer votre email"
-                                   value={this.state.email} onChange={(event) => {
-                                this.setState({email: event.target.value})
-                            }}/>
+                            <input
+                                type="email"
+                                className="col form-control-lg" id="email"
+                                placeholder="Entrer votre email"
+                                value={this.state.email}
+                                onChange={(event) => {this.setState({email: event.target.value})}}
+                            />
                         </div>
                         <div>
                             <label className="col">
                                 Mot de passe
                             </label>
-                            <input type="password" className="col form-control-lg" id="password"
-                                   placeholder="Entrer votre mot de passe" value={this.state.password}
-                                   onChange={(event) => {
-                                       this.setState({password: event.target.value})
-                                   }}/>
+                            <input
+                                type="password"
+                                className="col form-control-lg" id="password"
+                                placeholder="Entrer votre mot de passe" value={this.state.password}
+                                onChange={(event) => {this.setState({password: event.target.value})}}
+                            />
 
                         </div>
                         <div className="submit">
                             <button
                                 className="btn btn-outline-warning btn-rounded btn-block btn-lg my-4 waves-effect z-depth-0 w-50"
-                                type="submit">Envoyez
+                                type="submit"
+                            >Envoyez
                             </button>
                         </div>
                     </form>
