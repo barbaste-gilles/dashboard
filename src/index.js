@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import './dashboard.css';
 import * as serviceWorker from './serviceWorker';
 import FormLogin from './components/login/form-login/index';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -17,8 +16,6 @@ class App extends React.Component {
 
         return (
             <div>
-                <h1>Dashboard LOKALERO</h1>
-                {/*<img src={"helmet.png"} alt="Logo"/>;*/}
                 <FormLogin />
             </div>
 
