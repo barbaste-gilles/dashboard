@@ -3,9 +3,9 @@ import logo from '../../../assets/Logo.png'
 import logomot from '../../../assets/Logo_Mot.png'
 import logolokalero from '../../../assets/Lokalero_Sprint.png'
 import ErrorLogin from "../error-login";
-import Dashboard from "../dashboard";
+import Home from "../dashboard";
 
-class FormLogin extends React.Component {
+class Login extends React.Component {
 
     constructor(props) {
         super(props);
@@ -35,7 +35,6 @@ class FormLogin extends React.Component {
                 this.setState({password: data.password});
                 this.setState({isLoggedIn: data.login});
 
-
             })
 
     }
@@ -47,13 +46,15 @@ class FormLogin extends React.Component {
 
         if (isLoggedIn === true) {
             console.table('Réponse de l\' API à True :', isLoggedIn);
-            return <Dashboard />
+            // window.location.reload();
+            return <Home />
 
-        } else if (isLoggedIn === false) {
+        } else if (isLoggedIn === false && window.isError !== "Error") {
             console.table('Réponse de l\' API à False :', isLoggedIn);
+            window.isError = "Error";
             return <ErrorLogin />
-        } else {
 
+        } else {
 
             return (
                 <div className="formLog">
@@ -78,7 +79,10 @@ class FormLogin extends React.Component {
 
                             <div className="card-body px-xl-5 pt-0">
 
-                                <form className="form-login" action="#" onSubmit={this.handleSubmit}>
+                                <form
+                                    className="form-login"
+                                    action="#"
+                                    onSubmit={this.handleSubmit}>
 
                                     <div>
                                         <label className="col">
@@ -86,7 +90,8 @@ class FormLogin extends React.Component {
                                         </label>
                                         <input
                                             type="email"
-                                            className="col form-control-lg" id="email"
+                                            className="col form-control-lg"
+                                            id="email"
                                             placeholder="Entrer votre email"
                                             value={this.state.email}
                                             onChange={(event) => {
@@ -94,26 +99,29 @@ class FormLogin extends React.Component {
                                             }}
                                         />
                                     </div>
+
                                     <div>
                                         <label className="col">
                                             Mot de passe
                                         </label>
                                         <input
                                             type="password"
-                                            className="col form-control-lg" id="password"
+                                            className="col form-control-lg"
+                                            id="password"
                                             placeholder="Entrer votre mot de passe"
                                             value={this.state.password}
                                             onChange={(event) => {
                                                 this.setState({password: event.target.value})
                                             }}
                                         />
-
                                     </div>
+
                                     <div className="submit">
                                         <button
                                             className="btn btn-outline-warning btn-rounded btn-block btn-lg my-4 waves-effect z-depth-0 w-50"
                                             type="submit">
-                                            <img className="logolokalero col-lg-6" src={logolokalero}
+                                            <img className="logolokalero col-lg-6"
+                                                 src={logolokalero}
                                                  alt="Logo Lokalero"/>Envoyez
                                         </button>
 
@@ -131,4 +139,4 @@ class FormLogin extends React.Component {
     }
 }
 
-export default FormLogin
+export default Login

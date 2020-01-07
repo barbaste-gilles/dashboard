@@ -2,25 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e564fbf9-1fd1-4d70-a36c-58014a607924" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/react_favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/Logo_Complet.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/Lokalero_Sprint.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/SkypeMeetingsApp.msi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/login/dashboard/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/helmet.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login/dashboard/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/dashboard/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/login/error-login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/error-login/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/login/form-login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/form-login/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/login/validate-login/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pictures/Helmet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pictures/Logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pictures/Logo_Mot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Logo_Mot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pictures/Lokalero.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dashboard.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +16,12 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1UrCL2Y4i9CQ8ZGWF04tbtgejaJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -43,9 +36,11 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -72,6 +67,14 @@
       <workItem from="1576105271848" duration="1016000" />
       <workItem from="1576148202627" duration="34385000" />
       <workItem from="1576238201270" duration="26409000" />
+      <workItem from="1577115908643" duration="17403000" />
+      <workItem from="1577376002099" duration="6000" />
+      <workItem from="1577376660879" duration="6000" />
+      <workItem from="1577376866646" duration="19000" />
+      <workItem from="1577377667021" duration="15162000" />
+      <workItem from="1578309194226" duration="6935000" />
+      <workItem from="1578330463986" duration="11213000" />
+      <workItem from="1578407172158" duration="9950000" />
     </task>
     <servers />
   </component>
@@ -86,5 +89,9 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="371" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.720@0.0.1280.720" timestamp="1576148396318" />
+    <state x="144" y="7" key="SettingsEditor" timestamp="1577379133061">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="144" y="7" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1577379133061" />
   </component>
 </project>

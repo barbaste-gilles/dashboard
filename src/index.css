@@ -74,3 +74,12 @@ label{
   transition: 0.3s;
   border-radius: 5px; /* 5px rounded corners */
 }
+nav{
+  margin-bottom: 30px;
+}
+.col-lg-6{
+  margin-bottom: 30px ;
+}
+.card-deck{
+  margin: 30px;
+}
