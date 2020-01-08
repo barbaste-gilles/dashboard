@@ -3,7 +3,7 @@ import logo from '../../../assets/Logo.png'
 import logomot from '../../../assets/Logo_Mot.png'
 import logolokalero from '../../../assets/Lokalero_Sprint.png'
 import ErrorLogin from "../error-login";
-import Home from "../dashboard";
+import { withRouter } from 'react-router-dom';
 
 class Login extends React.Component {
 
@@ -12,6 +12,7 @@ class Login extends React.Component {
         this.state = {
             email: '',
             password: '',
+            errorLoggedIn : false,
         };
 
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -31,30 +32,18 @@ class Login extends React.Component {
                 console.log('un email a été soumis: ' + this.state.email);
                 console.log('Mot de passe correct: ' + this.state.password);
 
-                this.setState({email: data.email});
-                this.setState({password: data.password});
-                this.setState({isLoggedIn: data.login});
-
+                if (data.login) {
+                    this.props.history.push('/dashboard');
+                } else {
+                    this.setState({
+                        errorLoggedIn : true
+                    })
+                }
             })
 
     }
 
     render() {
-
-        const isLoggedIn = this.state.isLoggedIn;
-        console.log('Login initialisé', isLoggedIn);
-
-        if (isLoggedIn === true) {
-            console.table('Réponse de l\' API à True :', isLoggedIn);
-            // window.location.reload();
-            return <Home />
-
-        } else if (isLoggedIn === false && window.isError !== "Error") {
-            console.table('Réponse de l\' API à False :', isLoggedIn);
-            window.isError = "Error";
-            return <ErrorLogin />
-
-        } else {
 
             return (
                 <div className="formLog">
@@ -76,6 +65,7 @@ class Login extends React.Component {
                                 <strong>Identifiez-vous</strong>
                             </h5>
 
+                            {this.state.errorLoggedIn && <ErrorLogin/>}
 
                             <div className="card-body px-xl-5 pt-0">
 
@@ -124,9 +114,7 @@ class Login extends React.Component {
                                                  src={logolokalero}
                                                  alt="Logo Lokalero"/>Envoyez
                                         </button>
-
                                     </div>
-
                                 </form>
                             </div>
                         </div>
@@ -134,9 +122,7 @@ class Login extends React.Component {
                 </div>
             );
 
-        }
-
     }
 }
 
-export default Login
+export default withRouter(Login)
