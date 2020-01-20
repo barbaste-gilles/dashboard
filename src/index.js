@@ -3,23 +3,23 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import FormLogin from './components/login/form-login/index';
+import Dashboard from './components/dashboard/index';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 
 class App extends React.Component {
-
-    constructor(props) {
-        super(props);
-        this.state = {}
-    }
-
     render() {
-
         return (
-            <div>
-                <FormLogin />
-            </div>
-
-
+          <Router>
+              <Switch>
+                  <Route exact path="/" component={FormLogin} />
+                  <Route exact path="/dashboard" component={Dashboard} />
+              </Switch>
+          </Router>
         )
     }
 }

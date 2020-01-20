@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from '../../../assets/Logo.png'
-import logomot from '../../../assets/Logo_Mot.png'
+import logo from '../../assets/Logo.png'
+import logomot from '../../assets/Logo_Mot.png'
 
 class Home extends React.Component {
 

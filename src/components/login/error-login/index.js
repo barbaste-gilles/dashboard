@@ -1,11 +1,9 @@
 import React from 'react';
-import Login from "../form-login";
 
 class ErrorLogin extends React.Component {
     render() {
         return (
             <div className="classLogin">
-                <Login/>
                 <div className="card-footer">
                     <div className="container">
                         <div className="card-body px-xl-5 pt-0">
