@@ -1,7 +1,6 @@
 import React from 'react';
-import logo from '../../../assets/Logo.png'
-import logomot from '../../../assets/Logo_Mot.png'
-import logolokalero from '../../../assets/Lokalero_Sprint.png'
+import logo from '../../../assets/Logo.png';
+import logomot from '../../../assets/Logo_Mot.png';
 import ErrorLogin from "../error-login";
 import { withRouter } from 'react-router-dom';
 
@@ -110,9 +109,7 @@ class Login extends React.Component {
                                         <button
                                             className="btn btn-outline-warning btn-rounded btn-block btn-lg my-4 waves-effect z-depth-0 w-50"
                                             type="submit">
-                                            <img className="logolokalero col-lg-6"
-                                                 src={logolokalero}
-                                                 alt="Logo Lokalero"/>Envoyez
+                                            Se connecter
                                         </button>
                                     </div>
                                 </form>
