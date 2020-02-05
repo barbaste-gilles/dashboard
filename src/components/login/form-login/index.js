@@ -46,9 +46,9 @@ class Login extends React.Component {
 
             return (
                 <div className="formLog">
-                    <div className="card">
-                        <div className="container">
-
+                    <div className="card table-responsive-sm">
+                        <div className="container container-fluid">
+                            <div className="text-center">
                             <img
                                 className="logo"
                                 src={logo}
@@ -59,7 +59,7 @@ class Login extends React.Component {
                                 src={logomot}
                                 alt="logo mot"
                             />
-
+                            </div>
                             <h5 className="card-header text-center py-4">
                                 <strong>Identifiez-vous</strong>
                             </h5>

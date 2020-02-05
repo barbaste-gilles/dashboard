@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e564fbf9-1fd1-4d70-a36c-58014a607924" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/barnav/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Logo_Handidanse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/amount.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/don.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/logo_FIPA.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/moyenne.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/recufiscal.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/barnav/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/barnav/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/dashboard/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login/error-login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/error-login/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/login/form-login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/form-login/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
@@ -49,9 +56,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RunManager">
     <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/components/login/dashboard/index.js" working-dir="$PROJECT_DIR$/src/components/login/dashboard">
@@ -102,7 +113,20 @@
       <workItem from="1579542991739" duration="1323000" />
       <workItem from="1579598435886" duration="11984000" />
       <workItem from="1580115635622" duration="4000" />
-      <workItem from="1580118052199" duration="17943000" />
+      <workItem from="1580118052199" duration="18576000" />
+      <workItem from="1580203137437" duration="23572000" />
+      <workItem from="1580242385933" duration="897000" />
+      <workItem from="1580288756459" duration="25174000" />
+      <workItem from="1580375335100" duration="5507000" />
+      <workItem from="1580462520418" duration="36563000" />
+      <workItem from="1580720984969" duration="38154000" />
+      <workItem from="1580812769030" duration="4838000" />
+      <workItem from="1580894822227" duration="8081000" />
+      <workItem from="1580905565103" duration="170000" />
+      <workItem from="1580905960993" duration="437000" />
+      <workItem from="1580907600352" duration="601000" />
+      <workItem from="1580910764493" duration="1172000" />
+      <workItem from="1580912391356" duration="9936000" />
     </task>
     <servers />
   </component>
@@ -113,6 +137,14 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="233" y="20" key="#ESLint" timestamp="1580737612449">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="233" y="20" key="#ESLint/0.0.1280.720@0.0.1280.720" timestamp="1580737612449" />
+    <state x="233" y="20" key="#Inspections" timestamp="1580743045055">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="233" y="20" key="#Inspections/0.0.1280.720@0.0.1280.720" timestamp="1580743045055" />
     <state x="371" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576148396318">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -185,9 +217,9 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state width="1259" height="220" key="GridCell.Tab.3.right/0.0.1280.720@0.0.1280.720" timestamp="1579544314966" />
-    <state x="144" y="7" key="SettingsEditor" timestamp="1580145887559">
+    <state x="144" y="7" key="SettingsEditor" timestamp="1580310753476">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="144" y="7" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1580145887559" />
+    <state x="144" y="7" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1580310753476" />
   </component>
 </project>

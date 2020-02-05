@@ -1,116 +1,99 @@
 import React from 'react';
+import logocomplet from '../../assets/Logo_Complet.png';
 
-class Barnav extends React.Component {
+// const NavItem = props => {
+//     const pageURI = window.location.pathname+window.location.search
+//     const liClassName = (props.path === pageURI) ? "nav-item active" : "nav-item";
+//     const aClassName = props.disabled ? "nav-link disabled" : "nav-link"
+//     return (
+//         <li className={liClassName}>
+//             <a href={props.path} className={aClassName}>
+//                 {props.name}
+//                 {(props.path === pageURI) ? (<span className="sr-only">(current)</span>) : ''}
+//             </a>
+//         </li>
+//     );
+// }
 
+class NavDropdown extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isToggleOn: false
+        };
+    }
+    showDropdown(e) {
+        e.preventDefault();
+        this.setState(prevState => ({
+            isToggleOn: !prevState.isToggleOn
+        }));
+    }
     render() {
-
+        const classDropdownMenu = 'dropdown-menu' + (this.state.isToggleOn ? ' show' : '')
         return (
-            <div>
-                <div className="row">
-                    <div className="col-3">
-                        <div className="nav flex-column nav-pills"
-                             id="v-pills-tab"
-                             role="tablist"
-                             aria-orientation="vertical">
-                            <a className="nav-link active"
-                               id="v-pills-acceuil-tab"
-                               data-toggle="pill"
-                               href="#v-pills-acceuil"
-                               role="tab"
-                               aria-controls="v-pills-acceuil"
-                               aria-selected="true">
-                                ACCEUIL
-                            </a>
-                            <a className="nav-link"
-                               id="v-pills-dons-tab"
-                               data-toggle="pill"
-                               href="#v-pills-dons"
-                               role="tab"
-                               aria-controls="v-pills-dons"
-                               aria-selected="false">
-                                DONS
-                            </a>
-                            <a className="nav-link"
-                               id="v-pills-recus-tab"
-                               data-toggle="pill"
-                               href="#v-pills-recus"
-                               role="tab"
-                               aria-controls="v-pills-recus"
-                               aria-selected="false">
-                                RECUS FISCAUX
-                            </a>
-                            <a className="nav-link"
-                               id="v-pills-virements-tab"
-                               data-toggle="pill"
-                               href="#v-pills-virements"
-                               role="tab"
-                               aria-controls="v-pills-virements"
-                               aria-selected="false">
-                                VIREMENTS
-                            </a>
-                            <hr/>
-                            <a className="nav-link"
-                               id="v-pills-compte-tab"
-                               data-toggle="pill"
-                               href="#v-pills-compte"
-                               role="tab"
-                               aria-controls="v-pills-compte"
-                               aria-selected="false">
-                                CONFIGURER MON COMPTE
-                            </a>
-                            <a className="nav-link"
-                               id="v-pills-deconnecter-tab"
-                               data-toggle="pill"
-                               href="#v-pills-deconnecter"
-                               role="tab"
-                               aria-controls="v-pills-deconnecter"
-                               aria-selected="false">
-                                ME DECONNECTER
-                            </a>
-                        </div>
-                    </div>
-                    <div className="col-9">
-                        <div className="tab-content"
-                             id="v-pills-tabContent">
-                            <div className="tab-pane fade show active"
-                                 id="v-pills-acceuil"
-                                 role="tabpanel"
-                                 aria-labelledby="v-pills-acceuil-tab">
-                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto beatae dolorem
-                                 esse fugiat illum, nemo perferendis quaerat rerum. Asperiores blanditiis ea nostrum
-                                 placeat? Aut, tempora, vero. Aspernatur minus porro temporibus.
-                            </div>
-                            <div className="tab-pane fade"
-                                 id="v-pills-dashboard"
-                                 role="tabpanel"
-                                 aria-labelledby="v-pills-dashboard-tab">
-                                 Culpa cumque dolorem, dolores doloribus eos error facere magni maiores modi,
-                                 molestiae, nulla perspiciatis provident quas quod sunt velit vero? Accusamus maxime
-                                 natus neque nihil nulla omnis ratione recusandae rerum.
-                            </div>
-                            <div className="tab-pane fade"
-                                 id="v-pills-dons"
-                                 role="tabpanel"
-                                 aria-labelledby="v-pills-dons-tab">
-                                 Accusamus dolor ducimus esse et magnam necessitatibus perferendis, quae quam soluta
-                                 voluptatibus. Cum doloribus eaque et facere illo labore magnam mollitia nam nesciunt
-                                 nulla, qui quidem, suscipit temporibus? Omnis, praesentium.
-                            </div>
-                            <div className="tab-pane fade"
-                                 id="v-pills-deconnexion"
-                                 role="tabpanel"
-                                 aria-labelledby="v-pills-deconnexion-tab">
-                                 Adipisci consectetur eveniet itaque laborum magnam quibusdam quos saepe unde
-                                 veniam, vero! Amet delectus deleniti distinctio dolores illum itaque maiores minus
-                                 molestias nihil, officia quasi quia rem repudiandae rerum saepe!
-                            </div>
-                        </div>
-                    </div>
+            <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false"
+                   onClick={(e) => {this.showDropdown(e)}}>
+                    {this.props.name}
+                </a>
+                <div className={classDropdownMenu} aria-labelledby="navbarDropdown">
+                    {this.props.children}
                 </div>
-
-            </div>
-        );
+            </li>
+        )
     }
 }
 
-export default Barnav
+
+class Navigation extends React.Component {
+    render() {
+        return (
+            <nav className="navbar navbar-expand-lg navbar-warning bg-custom shadow">
+                <a href="/dashboard">
+                    <img className="navbar-brand logocomplet center block"
+                    src={logocomplet}
+                    href="/dashboard"
+                    alt="Logo Complet Lokalero"/>
+                </a>
+
+                {/*<a className="navbar-brand" href="/dashboard"></a>*/}
+                <button className="navbar-toggler navbar-light border-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+
+                <div className="dropdown-left collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul className="navbar-nav mr-auto navbar-expand-lg container-fluid" >
+
+                        {/*<NavItem path="/dashboard" name="Page 1" />*/}
+                        {/*<NavItem path="/dashboard" name="Page 2" />*/}
+                        {/*<NavItem path="/dashboard" name="Disabled" disabled="true" />*/}
+                        <form className="form-control col-3 d-inline-flex border-light center-block shadow p-0 justify-content-xl-around container-fluid">
+                            <NavDropdown name="Filtres">
+                                <a className="dropdown-item" href="/dashboard">Filtre 1</a>
+                                <a className="dropdown-item" href="/dashboard">Filtre 2</a>
+                                <div className="dropdown-divider"></div>
+                                <a className="dropdown-item" href="/dashboard">Autre Filtre</a>
+                            </NavDropdown>
+                        </form>
+                        <form className="form-control col-3 d-inline-flex p-0 border-light center-block shadow justify-content-xl-around container-fluid">
+                            <NavDropdown name="Périodes">
+                                <a className="dropdown-item" href="dashboard">Mois en cours</a>
+                                <a className="dropdown-item" href="/dashboard">Période 2</a>
+                                <div className="dropdown-divider"></div>
+                                <a className="dropdown-item" href="/dashboard">Autre période</a>
+                            </NavDropdown>
+                        </form>
+
+                    </ul>
+                    {/*<form className="form-inline my-2 my-lg-0">*/}
+                    {/*    <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />*/}
+                    {/*    <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>*/}
+                    {/*</form>*/}
+                </div>
+            </nav>
+        )
+    }
+}
+
+export default Navigation;
