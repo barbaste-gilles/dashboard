@@ -67,15 +67,16 @@ code {
   padding-bottom: 80px;
 }
 .card-header{
-  margin-top: 20px;
+  margin: 0;
 }
 label{
   color: brown;
   margin-left: -15px;
   margin-top: 20px;
 }
-.dropdown-left{
-  margin-left: 300px;
+.navbar-custom{
+  margin-left: 250px;
+  margin-right: 150px;
 }
 .submit{
   margin-top: 40px;
@@ -112,6 +113,12 @@ h6{
   height: auto;
   padding-bottom: 10px;
 }
+.donBis{
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
+  padding-top: 10px;
+}
 .moyenne{
   margin: 0 auto;
   max-width: 100%;
@@ -147,8 +154,12 @@ h6{
   text-align: center;
   margin: 0;
 }
-.card-header{
-  margin: 0;
+.card-graphic{
+  width: 1000px;
+  maxWidth: 1000px;
+  margin: 0 auto;
+  height: 600px;
+  font-size: small;
 }
 .diviseur{
   width: 120px;

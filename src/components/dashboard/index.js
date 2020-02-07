@@ -1,13 +1,60 @@
 import React from 'react';
 import repartitiondon from '../../assets/repartition_don.png';
 // import objectif from '../../assets/objectif.png';
-import repartitionmois from '../../assets/repartition_mois.png';
+// import repartitionmois from '../../assets/repartition_mois.png';
 import logohandidanse from '../../assets/Logo_Handidanse.png';
 import amount from '../../assets/amount.png';
 import don from '../../assets/don.png';
+import donation from '../../assets/donmoyen.png';
 import moyenne from '../../assets/moyenne.png';
 import recufiscal from '../../assets/recufiscal.png';
 import Navigation from "../barnav/index";
+
+// ----------------------------------------- Data + Dynamic graphics  -------------------------------------------------
+
+import {
+    AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
+} from 'recharts';
+
+const data = [
+    {
+        name: 'Mars', Nombre: 250, Montant: 1000, Cumul: 1000,
+    },
+    {
+        name: 'Avr.', Nombre: 150, Montant: 1500, Cumul: 2500,
+    },
+    {
+        name: 'Mai', Nombre: 70, Montant: 700, Cumul: 3200,
+    },
+    {
+        name: 'Juin', Nombre: 100, Montant: 800, Cumul: 4000,
+    },
+    {
+        name: 'Juil.', Nombre: 334, Montant: 2338, Cumul: 6338,
+    },
+    {
+        name: 'Août', Nombre: 4, Montant: 60, Cumul: 6368,
+    },
+    {
+        name: 'Sept.', Nombre: 158, Montant: 1896, Cumul: 8264,
+    },
+    {
+        name: 'Oct.', Nombre: 364, Montant: 5816, Cumul: 14088,
+    },
+    {
+        name: 'Nov.', Nombre: 140, Montant: 1960, Cumul: 16048,
+    },
+    {
+        name: 'Déc.', Nombre: 202, Montant: 5050, Cumul:21098,
+    },
+    {
+        name: 'Janv.', Nombre: 180, Montant: 3060, Cumul: 24158,
+    },
+    {
+        name: 'Fev.', Nombre: 130, Montant: 1300, Cumul: 25458,
+    },
+];
+// ---------------------------------------  Data + Dynamic graphics  -------------------------------------------------
 
 class Home extends React.Component {
 
@@ -128,7 +175,7 @@ class Home extends React.Component {
             {/*    </div>*/}
             {/*</nav>*/}
 
-            {/* ------- Vertical navigation bar --------------------------------------------------------------------*/}
+{/* ----------------------------------------- Vertical navigation bar -----------------------------------------------*/}
             <div className="row">
                 <div className="col-md-3 navbar-expand-xl">
                     <div className="nav flex-column nav-pills bg-custom ml-0 my-1 navbar-collapse navbar-light navbar-height shadow"
@@ -207,7 +254,9 @@ class Home extends React.Component {
                     </div>
                 </div>
 
-                {/* Affiche le Dashboard à droite de la barre de navigation */}
+{/* ---------------------------------------- End Vertical navigation bar ------------------------------------------- */}
+
+{/* -------------------------------- Displays the Dashboard to the right of the navigation bar --------------------- */}
 
                 <div className="col-md-9">
                     <div className="tab-content"
@@ -217,6 +266,86 @@ class Home extends React.Component {
                              role="tabpanel"
                              aria-labelledby="v-pills-acceuil-tab">
 
+                            < div className = "card-deck container-fluid text-center" >
+
+                                < div className = "card container-fluid" >
+                                    < div className = "card-body text-center" >
+                                        <h6 className="card-title">Montant global</h6>
+                                        <h6 className="card-header text-dark" >25 458 €</h6>
+                                        <img
+                                            className="donBis img-fluid center-block"
+                                            src={amount}
+                                            alt="Montant global"
+                                        />
+                                    </div>
+                                </div>
+
+                                <div className="card container-fluid">
+                                    <div className="card-body text-center">
+                                        <h6 className="card-title">Don Moyen</h6>
+                                        <h6 className="card-header text-dark" >12,23 €</h6>
+                                        <img
+                                            className="donBis img-fluid center-block"
+                                            src={donation}
+                                            alt="Don moyen"
+                                        />
+                                    </div>
+                                </div>
+
+                                <div className="card container-fluid">
+                                    <div className="card-body text-center">
+                                        <h6 className="card-title">Nombre de dons</h6>
+                                        <h6 className="card-header text-dark">2 082</h6>
+                                        <img
+                                            className="donBis img-fluid center-block"
+                                            src={don}
+                                            alt="Coeur - Nombre de dons"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+
+{/* ----------------------------------------------------- Dynamic graphics ----------------------------------------- */}
+                            < div className = "card-deck " >
+
+                                <div className="card container-fluid">
+                                    <div className="col-md-12 card-body card-graphic">
+                                        <h6 className="card-title">Répartition des dons en nombre et montant</h6>
+                                        {/*<img*/}
+                                        {/*    className="repartitionmois img-fluid center-block"*/}
+                                        {/*    src={repartitionmois}*/}
+                                        {/*    alt="Répartition du Don par mois"*/}
+                                        {/*/>*/}
+
+
+
+                                        <ResponsiveContainer>
+                                            <AreaChart
+                                                // width={1000}
+                                                // height={400}
+                                                data={data}
+                                                margin={{
+                                                    top: 10, right: 30, left: 0, bottom: 35,
+                                                }}
+                                            >
+                                                <CartesianGrid strokeDasharray="3 3" />
+                                                <XAxis dataKey="name" />
+                                                <YAxis />
+                                                <Tooltip />
+                                                <Area type="monotone" dataKey="Nombre" stackId="1" stroke="#82ca9d" fill="#82ca9d" />
+                                                <Area type="monotone" dataKey="Montant" stackId="1" stroke="#ffc658" fill="#ffc658" />
+                                                <Area type="monotone" dataKey="Cumul" stackId="1" stroke="#8884d8" fill="#8884d8" />
+                                            </AreaChart>
+                                        </ResponsiveContainer>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+{/* ----------------------------------------------------- Dynamic graphics ----------------------------------------- */}
+
+{/* ----------------------------- END Displays the Dashboard to the right of the navigation bar --------------------- */}
                             < div className = "card-deck" >
 
                                 < div className = "card container-fluid" >
@@ -346,29 +475,10 @@ class Home extends React.Component {
 
                             </div>
 
-                            < div className = "card-deck " >
-
-                                <div className="card container-fluid">
-                                    <div className="card-body">
-                                        <h6 className="card-title">Répartition du don par mois</h6>
-                                        <img
-                                            className="repartitionmois img-fluid center-block"
-                                            src={repartitionmois}
-                                            alt="Répartition du Don par mois"
-                                        />
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-
                     </div>
                 </div>
             </div>
-
-
-
+            </div>
         </div>
 
         );

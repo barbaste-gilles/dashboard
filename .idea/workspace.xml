@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e564fbf9-1fd1-4d70-a36c-58014a607924" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/Logo_Handidanse.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/amount.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/don.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/logo_FIPA.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/moyenne.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/recufiscal.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/donmoyen.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/barnav/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/barnav/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/dashboard/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/login/error-login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/error-login/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/login/form-login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/form-login/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,6 +55,7 @@
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
@@ -127,6 +122,9 @@
       <workItem from="1580907600352" duration="601000" />
       <workItem from="1580910764493" duration="1172000" />
       <workItem from="1580912391356" duration="9936000" />
+      <workItem from="1580981178190" duration="3220000" />
+      <workItem from="1580995573722" duration="18284000" />
+      <workItem from="1581068157849" duration="29036000" />
     </task>
     <servers />
   </component>
@@ -153,22 +151,22 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="421" y="120" key="FileChooserDialogImpl/0.0.1280.720@0.0.1280.720" timestamp="1580145705773" />
-    <state width="1259" height="220" key="GridCell.Tab.0.bottom" timestamp="1579544314965">
+    <state width="1259" height="176" key="GridCell.Tab.0.bottom" timestamp="1581016068415">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1259" height="220" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1579544314965" />
-    <state width="1259" height="220" key="GridCell.Tab.0.center" timestamp="1579544314965">
+    <state width="1259" height="176" key="GridCell.Tab.0.bottom/0.0.1280.720@0.0.1280.720" timestamp="1581016068415" />
+    <state width="1259" height="176" key="GridCell.Tab.0.center" timestamp="1581016068415">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1259" height="220" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1579544314965" />
-    <state width="1259" height="220" key="GridCell.Tab.0.left" timestamp="1579544314965">
+    <state width="1259" height="176" key="GridCell.Tab.0.center/0.0.1280.720@0.0.1280.720" timestamp="1581016068415" />
+    <state width="1259" height="176" key="GridCell.Tab.0.left" timestamp="1581016068415">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1259" height="220" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1579544314965" />
-    <state width="1259" height="220" key="GridCell.Tab.0.right" timestamp="1579544314965">
+    <state width="1259" height="176" key="GridCell.Tab.0.left/0.0.1280.720@0.0.1280.720" timestamp="1581016068415" />
+    <state width="1259" height="176" key="GridCell.Tab.0.right" timestamp="1581016068415">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state width="1259" height="220" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1579544314965" />
+    <state width="1259" height="176" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1581016068415" />
     <state width="1259" height="220" key="GridCell.Tab.1.bottom" timestamp="1579544314966">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
