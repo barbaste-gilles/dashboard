@@ -50,34 +50,49 @@ class Navigation extends React.Component {
     render() {
         return (
             <nav className="navbar navbar-expand-lg navbar-warning bg-custom shadow">
-                <a href="/dashboard">
-                    <img className="navbar-brand logocomplet"
-                    src={logocomplet}
-                    href="/dashboard"
-                    alt="Logo Complet Lokalero"/>
-                </a>
-
+                <div className="row col-3 justify-content-center">
+                    <a href="/dashboard">
+                        <img className="navbar-brand logocomplet"
+                        src={logocomplet}
+                        href="/dashboard"
+                        alt="Logo Complet Lokalero"/>
+                    </a>
+                </div>
                 {/*<a className="navbar-brand" href="/dashboard"></a>*/}
                 {/*<button className="navbar-toggler navbar-light border-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">*/}
                 {/*    <span className="navbar-toggler-icon"></span>*/}
                 {/*</button>*/}
 
-                <div className="navbar-custom collapse navbar-collapse" id="navbarSupportedContent">
+                <div className="row col-9 justify-content-center navbar-custom navbar-collapse">
 
                     <ul className="navbar-nav mr-auto navbar-expand-lg container-fluid" >
 
                         {/*<NavItem path="/dashboard" name="Page 1" />*/}
                         {/*<NavItem path="/dashboard" name="Page 2" />*/}
                         {/*<NavItem path="/dashboard" name="Disabled" disabled="true" />*/}
-                        <form className="form-control col-2 d-inline-flex border-light center-block shadow p-0 justify-content-xl-around container-fluid">
-                            <NavItem path="/dashboard" name="Bornes" />
-                        </form>
-                        <form className="form-control col-2 d-inline-flex border-light center-block shadow p-0 justify-content-xl-around container-fluid">
-                            <NavItem path="/dashboard" name="QR Codes" />
-                        </form>
-                        <form className="form-control col-2 d-inline-flex border-light center-block shadow p-0 justify-content-xl-around container-fluid">
-                            <NavItem path="/dashboard" name="Global" />
-                        </form>
+
+                        {/*<form className="form-control col-sm-2 d-inline-flex border-light center-block shadow p-0 justify-content-xl-around container-fluid">*/}
+                        {/*    <NavItem path="/dashboard" name="Global" />*/}
+                        {/*</form>*/}
+
+                        {/*container-fluid déactive le bouton - la solution pour centrer les boutons n'est pas retenue*/}
+                            <button className="col-sm-2 btn btn-md custom-gradient shadow btn-block my-4 border-light p-0 justify-content-xl-around container-fluid" type="button">
+                                <NavItem path="/dashboard" name="Global" />
+                            </button>
+
+                        {/*<form className="form-control col-sm-2 d-inline-flex border-light center-block shadow p-0 justify-content-xl-around container-fluid">*/}
+                        {/*    <NavItem path="/dashboard" name="Bornes" />*/}
+                        {/*</form>*/}
+                            <button className="col-sm-2 btn btn-md custom-gradient shadow btn-block my-4 border-light p-0 justify-content-xl-around container-fluid" type="button">
+                                <NavItem path="/dashboard" name="Bornes" />
+                            </button>
+
+                        {/*<form className="form-control col-sm-2 d-inline-flex border-light center-block shadow p-0 justify-content-xl-around container-fluid">*/}
+                        {/*    <NavItem path="/dashboard" name="QR Codes" />*/}
+                        {/*</form>*/}
+                            <button className="col-sm-2 btn btn-md custom-gradient shadow btn-block my-4 border-light p-0 justify-content-xl-around container-fluid" type="button">
+                                <NavItem path="/dashboard" name="QR Codes" />
+                            </button>
 
 
                         {/*<form className="form-control col-3 d-inline-flex border-light center-block shadow p-0 justify-content-xl-around container-fluid">*/}

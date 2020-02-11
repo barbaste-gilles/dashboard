@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e564fbf9-1fd1-4d70-a36c-58014a607924" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/donmoyen.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/barnav/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/barnav/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/barnav/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navpage/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/dashboard/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
@@ -125,6 +124,9 @@
       <workItem from="1580981178190" duration="3220000" />
       <workItem from="1580995573722" duration="18284000" />
       <workItem from="1581068157849" duration="29036000" />
+      <workItem from="1581103640857" duration="610000" />
+      <workItem from="1581327367953" duration="29142000" />
+      <workItem from="1581412248911" duration="28307000" />
     </task>
     <servers />
   </component>
