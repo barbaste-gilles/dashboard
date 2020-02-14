@@ -1,4 +1,7 @@
 import React, { PureComponent } from 'react';
+import {Button, ButtonToolbar} from 'react-bootstrap';
+import { MDBProgress } from 'mdbreact';
+import NumberFormat from 'react-number-format';
 import repartitiondon from '../../assets/repartition_don.png';
 import logohandidanse from '../../assets/Logo_Handidanse.png';
 import amount from '../../assets/amount.png';
@@ -6,8 +9,9 @@ import don from '../../assets/don.png';
 import donation from '../../assets/donmoyen.png';
 import moyenne from '../../assets/moyenne.png';
 import recufiscal from '../../assets/recufiscal.png';
-import Navigation from "../navpage/index";
-import NumberFormat from 'react-number-format';
+// import Navigation from "../navpage/index";
+
+
 
 // ----------------------------------------- Data + Dynamic graphics  -------------------------------------------------
 
@@ -17,40 +21,40 @@ import {
 
 const data = [
     {
-        name: 'Mars 2019', Nombre: 250, Montant: 1000, Cumul: 1000,
+        name: 'Mars 2019', Nombre: 250, Montant: 1000,
     },
     {
-        name: 'Avr. 2019', Nombre: 150, Montant: 1500, Cumul: 2500,
+        name: 'Avr. 2019', Nombre: 150, Montant: 1500,
     },
     {
-        name: 'Mai 2019', Nombre: 70, Montant: 700, Cumul: 3200,
+        name: 'Mai 2019', Nombre: 70, Montant: 700,
     },
     {
-        name: 'Juin 2019', Nombre: 100, Montant: 800, Cumul: 4000,
+        name: 'Juin 2019', Nombre: 100, Montant: 800,
     },
     {
-        name: 'Juil. 2019', Nombre: 334, Montant: 2338, Cumul: 6338,
+        name: 'Juil. 2019', Nombre: 334, Montant: 2338,
     },
     {
-        name: 'Août 2019', Nombre: 4, Montant: 60, Cumul: 6368,
+        name: 'Août 2019', Nombre: 4, Montant: 60,
     },
     {
-        name: 'Sept. 2019', Nombre: 158, Montant: 1896, Cumul: 8264,
+        name: 'Sept. 2019', Nombre: 158, Montant: 1896,
     },
     {
-        name: 'Oct. 2019', Nombre: 364, Montant: 5816, Cumul: 14088,
+        name: 'Oct. 2019', Nombre: 364, Montant: 5816,
     },
     {
-        name: 'Nov. 2019', Nombre: 140, Montant: 1960, Cumul: 16048,
+        name: 'Nov. 2019', Nombre: 140, Montant: 1960,
     },
     {
-        name: 'Déc. 2019', Nombre: 202, Montant: 5050, Cumul:21098,
+        name: 'Déc. 2019', Nombre: 202, Montant: 5050,
     },
     {
-        name: 'Janv. 2020', Nombre: 180, Montant: 3060, Cumul: 24158,
+        name: 'Janv. 2020', Nombre: 180, Montant: 3060,
     },
     {
-        name: 'Fev. 2020', Nombre: 130, Montant: 1300, Cumul: 25458,
+        name: 'Fev. 2020', Nombre: 130, Montant: 1300,
     },
 ];
 
@@ -94,11 +98,10 @@ class Home extends React.Component {
 
         return (
         <div>
-            {/* Navigation bars */}
 
 {/* ----------------------------------------- Horizontal navigation bar ---------------------------------------------*/}
 
-            < Navigation />
+            {/*< Navigation />*/}
 
 
 {/* ----------------------------------------- Vertical navigation bar -----------------------------------------------*/}
@@ -167,12 +170,172 @@ class Home extends React.Component {
 {/* -------------------------------- Displays the Dashboard to the right of the navigation bar --------------------- */}
 
                 <div className="col-md-9">
-                    <div className="tab-content"
+
+                    <header>
+
+                        {/*  -------------------------- Call up the selected page ------------------------------*/}
+                        <ButtonToolbar className="justify-content-center">
+                            <Button href="/dashboard" variant="outline-warning" type="submit" size="lg" active>Ensemble</Button>
+                            <Button href="/dashboardMobile" variant="outline-warning" type="submit" size="lg">LOKA'Mobile</Button>
+                            <Button href="/dashboard" variant="outline-warning" type="submit" size="lg">LOKA'Borne</Button>
+                        </ButtonToolbar>
+                        {/*  -------------------------- Call up the selected page ------------------------------*/}
+
+                        <div className="row mt-4 mb-0 justify-content-center">
+                            <div className="col-lg-2">
+                                <div className="form-control border-0">
+                                    <p>Montant total</p>
+                                </div>
+                            </div>
+                            <div className="col-lg-1">
+                                <div className="form-control border-0">
+                                    <p>Moyenne</p>
+                                </div>
+                            </div>
+                            <div className="col-auto">
+                                <div className="form-control border-0">
+                                    <p>Donateurs</p>
+                                </div>
+                            </div>
+                            <div className="col-3">
+                                <div className="form-control border-0">
+                                    <p>Répartition par dispositif</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="row mb-0 mt-0 justify-content-center text-center">
+                            <div className="col-lg-2">
+                                <div className="form-control form-control-lg shadow">
+                                    <h4>
+                                        <NumberFormat value={this.state.MontantTotal.toFixed(0)}
+                                                      displayType={'text'}
+                                                      thousandSeparator={' '}
+                                                      decimalSeparator={','}
+                                                      suffix={' €'}
+                                        />
+                                    </h4>
+                                </div>
+                            </div>
+                            <div className="col-lg-1">
+                                <div className="form-control form-control-lg shadow">
+                                    <h4>
+                                        <NumberFormat value={this.state.DonMoyen.toFixed(0)}
+                                                      displayType={'text'}
+                                                      thousandSeparator={' '}
+                                                      decimalSeparator={','}
+                                                      suffix={' €'}
+                                        />
+                                    </h4>
+                                </div>
+                            </div>
+                            <div className="col-auto">
+                                <div className="form-control form-control-lg shadow">
+                                    <h4>
+                                        <NumberFormat value={this.state.TotalDon.toFixed(0)}
+                                                      displayType={'text'}
+                                                      thousandSeparator={' '}
+                                                      decimalSeparator={','}
+                                        />
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div className="col-lg-3">
+                                <div className="bar-progress shadow text-left">
+                                    <p className="ml-3 mr-3 mb-0">
+                                        <strong>100%</strong>
+                                    </p>
+                                    <MDBProgress className="ml-3 mr-3"
+                                                 material value={100}
+                                                 color="warning"
+                                                 height="20px"
+                                                 animated
+                                    />
+                                    <p className="ml-3 mr-3"><strong>Ensemble</strong></p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div className="row mb-5 mt-4 justify-content-center text-center">
+                            <div className="col-lg-2">
+                                <div className="form-control form-control-lg custom-gradient justify-content-xl-around shadow">
+                                    <h4>Filtre projet</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </header>
+
+                    <main className="tab-content"
                          id="v-pills-tabContent">
                         <div className="tab-pane fade show active"
                              id="v-pills-acceuil"
                              role="tabpanel"
                              aria-labelledby="v-pills-acceuil-tab">
+
+{/* ----------------------------------------------------- Dynamic graphics ----------------------------------------- */}
+                            < div className = "card-deck " >
+
+                                <div className="card container-fluid">
+                                    <div className="col-md-12 card-body card-graphic">
+                                        <h6 className="card-title">
+                                            Répartition des dons en nombre et montant
+                                        </h6>
+                                        <ResponsiveContainer>
+                                            <AreaChart
+                                                data={data}
+                                                margin={{
+                                                    top: 10, right: 30, left: 0, bottom: 35,
+                                                }}
+                                            >
+                                                <defs>
+                                                    <linearGradient id="colorMontant" x1="0" y1="0" x2="0" y2="1">
+                                                        <stop offset="100%" stopColor="#FFEADC" stopOpacity={1}/>
+                                                        <stop offset="100%" stopColor="#FFEADC" stopOpacity={1}/>
+                                                    </linearGradient>
+                                                    <linearGradient id="colorNombre" x1="0" y1="0" x2="0" y2="1">
+                                                        <stop offset="100%" stopColor="#FFC491" stopOpacity={1}/>
+                                                        <stop offset="100%" stopColor="#FFC491" stopOpacity={1}/>
+                                                    </linearGradient>
+
+                                                </defs>
+                                                <CartesianGrid strokeDasharray="3 3" />
+                                                <XAxis dataKey="name"
+                                                       height={60}
+                                                       tick={<CustomizedAxisTick />}
+                                                />
+                                                <YAxis />
+                                                <Tooltip />
+                                                <Area type="monotone"
+                                                      dataKey="Montant"
+                                                      stroke="#FFEADC"
+                                                      fillOpacity={1}
+                                                      fill="url(#colorMontant)" />
+                                                <Area type="monotone"
+                                                      dataKey="Nombre"
+                                                      stroke="#FFC491"
+                                                      fillOpacity={1}
+                                                      fill="url(#colorNombre)" />
+                                            </AreaChart>
+                                        </ResponsiveContainer>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+{/* ----------------------------------------------------- Dynamic graphics ----------------------------------------- */}
+
+
+                    {/* --------------      Liste des projets à intégrer ici       -------------- */}
+
+
+{/* ---------------------------- (END) Displays the Dashboard to the right of the navigation bar --------------------- */}
+
+                       {/* --------------------      Configuration obsolète      ------------------ */}
+
 
                             < div className = "card-deck container-fluid text-center" >
 
@@ -241,70 +404,6 @@ class Home extends React.Component {
                                     </div>
                                 </div>
                             </div>
-
-{/* ----------------------------------------------------- Dynamic graphics ----------------------------------------- */}
-                            < div className = "card-deck " >
-
-                                <div className="card container-fluid">
-                                    <div className="col-md-12 card-body card-graphic">
-                                        <h6 className="card-title">
-                                            Répartition des dons en nombre et montant
-                                        </h6>
-                                        <ResponsiveContainer>
-                                            <AreaChart
-                                                data={data}
-                                                margin={{
-                                                    top: 10, right: 30, left: 0, bottom: 35,
-                                                }}
-                                            >
-                                                <defs>
-                                                    <linearGradient id="colorNombre" x1="0" y1="0" x2="0" y2="1">
-                                                        <stop offset="5%" stopColor="#82ca9d" stopOpacity={0.8}/>
-                                                        <stop offset="95%" stopColor="#82ca9d" stopOpacity={0}/>
-                                                    </linearGradient>
-                                                    <linearGradient id="colorMontant" x1="0" y1="0" x2="0" y2="1">
-                                                        <stop offset="5%" stopColor="#ffc658" stopOpacity={0.8}/>
-                                                        <stop offset="95%" stopColor="#ffc658" stopOpacity={0}/>
-                                                    </linearGradient>
-                                                    <linearGradient id="colorCumul" x1="0" y1="0" x2="0" y2="1">
-                                                        <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8}/>
-                                                        <stop offset="95%" stopColor="#8884d8" stopOpacity={0}/>
-                                                    </linearGradient>
-
-                                                </defs>
-                                                <CartesianGrid strokeDasharray="3 3" />
-                                                <XAxis dataKey="name"
-                                                       height={60}
-                                                       tick={<CustomizedAxisTick />}
-                                                />
-                                                <YAxis />
-                                                <Tooltip />
-                                                <Area type="monotone"
-                                                      dataKey="Nombre"
-                                                      stroke="#82ca9d"
-                                                      fillOpacity={1}
-                                                      fill="url(#colorNombre)" />
-                                                <Area type="monotone"
-                                                      dataKey="Montant"
-                                                      stroke="#ffc658"
-                                                      fillOpacity={1}
-                                                      fill="url(#colorMontant)" />
-                                                <Area type="monotone"
-                                                      dataKey="Cumul"
-                                                      stroke="#8884d8"
-                                                      fillOpacity={1}
-                                                      fill="url(#colorCumul)" />
-                                            </AreaChart>
-                                        </ResponsiveContainer>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-{/* ----------------------------------------------------- Dynamic graphics ----------------------------------------- */}
-
-{/* ---------------------------- (END) Displays the Dashboard to the right of the navigation bar --------------------- */}
 
                             < div className = "card-deck" >
 
@@ -434,9 +533,10 @@ class Home extends React.Component {
                                 </div>
 
                             </div>
+                        {/* --------------------     Fin de la Configuration obsolète      ------------------ */}
 
                     </div>
-                </div>
+                </main>
             </div>
             </div>
         </div>

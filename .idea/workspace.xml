@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e564fbf9-1fd1-4d70-a36c-58014a607924" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/dashboardMobile/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/barnav/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navpage/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/dashboard/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navpage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navpage/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +48,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -57,6 +58,11 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dashboard\src\components" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/components/login/dashboard/index.js" working-dir="$PROJECT_DIR$/src/components/login/dashboard">
@@ -126,7 +132,12 @@
       <workItem from="1581068157849" duration="29036000" />
       <workItem from="1581103640857" duration="610000" />
       <workItem from="1581327367953" duration="29142000" />
-      <workItem from="1581412248911" duration="28307000" />
+      <workItem from="1581412248911" duration="28646000" />
+      <workItem from="1581500537968" duration="14396000" />
+      <workItem from="1581587086270" duration="229000" />
+      <workItem from="1581587345303" duration="29369000" />
+      <workItem from="1581628144717" duration="400000" />
+      <workItem from="1581672328856" duration="18022000" />
     </task>
     <servers />
   </component>

@@ -75,7 +75,6 @@ class Navigation extends React.Component {
                         {/*    <NavItem path="/dashboard" name="Global" />*/}
                         {/*</form>*/}
 
-                        {/*container-fluid déactive le bouton - la solution pour centrer les boutons n'est pas retenue*/}
                             <button className="col-sm-2 btn btn-md custom-gradient shadow btn-block my-4 border-light p-0 justify-content-xl-around container-fluid" type="button">
                                 <NavItem path="/dashboard" name="Global" />
                             </button>

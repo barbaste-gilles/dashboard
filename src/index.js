@@ -4,6 +4,7 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 import FormLogin from './components/login/form-login/index';
 import Dashboard from './components/dashboard/index';
+import DashboardMobile from './components/dashboardMobile/index';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   BrowserRouter as Router,
@@ -18,6 +19,7 @@ class App extends React.Component {
               <Switch>
                   <Route exact path="/" component={FormLogin} />
                   <Route exact path="/dashboard" component={Dashboard} />
+                  <Route exact path="/dashboardMobile" component={DashboardMobile} />
               </Switch>
           </Router>
         )
