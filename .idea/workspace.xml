@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e564fbf9-1fd1-4d70-a36c-58014a607924" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/dashboardMobile/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Help.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/circle-grey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/parameter-test.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dashboardBorne/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/sidebar/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/dashboard/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navpage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navpage/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboardMobile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboardMobile/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
@@ -137,7 +141,9 @@
       <workItem from="1581587086270" duration="229000" />
       <workItem from="1581587345303" duration="29369000" />
       <workItem from="1581628144717" duration="400000" />
-      <workItem from="1581672328856" duration="18022000" />
+      <workItem from="1581672328856" duration="18614000" />
+      <workItem from="1581930203223" duration="32886000" />
+      <workItem from="1582017667286" duration="36025000" />
     </task>
     <servers />
   </component>
@@ -156,10 +162,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="233" y="20" key="#Inspections/0.0.1280.720@0.0.1280.720" timestamp="1580743045055" />
-    <state x="371" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576148396318">
+    <state x="371" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581957372646">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="371" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.720@0.0.1280.720" timestamp="1576148396318" />
+    <state x="371" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.720@0.0.1280.720" timestamp="1581957372646" />
     <state x="421" y="120" key="FileChooserDialogImpl" timestamp="1580145705773">
       <screen x="0" y="0" width="1280" height="720" />
     </state>

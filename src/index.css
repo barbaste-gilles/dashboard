@@ -54,18 +54,63 @@ code {
 .logocomplet{
   width: 5rem;
   margin: 0;
-  /*margin-left: 92px;*/
-  /*padding-top: 30px;*/
-  /*padding-bottom: 50px;*/
 }
 .link-custom{
   margin-bottom: 20px;
+}
+.round{
+  width: 50%;
+  height: 50px;
+/* arroundi avec bordure (2ème photo)*/
+  border:2px solid #FFC491;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+  padding: 5px;
+  background-color:#E4EFFF;
+}
+.text-custom{
+  width: 50%;
+  height: 50px;
+  border: 0;
+  color: #003135;
+  margin-top: 15px;
+  margin-left: -30px;
+}
+.p-custom{
+  width: 50%;
+  height: 50px;
+  border:0;
+  color: #003135;
+  font-size: xx-small;
+  margin: 0 auto;
+}
+.flotte{
+  float: left;
+
 }
 .logohandidanse{
   width: 8rem;
   margin: 0 auto;
   padding-top: 140px;
-  padding-bottom: 80px;
+  padding-bottom: 10px;
+}
+.parameter{
+  width: 3rem;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+ }
+
+.help{
+  width: 3rem;
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.SidebarTitre{
+  padding-bottom: 40px;
+  color: #003135;
 }
 .card-header{
   margin: 0;
@@ -182,7 +227,7 @@ h6{
   border-right:3px solid #FFC491;
 }
 .navbar-height{
-  height: 960px;
+  height: 1300px;
 }
 #basic-navbar-nav{
   margin-left: 420px;
@@ -228,3 +273,25 @@ header{
   border-radius: 5px; /* 5px rounded corners */
 
 }
+/*Table des donateurs*/
+.h3-custom{
+  margin-bottom: 30px;
+}
+.line-custom{
+  background-color: #FFFFFF;
+}
+.line2-custom{
+  background-color: #FFC491;
+}
+.IconGrey{
+  width: 12%;
+}
+.table {
+  margin: auto;
+  width: 100% !important;
+  border: #757575;
+}
+.table td{
+  vertical-align: middle;
+}
+/*Table des donateurs*/

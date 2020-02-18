@@ -5,6 +5,7 @@ import * as serviceWorker from './serviceWorker';
 import FormLogin from './components/login/form-login/index';
 import Dashboard from './components/dashboard/index';
 import DashboardMobile from './components/dashboardMobile/index';
+import DashboardBorne from './components/dashboardBorne/index';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   BrowserRouter as Router,
@@ -20,6 +21,7 @@ class App extends React.Component {
                   <Route exact path="/" component={FormLogin} />
                   <Route exact path="/dashboard" component={Dashboard} />
                   <Route exact path="/dashboardMobile" component={DashboardMobile} />
+                  <Route exact path="/dashboardBorne" component={DashboardBorne} />
               </Switch>
           </Router>
         )

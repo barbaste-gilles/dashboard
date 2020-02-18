@@ -3,16 +3,19 @@ import {Button, ButtonToolbar} from 'react-bootstrap';
 import { MDBProgress } from 'mdbreact';
 import NumberFormat from 'react-number-format';
 import logohandidanse from '../../assets/Logo_Handidanse.png';
+import IconGrey from "../../assets/circle-grey.png";
 
 // ----------------------------------------- Data + Dynamic graphics  -------------------------------------------------
 
 import {
-    AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
+    AreaChart, Area, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend,
 } from 'recharts';
+import Parameter from "../../assets/parameter-test.png";
+import Help from "../../assets/Help.png";
 
 const data = [
     {
-        name: 'Mars 2019', Nombre: 1500, Montant: 500,
+        name: 'Mars 2019', Nombre: 50, Montant: 250,
     },
     {
         name: 'Avr. 2019', Nombre: 90, Montant: 750,
@@ -42,7 +45,7 @@ const data = [
         name: 'Déc. 2019', Nombre: 120, Montant: 2500,
     },
     {
-        name: 'Janv. 2020', Nombre: 948, Montant: 1530,
+        name: 'Janv. 2020', Nombre: 90, Montant: 1530,
     },
     {
         name: 'Fev. 2020', Nombre: 98, Montant: 650,
@@ -85,7 +88,34 @@ class Mobile extends React.Component {
         };
     }
 
+    state = {
+        opacity: {
+            uv: 1,
+            pv: 1,
+        },
+    };
+
+    handleMouseEnter = (o) => {
+        const { dataKey } = o;
+        const { opacity } = this.state;
+
+        this.setState({
+            opacity: { ...opacity, [dataKey]: 0.5 },
+        });
+    }
+
+    handleMouseLeave = (o) => {
+        const { dataKey } = o;
+        const { opacity } = this.state;
+
+        this.setState({
+            opacity: { ...opacity, [dataKey]: 1 },
+        });
+    }
+
     render() {
+
+        // const { opacity } = this.state;
 
         return (
         <div>
@@ -98,7 +128,7 @@ class Mobile extends React.Component {
 {/* ----------------------------------------- Vertical navigation bar -----------------------------------------------*/}
             <div className="row">
                 <div className="col-md-3 navbar-expand-xl">
-                    <div className="nav flex-column nav-pills bg-custom ml-0 my-1 navbar-collapse navbar-light navbar-height shadow"
+                    <div className="nav flex-column nav-pills bg-custom ml-0 my-1 navbar-collapse navbar-light navbar-height text-center"
                          id="v-pills-tab"
                          role="tablist"
                          aria-orientation="vertical">
@@ -115,47 +145,71 @@ class Mobile extends React.Component {
                                 alt="Logo Handidanse"
 
                             />
+                            <h3 className="SidebarTitre">Domaine des Possibles</h3>
                         </a>
-                        <a className="nav-link link-custom active"
-                           id="v-pills-dashboard-tab"
-                           data-toggle="pill"
-                           href="/dashboard"
-                           role="tab"
-                           aria-controls="dashboard"
-                           aria-selected="false">
-                            DONS
-                        </a>
-                        <a className="nav-link link-custom"
-                           id="v-pills-projet-tab"
-                           data-toggle="pill"
-                           href="#v-pills-projet"
-                           role="tab"
-                           aria-controls="v-pills-projet"
-                           aria-selected="false">
-                            PROJETS
-                        </a>
-                        <hr className="separateur"/>
-                        <a className="nav-link link-custom"
-                           id="v-pills-compte-tab"
-                           data-toggle="pill"
-                           href="#v-pills-compte"
-                           role="tab"
-                           aria-controls="v-pills-compte"
-                           aria-selected="false">
-                            MON COMPTE
-                        </a>
-                        <a className="nav-link link-custom"
-                           id="v-pills-deconnecter-tab"
-                           data-toggle="pill"
-                           href="/"
-                           role="tab"
-                           aria-controls="v-pills-deconnecter"
-                           aria-selected="false">
-                            ME DECONNECTER
-                        </a>
+                        <Button className="link-custom round" href="/dashboard"
+                                variant="outline-warning"
+                                type="submit"
+                                size="lg"
+                                color="#003135"
+                                active
+                        >
+                            <strong>Général</strong>
+                        </Button>
+                        <Button className="link-custom round" href="/dashboard"
+                                variant="outline-warning"
+                                type="submit"
+                                size="lg"
+                                color="#003135"
+                        >
+                            <strong>Projets</strong>
+                        </Button>
+                        <br/><br/><br/>
+                        <div className="row container-fluid justify-content-center">
+                            <div className="flotte">
+                                <img
+                                    className="parameter"
+                                    src={Parameter}
+                                    alt="Paramétres"
+
+                                />
+                            </div>
+                            <a className="link-custom text-custom"
+                               id="v-pills-profil-tab"
+                               data-toggle="pill"
+                               href="#v-pills-profil"
+                               role="tab"
+                               aria-controls="v-pills-profil"
+                               aria-selected="false"
+                            >
+                                <h5><strong>Paramétres</strong></h5>
+                                <p className="p-custom">Profil et paiements</p>
+                            </a>
+                        </div>
+                        <div className="row container-fluid justify-content-center">
+                            <div className="flotte">
+                                <img
+                                    className="help center-block"
+                                    src={Help}
+                                    alt=" Aide"
+
+                                />
+                            </div>
+                            <a className="link-custom text-custom"
+                               id="v-pills-profil-tab"
+                               data-toggle="pill"
+                               href="#v-pills-profil"
+                               role="tab"
+                               aria-controls="v-pills-profil"
+                               aria-selected="false"
+                            >
+
+                                <h5><strong>Aide</strong></h5>
+                                <p className="p-custom">FAQ et assistance</p>
+                            </a>
+                        </div>
                     </div>
                 </div>
-
 {/* ---------------------------------------- End Vertical navigation bar ------------------------------------------- */}
 
 {/* -------------------------------- Displays the Dashboard to the right of the navigation bar --------------------- */}
@@ -167,8 +221,8 @@ class Mobile extends React.Component {
                         {/*  -------------------------- Call up the selected page ------------------------------*/}
                         <ButtonToolbar className="justify-content-center">
                             <Button href="/dashboard" variant="outline-warning" type="submit" size="lg">Ensemble</Button>
-                            <Button href="/" variant="outline-warning" type="submit" size="lg" active>LOKA'Mobile</Button>
-                            <Button href="/dashboard" variant="outline-warning" type="submit" size="lg">LOKA'Borne</Button>
+                            <Button href="/dashboardMobile" variant="outline-warning" type="submit" size="lg" active>LOKA'Mobile</Button>
+                            <Button href="/dashboardBorne" variant="outline-warning" type="submit" size="lg">LOKA'Borne</Button>
                         </ButtonToolbar>
                         {/*  -------------------------- Call up the selected page ------------------------------*/}
 
@@ -243,7 +297,7 @@ class Mobile extends React.Component {
                                                  height="20px"
                                                  animated
                                     />
-                                    <p className="ml-3 mr-3"><strong>Ensemble</strong></p>
+                                    <p className="ml-3 mr-3"><strong>LOKA'Mobile</strong></p>
                                 </div>
                             </div>
 
@@ -292,19 +346,27 @@ class Mobile extends React.Component {
                                                     </linearGradient>
 
                                                 </defs>
-                                                <CartesianGrid strokeDasharray="3 3" />
+                                                <CartesianGrid strokeDasharray="0 3" />
                                                 <XAxis dataKey="name"
                                                        height={60}
                                                        tick={<CustomizedAxisTick />}
                                                 />
-                                                <YAxis />
+                                                <YAxis yAxisId="right" orientation="right" />
                                                 <Tooltip />
-                                                <Area type="monotone"
+                                                <Legend onMouseEnter={this.handleMouseEnter}
+                                                        onMouseLeave={this.handleMouseLeave} />
+
+                                                <Line yAxisId="right" type="monotone" stroke="#003135" />
+
+                                                <Area yAxisId="right"
+                                                      type="monotone"
                                                       dataKey="Montant"
                                                       stroke="#FFEADC"
                                                       fillOpacity={1}
                                                       fill="url(#colorMontant)" />
-                                                <Area type="monotone"
+
+                                                <Area yAxisId="right"
+                                                      type="monotone"
                                                       dataKey="Nombre"
                                                       stroke="#FFC491"
                                                       fillOpacity={1}
@@ -324,6 +386,32 @@ class Mobile extends React.Component {
 
 
 {/* ---------------------------- (END) Displays the Dashboard to the right of the navigation bar --------------------- */}
+
+                            {/* ------------------------------------     Liste des donateurs récents      -------------------------------------- */}
+
+                            <div className="container-fluid text-center">
+                                <h3 className="h3-custom">Donateurs récents</h3>
+                                <table className="table table-responsive-lg shadow justify-content-around">
+                                    <tbody>
+                                    <tr className="line-custom">
+                                        <td>Biscuits solidaire</td>
+                                        <td><img className="IconGrey" src={IconGrey} alt="icone gris"/></td>
+                                        <td>Loka'Mobile</td>
+                                        <td>01/10/2019</td>
+                                        <td>20€</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr className="line2-custom">
+                                        <td>Handidanse</td>
+                                        <td><img className="IconGrey" src={IconGrey} alt="icone gris"/></td>
+                                        <td>Loka'Mobile</td>
+                                        <td>03/09/2019</td>
+                                        <td>10€</td>
+                                        <td></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
 
                     </div>
                 </main>
