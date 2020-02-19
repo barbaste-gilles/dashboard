@@ -295,3 +295,29 @@ header{
   vertical-align: middle;
 }
 /*Table des donateurs*/
+
+/*Projet*/
+.projetAjout{
+  width: 30%;
+}
+.h4-custom{
+  margin-top: 20px;
+}
+.NewProject{
+  margin-top: 20px;
+}
+.border-custom{
+  max-width: 15rem;
+}
+.form-custom{
+  font-size: small;
+  border:1px solid #FFC491;
+  background-color: #FFC491;
+  min-height: 40px;
+}
+.form2-custom{
+  font-size: small;
+  border:1px solid #D2F0F0;
+  background-color: #D2F0F0;
+  min-height: 40px;
+}

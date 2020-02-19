@@ -99,8 +99,8 @@ class Home extends React.Component {
         opacity: {
             uv: 1,
             pv: 1,
-},
-};
+        },
+    };
 
 handleMouseEnter = (o) => {
     const { dataKey } = o;
@@ -165,7 +165,7 @@ render() {
                         >
                             <strong>Général</strong>
                         </Button>
-                        <Button className="link-custom round" href="/dashboard"
+                        <Button className="link-custom round" href="/project"
                                 variant="outline-warning"
                                 type="submit"
                                 size="lg"
@@ -267,7 +267,7 @@ render() {
                                                       displayType={'text'}
                                                       thousandSeparator={' '}
                                                       decimalSeparator={','}
-                                                      suffix={' €'}
+                                                      suffix={'€'}
                                         />
                                     </h4>
                                 </div>
@@ -279,7 +279,7 @@ render() {
                                                       displayType={'text'}
                                                       thousandSeparator={' '}
                                                       decimalSeparator={','}
-                                                      suffix={' €'}
+                                                      suffix={'€'}
                                         />
                                     </h4>
                                 </div>
@@ -346,13 +346,29 @@ render() {
                                                 }}
                                             >
                                                 <defs>
-                                                    <linearGradient id="colorMontant" x1="0" y1="0" x2="0" y2="1">
-                                                        <stop offset="100%" stopColor="#FFEADC" stopOpacity={1}/>
-                                                        <stop offset="100%" stopColor="#FFEADC" stopOpacity={1}/>
+                                                    <linearGradient id="colorMontant"
+                                                                    x1="0"
+                                                                    y1="0"
+                                                                    x2="0"
+                                                                    y2="1">
+                                                        <stop offset="100%"
+                                                              stopColor="#FFEADC"
+                                                              stopOpacity={1}/>
+                                                        <stop offset="100%"
+                                                              stopColor="#FFEADC"
+                                                              stopOpacity={1}/>
                                                     </linearGradient>
-                                                    <linearGradient id="colorNombre" x1="0" y1="0" x2="0" y2="1">
-                                                        <stop offset="100%" stopColor="#FFC491" stopOpacity={1}/>
-                                                        <stop offset="100%" stopColor="#FFC491" stopOpacity={1}/>
+                                                    <linearGradient id="colorNombre"
+                                                                    x1="0"
+                                                                    y1="0"
+                                                                    x2="0"
+                                                                    y2="1">
+                                                        <stop offset="100%"
+                                                              stopColor="#FFC491"
+                                                              stopOpacity={1}/>
+                                                        <stop offset="100%"
+                                                              stopColor="#FFC491"
+                                                              stopOpacity={1}/>
                                                     </linearGradient>
 
                                                 </defs>
@@ -363,13 +379,16 @@ render() {
                                                 />
                                                 {/*<YAxis />*/}
                                                 {/*<YAxis yAxisId="left" />*/}
-                                                <YAxis yAxisId="right" orientation="right" />
+                                                <YAxis yAxisId="right"
+                                                       orientation="right" />
                                                 <Tooltip />
                                                 <Legend onMouseEnter={this.handleMouseEnter}
                                                         onMouseLeave={this.handleMouseLeave} />
 
                                                 {/*<Line yAxisId="left" type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />*/}
-                                                <Line yAxisId="right" type="monotone" stroke="#003135" />
+                                                <Line yAxisId="right"
+                                                      type="monotone"
+                                                      stroke="#003135" />
 
                                                 <Area yAxisId="right"
                                                       type="monotone"
@@ -416,7 +435,7 @@ render() {
                             {/*                              displayType={'text'}*/}
                             {/*                              thousandSeparator={' '}*/}
                             {/*                              decimalSeparator={','}*/}
-                            {/*                              suffix={' €'}*/}
+                            {/*                              suffix={'€'}*/}
                             {/*                />*/}
                             {/*            </h6>*/}
                             {/*            <img*/}
@@ -438,7 +457,7 @@ render() {
                             {/*                              displayType={'text'}*/}
                             {/*                              thousandSeparator={' '}*/}
                             {/*                              decimalSeparator={','}*/}
-                            {/*                              suffix={' €'}*/}
+                            {/*                              suffix={'€'}*/}
                             {/*                />*/}
                             {/*            </h6>*/}
                             {/*            <img*/}
@@ -481,11 +500,11 @@ render() {
                             {/*                src={amount}*/}
                             {/*                alt="Montant de la période"*/}
                             {/*            />*/}
-                            {/*            <h6 className="card-header" >25,00 €</h6>*/}
+                            {/*            <h6 className="card-header" >25,00€</h6>*/}
                             {/*            <p className="card-text">Montants sur la période</p>*/}
                             {/*            <hr className="diviseur"/>*/}
                             {/*            <p className="card-text">Montant sur l'année</p>*/}
-                            {/*            <h6 className="card-header" >25,00 €</h6>*/}
+                            {/*            <h6 className="card-header" >25,00€</h6>*/}
                             {/*        </div>*/}
                             {/*    </div>*/}
 
@@ -513,11 +532,11 @@ render() {
                             {/*                src={moyenne}*/}
                             {/*                alt="Moyenne de la période"*/}
                             {/*            />*/}
-                            {/*            <h6 className="card-header" >25,00 €</h6>*/}
+                            {/*            <h6 className="card-header" >25,00€</h6>*/}
                             {/*            <p className="card-text">Moyenne sur la période</p>*/}
                             {/*            <hr className="diviseur"/>*/}
                             {/*            <p className="card-text">Moyenne sur l'année</p>*/}
-                            {/*            <h6 className="card-header" >25,00 €</h6>*/}
+                            {/*            <h6 className="card-header" >25,00€</h6>*/}
                             {/*        </div>*/}
                             {/*    </div>*/}
 
@@ -603,49 +622,54 @@ render() {
 
 {/* ------------------------------------     Liste des donateurs récents      -------------------------------------- */}
 
-            <div className="container-fluid text-center">
-                <h3 className="h3-custom">Donateurs récents</h3>
-                <table className="table table-responsive-lg shadow justify-content-around">
-                    <tbody>
-                        <tr className="line-custom">
-                            <td>Plantations arbres</td>
-                            <td><img className="IconGrey" src={IconGrey} alt="icone gris"/></td>
-                            <td>Loka'Borne</td>
-                            <td>02/10/2019</td>
-                            <td>2€</td>
-                            <td>doom.elegant@hell.com</td>
-                        </tr>
-                        <tr className="line2-custom">
-                            <td>Biscuits solidaire</td>
-                            <td><img className="IconGrey" src={IconGrey} alt="icone gris"/></td>
-                            <td>Loka'Mobile</td>
-                            <td>01/10/2019</td>
-                            <td>20€</td>
-                            <td></td>
-                        </tr>
-                        <tr className="line-custom">
-                            <td>Biscuits solidaire</td>
-                            <td><img className="IconGrey" src={IconGrey} alt="icone gris"/></td>
-                            <td>Loka'Borne</td>
-                            <td>20/09/2019</td>
-                            <td>5€</td>
-                            <td>limo.zenit@gmail.com</td>
-                        </tr>
-                        <tr className="line2-custom">
-                            <td>Handidanse</td>
-                            <td><img className="IconGrey" src={IconGrey} alt="icone gris"/></td>
-                            <td>Loka'Mobile</td>
-                            <td>03/09/2019</td>
-                            <td>10€</td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-
-
-
+                        <div className="container-fluid text-center">
+                            <h3 className="h3-custom">Donateurs récents</h3>
+                            <table className="table table-responsive-lg shadow justify-content-around">
+                                <tbody>
+                                    <tr className="line-custom">
+                                        <td>Plantations arbres</td>
+                                        <td><img className="IconGrey"
+                                                 src={IconGrey}
+                                                 alt="icone gris"/></td>
+                                        <td>Loka'Borne</td>
+                                        <td>02/10/2019</td>
+                                        <td>2€</td>
+                                        <td>doom.elegant@hell.com</td>
+                                    </tr>
+                                    <tr className="line2-custom">
+                                        <td>Biscuits solidaire</td>
+                                        <td><img className="IconGrey"
+                                                 src={IconGrey}
+                                                 alt="icone gris"/></td>
+                                        <td>Loka'Mobile</td>
+                                        <td>01/10/2019</td>
+                                        <td>20€</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr className="line-custom">
+                                        <td>Biscuits solidaire</td>
+                                        <td><img className="IconGrey"
+                                                 src={IconGrey}
+                                                 alt="icone gris"/></td>
+                                        <td>Loka'Borne</td>
+                                        <td>20/09/2019</td>
+                                        <td>5€</td>
+                                        <td>limo.zenit@gmail.com</td>
+                                    </tr>
+                                    <tr className="line2-custom">
+                                        <td>Handidanse</td>
+                                        <td><img className="IconGrey"
+                                                 src={IconGrey}
+                                                 alt="icone gris"/></td>
+                                        <td>Loka'Mobile</td>
+                                        <td>03/09/2019</td>
+                                        <td>10€</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+{/* ------------------------------------  End - Liste des donateurs récents   -------------------------------------- */}
                     </div>
                 </main>
             </div>

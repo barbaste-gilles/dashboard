@@ -259,7 +259,7 @@ class Borne extends React.Component {
                                                           displayType={'text'}
                                                           thousandSeparator={' '}
                                                           decimalSeparator={','}
-                                                          suffix={' €'}
+                                                          suffix={'€'}
                                             />
                                         </h4>
                                     </div>
@@ -271,7 +271,7 @@ class Borne extends React.Component {
                                                           displayType={'text'}
                                                           thousandSeparator={' '}
                                                           decimalSeparator={','}
-                                                          suffix={' €'}
+                                                          suffix={'€'}
                                             />
                                         </h4>
                                     </div>
@@ -338,13 +338,29 @@ class Borne extends React.Component {
                                                     }}
                                                 >
                                                     <defs>
-                                                        <linearGradient id="colorMontant" x1="0" y1="0" x2="0" y2="1">
-                                                            <stop offset="100%" stopColor="#FFEADC" stopOpacity={1}/>
-                                                            <stop offset="100%" stopColor="#FFEADC" stopOpacity={1}/>
+                                                        <linearGradient id="colorMontant"
+                                                                        x1="0"
+                                                                        y1="0"
+                                                                        x2="0"
+                                                                        y2="1">
+                                                            <stop offset="100%"
+                                                                  stopColor="#FFEADC"
+                                                                  stopOpacity={1}/>
+                                                            <stop offset="100%"
+                                                                  stopColor="#FFEADC"
+                                                                  stopOpacity={1}/>
                                                         </linearGradient>
-                                                        <linearGradient id="colorNombre" x1="0" y1="0" x2="0" y2="1">
-                                                            <stop offset="100%" stopColor="#FFC491" stopOpacity={1}/>
-                                                            <stop offset="100%" stopColor="#FFC491" stopOpacity={1}/>
+                                                        <linearGradient id="colorNombre"
+                                                                        x1="0"
+                                                                        y1="0"
+                                                                        x2="0"
+                                                                        y2="1">
+                                                            <stop offset="100%"
+                                                                  stopColor="#FFC491"
+                                                                  stopOpacity={1}/>
+                                                            <stop offset="100%"
+                                                                  stopColor="#FFC491"
+                                                                  stopOpacity={1}/>
                                                         </linearGradient>
 
                                                     </defs>
@@ -353,11 +369,14 @@ class Borne extends React.Component {
                                                            height={60}
                                                            tick={<CustomizedAxisTick />}
                                                     />
-                                                    <YAxis yAxisId="right" orientation="right" />
+                                                    <YAxis yAxisId="right"
+                                                           orientation="right" />
                                                     <Tooltip />
                                                     <Legend onMouseEnter={this.handleMouseEnter}
                                                             onMouseLeave={this.handleMouseLeave} />
-                                                    <Line yAxisId="right" type="monotone" stroke="#003135" />
+                                                    <Line yAxisId="right"
+                                                          type="monotone"
+                                                          stroke="#003135" />
                                                     <Area yAxisId="right"
                                                           type="monotone"
                                                           dataKey="Montant"
@@ -394,7 +413,9 @@ class Borne extends React.Component {
                                         <tbody>
                                         <tr className="line-custom">
                                             <td>Plantations arbres</td>
-                                            <td><img className="IconGrey" src={IconGrey} alt="icone gris"/></td>
+                                            <td><img className="IconGrey"
+                                                     src={IconGrey}
+                                                     alt="icone gris"/></td>
                                             <td>Loka'Borne</td>
                                             <td>02/10/2019</td>
                                             <td>2€</td>
@@ -402,7 +423,9 @@ class Borne extends React.Component {
                                         </tr>
                                         <tr className="line2-custom">
                                             <td>Biscuits solidaire</td>
-                                            <td><img className="IconGrey" src={IconGrey} alt="icone gris"/></td>
+                                            <td><img className="IconGrey"
+                                                     src={IconGrey}
+                                                     alt="icone gris"/></td>
                                             <td>Loka'Borne</td>
                                             <td>20/09/2019</td>
                                             <td>5€</td>
