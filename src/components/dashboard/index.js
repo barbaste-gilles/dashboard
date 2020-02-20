@@ -3,17 +3,10 @@ import {Button, ButtonToolbar} from 'react-bootstrap';
 import { MDBProgress } from 'mdbreact';
 import NumberFormat from 'react-number-format';
 import Parameter from '../../assets/parameter-test.png';
-import Help from '../../assets/Help.png'
+// import Help from '../../assets/Help.png'
 import logohandidanse from "../../assets/Logo_Handidanse.png";
 import IconGrey from "../../assets/circle-grey.png";
-// import repartitiondon from '../../assets/repartition_don.png';
-// import amount from '../../assets/amount.png';
-// import don from '../../assets/don.png';
-// import donation from '../../assets/donmoyen.png';
-// import moyenne from '../../assets/moyenne.png';
-// import recufiscal from '../../assets/recufiscal.png';
-// import Sidebar from "../sidebar";
-
+import Logout from "../../assets/Logout.png";
 
 // ----------------------------------------- Data + Dynamic graphics  -------------------------------------------------
 import {
@@ -91,7 +84,7 @@ class Home extends React.Component {
         this.state = {
             MontantTotal: 25458,
             DonMoyen: 25458/2082,
-            TotalDon: 2082,
+            TotalDon: 250,
         };
     }
 
@@ -196,26 +189,49 @@ render() {
                             </a>
                         </div>
                         <div className="row container-fluid justify-content-center">
-                            <div className="flotte">
-                            <img
-                                className="help center-block"
-                                src={Help}
-                                alt=" Aide"
+                            {/*Button help disable*/}
 
-                            />
+                            {/*<div className="flotte">*/}
+                            {/*<img*/}
+                            {/*    className="help center-block"*/}
+                            {/*    src={Help}*/}
+                            {/*    alt=" Aide"*/}
+
+                            {/*/>*/}
+                            {/*</div>*/}
+                            {/*<a className="link-custom text-custom"*/}
+                            {/*   id="v-pills-profil-tab"*/}
+                            {/*   data-toggle="pill"*/}
+                            {/*   href="#v-pills-profil"*/}
+                            {/*   role="tab"*/}
+                            {/*   aria-controls="v-pills-profil"*/}
+                            {/*   aria-selected="false"*/}
+                            {/*>*/}
+
+                            {/*<h5><strong>Aide</strong></h5>*/}
+                            {/*    <p className="p-custom">FAQ et assistance</p>*/}
+                            {/*</a>*/}
+
+                            {/*End Button help disable*/}
+                            <div className="flotte">
+                                <img
+                                    className="logout"
+                                    src={Logout}
+                                    alt="Déconnexion"
+
+                                />
                             </div>
                             <a className="link-custom text-custom"
                                id="v-pills-profil-tab"
                                data-toggle="pill"
-                               href="#v-pills-profil"
+                               href="/"
                                role="tab"
                                aria-controls="v-pills-profil"
                                aria-selected="false"
                             >
+                                <h5><strong>Déconnexion</strong></h5>
+                            </a>
 
-                            <h5><strong>Aide</strong></h5>
-                            <p className="p-custom">FAQ et assistance</p>
-                        </a>
                         </div>
                     </div>
                 </div>
@@ -411,214 +427,8 @@ render() {
                                 </div>
 
                             </div>
-{/* ----------------------------------------------------- Dynamic graphics ----------------------------------------- */}
+{/* -----------------------------------------------  End Dynamic graphics ----------------------------------------- */}
 
-
-                    {/* --------------      Liste des projets à intégrer ici       -------------- */}
-
-
-{/* ---------------------------- (END) Displays the Dashboard to the right of the navigation bar --------------------- */}
-
-                       {/* --------------------      Configuration obsolète      ------------------ */}
-
-
-                            {/*< div className = "card-deck container-fluid text-center" >*/}
-
-                            {/*    < div className = "card container-fluid" >*/}
-                            {/*        < div className = "card-body text-center" >*/}
-                            {/*            <h6 className="card-title">*/}
-                            {/*                Montant global*/}
-                            {/*            </h6>*/}
-                            {/*            <h6 className="card-header text-dark" >*/}
-                            {/*                /!* --------------- rounded to the nearest euro --------------------- *!/*/}
-                            {/*                <NumberFormat value={this.state.MontantTotal.toFixed(0)}*/}
-                            {/*                              displayType={'text'}*/}
-                            {/*                              thousandSeparator={' '}*/}
-                            {/*                              decimalSeparator={','}*/}
-                            {/*                              suffix={'€'}*/}
-                            {/*                />*/}
-                            {/*            </h6>*/}
-                            {/*            <img*/}
-                            {/*                className="donBis img-fluid center-block"*/}
-                            {/*                src={amount}*/}
-                            {/*                alt="Montant global"*/}
-                            {/*            />*/}
-                            {/*        </div>*/}
-                            {/*    </div>*/}
-
-                            {/*    <div className="card container-fluid">*/}
-                            {/*        <div className="card-body text-center">*/}
-                            {/*            <h6 className="card-title">*/}
-                            {/*                Don Moyen*/}
-                            {/*            </h6>*/}
-                            {/*            <h6 className="card-header text-dark" >*/}
-                            {/*                /!* --------------- rounded to the nearest euro --------------------- *!/*/}
-                            {/*                <NumberFormat value={this.state.DonMoyen.toFixed(0)}*/}
-                            {/*                              displayType={'text'}*/}
-                            {/*                              thousandSeparator={' '}*/}
-                            {/*                              decimalSeparator={','}*/}
-                            {/*                              suffix={'€'}*/}
-                            {/*                />*/}
-                            {/*            </h6>*/}
-                            {/*            <img*/}
-                            {/*                className="donBis img-fluid center-block"*/}
-                            {/*                src={donation}*/}
-                            {/*                alt="Don moyen"*/}
-                            {/*            />*/}
-                            {/*        </div>*/}
-                            {/*    </div>*/}
-
-                            {/*    <div className="card container-fluid">*/}
-                            {/*        <div className="card-body text-center">*/}
-                            {/*            <h6 className="card-title">*/}
-                            {/*                Nombre de dons*/}
-                            {/*            </h6>*/}
-                            {/*            <h6 className="card-header text-dark" >*/}
-                            {/*                /!* --------------- rounded to the nearest euro --------------------- *!/*/}
-                            {/*                <NumberFormat value={this.state.TotalDon.toFixed(0)}*/}
-                            {/*                              displayType={'text'}*/}
-                            {/*                              thousandSeparator={' '}*/}
-                            {/*                              decimalSeparator={','}*/}
-                            {/*                />*/}
-                            {/*            </h6>*/}
-                            {/*            <img*/}
-                            {/*                className="donBis img-fluid center-block"*/}
-                            {/*                src={don}*/}
-                            {/*                alt="Coeur - Nombre de dons"*/}
-                            {/*            />*/}
-                            {/*        </div>*/}
-                            {/*    </div>*/}
-                            {/*</div>*/}
-
-                            {/*< div className = "card-deck" >*/}
-
-                            {/*    < div className = "card container-fluid" >*/}
-                            {/*        < div className = "card-body" >*/}
-                            {/*            <h6 className="card-title">Montants</h6>*/}
-                            {/*            <img*/}
-                            {/*                className="amount img-fluid center-block"*/}
-                            {/*                src={amount}*/}
-                            {/*                alt="Montant de la période"*/}
-                            {/*            />*/}
-                            {/*            <h6 className="card-header" >25,00€</h6>*/}
-                            {/*            <p className="card-text">Montants sur la période</p>*/}
-                            {/*            <hr className="diviseur"/>*/}
-                            {/*            <p className="card-text">Montant sur l'année</p>*/}
-                            {/*            <h6 className="card-header" >25,00€</h6>*/}
-                            {/*        </div>*/}
-                            {/*    </div>*/}
-
-                            {/*    <div className="card container-fluid">*/}
-                            {/*        <div className="card-body">*/}
-                            {/*            <h6 className="card-title">Dons</h6>*/}
-                            {/*            <img*/}
-                            {/*                className="don img-fluid center-block"*/}
-                            {/*                src={don}*/}
-                            {/*                alt="Dons de la période"*/}
-                            {/*            />*/}
-                            {/*            <h6 className="card-header" >1</h6>*/}
-                            {/*            <p className="card-text">Dons sur la période</p>*/}
-                            {/*            <hr className="diviseur"/>*/}
-                            {/*            <p className="card-text">Dons sur l'année</p>*/}
-                            {/*            <h6 className="card-header" >1</h6>*/}
-                            {/*        </div>*/}
-                            {/*    </div>*/}
-
-                            {/*    <div className="card container-fluid">*/}
-                            {/*        <div className="card-body text-center">*/}
-                            {/*            <h6 className="card-title">Moyenne</h6>*/}
-                            {/*            <img*/}
-                            {/*                className="moyenne img-fluid center-block"*/}
-                            {/*                src={moyenne}*/}
-                            {/*                alt="Moyenne de la période"*/}
-                            {/*            />*/}
-                            {/*            <h6 className="card-header" >25,00€</h6>*/}
-                            {/*            <p className="card-text">Moyenne sur la période</p>*/}
-                            {/*            <hr className="diviseur"/>*/}
-                            {/*            <p className="card-text">Moyenne sur l'année</p>*/}
-                            {/*            <h6 className="card-header" >25,00€</h6>*/}
-                            {/*        </div>*/}
-                            {/*    </div>*/}
-
-                            {/*    <div className="card container-fluid">*/}
-                            {/*        <div className="card-body text-center">*/}
-
-                            {/*            <h6 className="card-title">Reçus Fiscaux</h6>*/}
-                            {/*            <img*/}
-                            {/*                className="moyenne img-fluid center-block"*/}
-                            {/*                src={recufiscal}*/}
-                            {/*                alt="Reçus fiscaux de la période"*/}
-                            {/*            />*/}
-                            {/*            <h6 className="card-header" >0</h6>*/}
-                            {/*            <p className="card-text">Reçus fiscaux sur la période</p>*/}
-                            {/*            <hr className="diviseur"/>*/}
-                            {/*            <p className="card-text">Reçus fiscaux sur l'année</p>*/}
-                            {/*            <h6 className="card-header" >0</h6>*/}
-
-                            {/*        </div>*/}
-                            {/*    </div>*/}
-
-                            {/*</div>*/}
-
-                            {/*< div className = "card-deck " >*/}
-
-                            {/*    < div className = "col-xl-9 card container-fluid" >*/}
-                            {/*        < div className = "card-body " >*/}
-                            {/*            < h6 className = "card-title" > 12 derniers mois < /h6>*/}
-
-                            {/*                <img*/}
-                            {/*                    className="repartitiondon img-fluid center-block"*/}
-                            {/*                    src={repartitiondon}*/}
-                            {/*                    alt="Répartition du Don"*/}
-
-                            {/*                />*/}
-
-                            {/*        </div>*/}
-                            {/*    </div>*/}
-
-                            {/*    <div className="col-xl-3 card container-fluid">*/}
-                            {/*        <div className="card-body container-fluid">*/}
-                            {/*            <h6 className="card-title">Les 10 derniers dons</h6>*/}
-                            {/*            <img */}
-                            {/*                className="objectif img-fluid center-block" */}
-                            {/*                src={objectif} */}
-                            {/*                alt="Pourcentage de l'objectif" */}
-                            {/*            /> */}
-                            {/*            <div className="col-sm-7 float-left text-center card-custom2">*/}
-                            {/*                <div className="card-custom"><strong>Type</strong></div>*/}
-                            {/*                <ul>*/}
-                            {/*                    <li className="list-custom">Denier</li>*/}
-                            {/*                    <li className="list-custom">Denier</li>*/}
-                            {/*                    <li className="list-custom">Don avec un montant libre</li>*/}
-                            {/*                    <li className="list-custom">Quête</li>*/}
-                            {/*                    <li className="list-custom">Denier</li>*/}
-                            {/*                    <li className="list-custom">Denier</li>*/}
-                            {/*                    <li className="list-custom">Don avec un montant libre</li>*/}
-                            {/*                    <li className="list-custom">Travaux</li>*/}
-                            {/*                    <li className="list-custom">Denier</li>*/}
-                            {/*                    <li className="list-custom">Travaux</li>*/}
-                            {/*                </ul>*/}
-                            {/*            </div>*/}
-                            {/*            <div className="col-sm-5 float-right text-center card-custom2">*/}
-                            {/*                <div className="card-custom"><strong>Montant</strong></div>*/}
-                            {/*                <ul>*/}
-                            {/*                    <li className="list-custom">1</li>*/}
-                            {/*                    <li className="list-custom">1</li>*/}
-                            {/*                    <li className="list-custom">20</li>*/}
-                            {/*                    <li className="list-custom">1</li>*/}
-                            {/*                    <li className="list-custom">5</li>*/}
-                            {/*                    <li className="list-custom">1</li>*/}
-                            {/*                    <li className="list-custom">25</li>*/}
-                            {/*                    <li className="list-custom">10</li>*/}
-                            {/*                    <li className="list-custom">1</li>*/}
-                            {/*                    <li className="list-custom">5</li>*/}
-                            {/*                </ul>*/}
-                            {/*            </div>*/}
-                            {/*        </div>*/}
-                            {/*    </div>*/}
-
-                            {/*</div>*/}
-                        {/* --------------------     Fin de la Configuration obsolète      ------------------ */}
 
 {/* ------------------------------------     Liste des donateurs récents      -------------------------------------- */}
 
@@ -673,6 +483,7 @@ render() {
                     </div>
                 </main>
             </div>
+{/* ---------------------------- (END) Displays the Dashboard to the right of the navigation bar --------------------- */}
             </div>
         </div>
 

@@ -4,14 +4,15 @@ import { MDBProgress } from 'mdbreact';
 import NumberFormat from 'react-number-format';
 import logohandidanse from '../../assets/Logo_Handidanse.png';
 import IconGrey from "../../assets/circle-grey.png";
+import Parameter from "../../assets/parameter-test.png";
+// import Help from "../../assets/Help.png";
+import Logout from "../../assets/Logout.png";
 
 // ----------------------------------------- Data + Dynamic graphics  -------------------------------------------------
 
 import {
     AreaChart, Area, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend,
 } from 'recharts';
-import Parameter from "../../assets/parameter-test.png";
-import Help from "../../assets/Help.png";
 
 const data = [
     {
@@ -158,7 +159,7 @@ class Borne extends React.Component {
                             >
                                 <strong>Général</strong>
                             </Button>
-                            <Button className="link-custom round" href="/dashboard"
+                            <Button className="link-custom round" href="/project"
                                     variant="outline-warning"
                                     type="submit"
                                     size="lg"
@@ -189,29 +190,53 @@ class Borne extends React.Component {
                                 </a>
                             </div>
                             <div className="row container-fluid justify-content-center">
+                                {/*Button help disable*/}
+
+                                {/*<div className="flotte">*/}
+                                {/*<img*/}
+                                {/*    className="help center-block"*/}
+                                {/*    src={Help}*/}
+                                {/*    alt=" Aide"*/}
+
+                                {/*/>*/}
+                                {/*</div>*/}
+                                {/*<a className="link-custom text-custom"*/}
+                                {/*   id="v-pills-profil-tab"*/}
+                                {/*   data-toggle="pill"*/}
+                                {/*   href="#v-pills-profil"*/}
+                                {/*   role="tab"*/}
+                                {/*   aria-controls="v-pills-profil"*/}
+                                {/*   aria-selected="false"*/}
+                                {/*>*/}
+
+                                {/*<h5><strong>Aide</strong></h5>*/}
+                                {/*    <p className="p-custom">FAQ et assistance</p>*/}
+                                {/*</a>*/}
+
+                                {/*End Button help disable*/}
                                 <div className="flotte">
                                     <img
-                                        className="help center-block"
-                                        src={Help}
-                                        alt=" Aide"
+                                        className="logout"
+                                        src={Logout}
+                                        alt="Déconnexion"
 
                                     />
                                 </div>
                                 <a className="link-custom text-custom"
                                    id="v-pills-profil-tab"
                                    data-toggle="pill"
-                                   href="#v-pills-profil"
+                                   href="/"
                                    role="tab"
                                    aria-controls="v-pills-profil"
                                    aria-selected="false"
                                 >
-
-                                    <h5><strong>Aide</strong></h5>
-                                    <p className="p-custom">FAQ et assistance</p>
+                                    <h5><strong>Déconnexion</strong></h5>
                                 </a>
+
                             </div>
                         </div>
                     </div>
+
 {/* ---------------------------------------- End Vertical navigation bar ------------------------------------------- */}
 
 {/* -------------------------------- Displays the Dashboard to the right of the navigation bar --------------------- */}
