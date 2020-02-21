@@ -207,10 +207,10 @@ h6{
   margin: 0;
 }
 .card-graphic{
-  width: 1000px;
-  maxWidth: 1000px;
+  width: 500px;
+  maxWidth: 500px;
   margin: 0 auto;
-  height: 600px;
+  height: 500px;
   font-size: small;
 }
 .diviseur{
@@ -230,7 +230,11 @@ h6{
 }
 .bg-custom{
   background-color: #FFFFFF;
-  border-right:3px solid #FFC491;
+  /*border-right:3px solid #FFC491;*/
+  /*border-radius: 5px;*/
+}
+.p-custom2{
+  min-width: 6rem;
 }
 .navbar-height{
   height: 1300px;
@@ -273,11 +277,14 @@ ul {
 header{
   margin-top: 40px;
 }
+.TextValor{
+  margin-right: 100px;
+}
 .bar-progess{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   border-radius: 5px; /* 5px rounded corners */
-
+  margin-right: 100px;
 }
 /*Table des donateurs*/
 .h3-custom{
@@ -343,5 +350,11 @@ header{
 }
 .police-custom{
   font-size: medium;
-  color: #FFFFFF;
+  color: #003135;
+}
+.hedge{
+  width: 5rem;
+}
+.mushroom{
+  width: 5rem;
 }

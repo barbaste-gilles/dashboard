@@ -1,9 +1,8 @@
 import React, { PureComponent } from 'react';
-import {Button, ButtonToolbar} from 'react-bootstrap';
+import {Button, ButtonGroup, ButtonToolbar, Dropdown} from 'react-bootstrap';
 import { MDBProgress } from 'mdbreact';
 import NumberFormat from 'react-number-format';
 import logohandidanse from '../../assets/Logo_Handidanse.png';
-import IconGrey from "../../assets/circle-grey.png";
 import Parameter from "../../assets/parameter-test.png";
 // import Help from "../../assets/Help.png";
 import Logout from "../../assets/Logout.png";
@@ -167,6 +166,14 @@ class Borne extends React.Component {
                             >
                                 <strong>Projets</strong>
                             </Button>
+                            <Button className="link-custom round" href="/dashboard"
+                                    variant="outline-warning"
+                                    type="submit"
+                                    size="lg"
+                                    color="#003135"
+                            >
+                                <strong>Dons</strong>
+                            </Button>
                             <br/><br/><br/>
                             <div className="row container-fluid justify-content-center">
                                 <div className="flotte">
@@ -245,75 +252,109 @@ class Borne extends React.Component {
 
                         <header>
 
-                            {/*  -------------------------- Call up the selected page ------------------------------*/}
-                            <ButtonToolbar className="justify-content-center">
-                                <Button href="/dashboard" variant="outline-warning" type="submit" size="lg">Ensemble</Button>
-                                <Button href="/dashboardMobile" variant="outline-warning" type="submit" size="lg">LOKA'Mobile</Button>
-                                <Button href="/dashboardBorne" variant="outline-warning" type="submit" size="lg" active>LOKA'Borne</Button>
-                            </ButtonToolbar>
-                            {/*  -------------------------- Call up the selected page ------------------------------*/}
+                            {/*<div className="row mb-5 mt-4 justify-content-center text-center">*/}
+                            {/*    <div className="col-lg-2">*/}
+                            {/*        <div className="form-control form-control-lg custom-gradient justify-content-xl-around shadow">*/}
+                            {/*            <h4>Filtre projet</h4>*/}
+                            {/*        </div>*/}
+                            {/*    </div>*/}
+                            {/*</div>*/}
 
-                            <div className="row mt-4 mb-0 justify-content-center">
-                                <div className="col-lg-2">
+                            {/*  -------------------------- Call up the selected page ------------------------------*/}
+                            <div className="row">
+
+                                <div className="col-sm-10">
+                                    <ButtonToolbar className="justify-content-center">
+                                        <Button href="/dashboard" variant="outline-warning" size="sm">Ensemble</Button>
+                                        <Button href="/dashboardMobile" variant="outline-warning" size="sm">LOKA'Mobile</Button>
+                                        <Button href="/dashboardBorne" variant="outline-warning" size="sm" active>LOKA'Borne</Button>
+
+                                        <div className="col-sm-1">
+                                        </div>
+                                        <Dropdown as={ButtonGroup}>
+                                            <Button variant="outline-warning" size="sm">Projets</Button>
+                                            <Dropdown.Toggle split variant="warning" id="dropdown-custom-2" />
+                                            <Dropdown.Menu className="super-colors">
+                                                <Dropdown.Item href="/project" eventKey="1" active>
+                                                    Projet 1
+                                                </Dropdown.Item>
+                                                <Dropdown.Item href="/project" eventKey="2">Projet 2</Dropdown.Item>
+                                                <Dropdown.Item href="/project" eventKey="3">Projet 3</Dropdown.Item>
+                                            </Dropdown.Menu>
+                                        </Dropdown>
+
+                                    </ButtonToolbar>
+                                </div>
+                            </div>
+                            {/*  -------------------------- End Call up the selected page ------------------------------*/}
+
+                            <div className="row mt-4 mb-0 justify-content-center text-center">
+                                <div className="col-sm-1">
+                                </div>
+                                <div className="col-sm-2">
                                     <div className="form-control border-0">
                                         <p>Montant total</p>
                                     </div>
                                 </div>
-                                <div className="col-lg-1">
+                                <div className="col-sm-2">
                                     <div className="form-control border-0">
-                                        <p>Moyenne</p>
+                                        <p className="p-custom2">Don moyen</p>
                                     </div>
                                 </div>
-                                <div className="col-auto">
+                                <div className="col-sm-2">
                                     <div className="form-control border-0">
                                         <p>Donateurs</p>
                                     </div>
                                 </div>
-                                <div className="col-3">
+                                <div className="col-sm-3">
                                     <div className="form-control border-0">
                                         <p>Répartition par dispositif</p>
                                     </div>
                                 </div>
+                                <div className="col-sm-2">
+                                </div>
                             </div>
 
                             <div className="row mb-0 mt-0 justify-content-center text-center">
-                                <div className="col-lg-2">
-                                    <div className="form-control form-control-lg shadow">
-                                        <h4>
+                                <div className="col-sm-1">
+                                </div>
+                                <div className="col-sm-2">
+                                    <div className="form-control form-control-sm shadow">
+                                        <h5>
                                             <NumberFormat value={this.state.MontantTotal.toFixed(0)}
                                                           displayType={'text'}
                                                           thousandSeparator={' '}
                                                           decimalSeparator={','}
                                                           suffix={'€'}
                                             />
-                                        </h4>
+                                        </h5>
                                     </div>
                                 </div>
-                                <div className="col-lg-1">
-                                    <div className="form-control form-control-lg shadow">
-                                        <h4>
+                                <div className="col-sm-2">
+                                    <div className="form-control form-control-sm shadow">
+                                        <h5>
                                             <NumberFormat value={this.state.DonMoyen.toFixed(0)}
                                                           displayType={'text'}
                                                           thousandSeparator={' '}
                                                           decimalSeparator={','}
                                                           suffix={'€'}
                                             />
-                                        </h4>
+                                        </h5>
                                     </div>
                                 </div>
-                                <div className="col-auto">
-                                    <div className="form-control form-control-lg shadow">
-                                        <h4>
+                                <div className="col-sm-2" >
+                                    <div className="form-control form-control-sm shadow">
+                                        <h5>
                                             <NumberFormat value={this.state.TotalDon.toFixed(0)}
                                                           displayType={'text'}
                                                           thousandSeparator={' '}
                                                           decimalSeparator={','}
                                             />
-                                        </h4>
+                                        </h5>
                                     </div>
                                 </div>
 
-                                <div className="col-lg-3">
+                                <div className="col-sm-3">
                                     <div className="bar-progress shadow text-left">
                                         <p className="ml-3 mr-3 mb-0">
                                             <strong>40%</strong>
@@ -328,14 +369,9 @@ class Borne extends React.Component {
                                     </div>
                                 </div>
 
-                            </div>
-
-                            <div className="row mb-5 mt-4 justify-content-center text-center">
-                                <div className="col-lg-2">
-                                    <div className="form-control form-control-lg custom-gradient justify-content-xl-around shadow">
-                                        <h4>Filtre projet</h4>
-                                    </div>
+                                <div className="col-sm-2">
                                 </div>
+
                             </div>
 
                         </header>
@@ -350,11 +386,11 @@ class Borne extends React.Component {
 {/* ----------------------------------------------------- Dynamic graphics ----------------------------------------- */}
                                 < div className = "card-deck " >
 
-                                    <div className="card container-fluid">
-                                        <div className="col-md-12 card-body card-graphic">
-                                            <h6 className="card-title">
-                                                Répartition des dons en nombre et montant
-                                            </h6>
+                                    <div className="card container-fluid border-0 shadow-none">
+                                        <div className="col-sm-12 card-body card-graphic">
+                                            {/*<h6 className="card-title">*/}
+                                            {/*    Répartition des dons en nombre et montant*/}
+                                            {/*</h6>*/}
                                             <ResponsiveContainer>
                                                 <AreaChart
                                                     data={data}
@@ -434,30 +470,26 @@ class Borne extends React.Component {
 
                                 <div className="container-fluid text-center">
                                     <h3 className="h3-custom">Donateurs récents</h3>
-                                    <table className="table table-responsive-lg shadow justify-content-around">
-                                        <tbody>
-                                        <tr className="line-custom">
-                                            <td>Plantations arbres</td>
-                                            <td><img className="IconGrey"
-                                                     src={IconGrey}
-                                                     alt="icone gris"/></td>
-                                            <td>Loka'Borne</td>
-                                            <td>02/10/2019</td>
-                                            <td>2€</td>
-                                            <td>doom.elegant@hell.com</td>
-                                        </tr>
-                                        <tr className="line2-custom">
-                                            <td>Biscuits solidaire</td>
-                                            <td><img className="IconGrey"
-                                                     src={IconGrey}
-                                                     alt="icone gris"/></td>
-                                            <td>Loka'Borne</td>
-                                            <td>20/09/2019</td>
-                                            <td>5€</td>
-                                            <td>limo.zenit@gmail.com</td>
-                                        </tr>
-                                        </tbody>
-                                    </table>
+                                    <div className="table-responsive-sm">
+                                        <table className="table shadow justify-content-around">
+                                            <tbody>
+                                            <tr className="line-custom">
+                                                <td>Plantations arbres</td>
+                                                <td>Loka'Borne</td>
+                                                <td>02/10/2019</td>
+                                                <td>2€</td>
+                                                <td>doom.elegant@hell.com</td>
+                                            </tr>
+                                            <tr className="line2-custom">
+                                                <td>Biscuits solidaire</td>
+                                                <td>Loka'Borne</td>
+                                                <td>20/09/2019</td>
+                                                <td>5€</td>
+                                                <td>limo.zenit@gmail.com</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
 
                             </div>

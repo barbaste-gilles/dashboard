@@ -2,13 +2,15 @@ import React from 'react';
 import { Button } from 'react-bootstrap';
 import Parameter from '../../assets/parameter-test.png';
 // import Help from '../../assets/Help.png';
+import Logout from "../../assets/Logout.png";
 import logohandidanse from "../../assets/Logo_Handidanse.png";
 import projetTest from "../../assets/projetTest.png";
 import projetTest2 from "../../assets/projetTest2.png";
 import projetAjout from "../../assets/projetAjout.png";
 import NumberFormat from "react-number-format";
-import IconGrey from "../../assets/circle-grey.png";
-import Logout from "../../assets/Logout.png";
+import hedge from "../../assets/haie.png"
+import mushroom from '../../assets/champignons.png'
+
 
 class Project extends React.Component {
 
@@ -74,6 +76,14 @@ class Project extends React.Component {
                                         active
                                 >
                                     <strong>Projets</strong>
+                                </Button>
+                                <Button className="link-custom round" href="/dashboard"
+                                        variant="outline-warning"
+                                        type="submit"
+                                        size="lg"
+                                        color="#003135"
+                                >
+                                    <strong>Dons</strong>
                                 </Button>
                                 <br/><br/><br/>
                                 <div className="row container-fluid justify-content-center">
@@ -275,7 +285,7 @@ class Project extends React.Component {
                                                 color="#003135"
                                                 active
                                         >
-                                            <strong className="police-custom">Archiver</strong>
+                                            <strong className="police-custom">Clôturer</strong>
                                         </Button>
                                     </div>
                                 </div>
@@ -303,57 +313,50 @@ class Project extends React.Component {
 
                         <main className="container-fluid text-center">
                             <h2 className="text-center mt-2 mb-4">Projets clôturés</h2>
-
-                            <table className="table table-responsive-lg shadow justify-content-around">
-                                <tbody>
-                                <tr>
-                                    <th>Projet</th>
-                                    <th>Photo</th>
-                                    <th>Début collecte</th>
-                                    <th>Fin collecte</th>
-                                    <th>Total des dons</th>
-                                    <th></th>
-                                </tr>
-                                <tr className="line-custom">
-                                    <td>Plantations des haies</td>
-                                    <td><img className="IconGrey"
-                                             src={IconGrey}
-                                             alt="icone gris"/></td>
-                                    <td>27/01/2020</td>
-                                    <td>31/03/2020</td>
-                                    <td>10500€</td>
-                                    <td><img className="IconGrey"
-                                             src={IconGrey}
-                                             alt="icone gris"/></td>
-
-                                </tr>
-                                <tr className="line2-custom">
-                                    <td>Chasse aux champignons</td>
-                                    <td><img className="IconGrey"
-                                             src={IconGrey}
-                                             alt="icone gris"/></td>
-                                    <td>15/01/2020</td>
-                                    <td>28/02/2020</td>
-                                    <td>10500€</td>
-                                    <td><img className="IconGrey"
-                                             src={IconGrey}
-                                             alt="icone gris"/></td>
-                                </tr>
-                                <tr className="line-custom">
-                                    <td>Plantations des haies</td>
-                                    <td><img className="IconGrey"
-                                             src={IconGrey}
-                                             alt="icone gris"/></td>
-                                    <td>27/01/2020</td>
-                                    <td>31/03/2020</td>
-                                    <td>10500€</td>
-                                    <td><img className="IconGrey"
-                                             src={IconGrey}
-                                             alt="icone gris"/></td>
-                                </tr>
-                                </tbody>
-                            </table>
-
+                            <div className="table-responsive-sm">
+                                <table className="table table-custom shadow justify-content-around">
+                                    <thead>
+                                    <tr>
+                                        <th>Projet</th>
+                                        <th>Photo</th>
+                                        <th>Début collecte</th>
+                                        <th>Fin collecte</th>
+                                        <th>Total des dons</th>
+                                        <th></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr className="line-custom">
+                                        <td className="align-middle">Plantations des haies</td>
+                                        <td className="align-middle"><img className="hedge"
+                                                 src={hedge}
+                                                 alt="Haie"/></td>
+                                        <td className="align-middle">27/01/2020</td>
+                                        <td className="align-middle">31/03/2020</td>
+                                        <td className="align-middle">10500€</td>
+                                    </tr>
+                                    <tr className="line2-custom">
+                                        <td className="align-middle">Chasse aux champignons</td>
+                                        <td className="align-middle"><img className="mushroom"
+                                                 src={mushroom}
+                                                 alt="Chasse aux champignons"/></td>
+                                        <td className="align-middle">15/01/2020</td>
+                                        <td className="align-middle">28/02/2020</td>
+                                        <td className="align-middle">10500€</td>
+                                    </tr>
+                                    <tr className="line-custom">
+                                        <td className="align-middle">Plantations des haies</td>
+                                        <td className="align-middle"><img className="hedge"
+                                                 src={hedge}
+                                                 alt="Haie"/>
+                                        </td>
+                                        <td className="align-middle">27/01/2020</td>
+                                        <td className="align-middle">31/03/2020</td>
+                                        <td className="align-middle">10500€</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </main>
 
 
