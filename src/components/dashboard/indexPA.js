@@ -60,27 +60,6 @@ const multiDataSet = [
                 {value: "2€", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
                 {value: "doom.elegant@hell.com", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
             ],
-            [
-                {value: "Biscuits solidaire"},
-                {value: "LOKA'Mobile"},
-                {value: "01/10/2019"},
-                {value: "20€"},
-                {value: ""},
-            ],
-            [
-                {value: "Biscuits solidaire", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
-                {value: "Loka'Borne", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
-                {value: "20/09/2019", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
-                {value: "5€", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
-                {value: "limo.zenit@gmail.com", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
-            ],
-            [
-                {value: "Handidanse"},
-                {value: "LOKA'Mobile"},
-                {value: "03/09/2019"},
-                {value: "10€"},
-                {value: ""},
-            ],
         ],
     }
 ];
@@ -89,40 +68,40 @@ const multiDataSet = [
 
 const data = [
     // {
-    //     name: 'Mars 2019', Nombre: 250, Montant: 1000,
+    //     name: 'Mars 2019', Nombre: 87, Montant: 350,
     // },
     // {
-    //     name: 'Avr. 2019', Nombre: 150, Montant: 1500,
+    //     name: 'Avr. 2019', Nombre: 52, Montant: 525,
     // },
     // {
-    //     name: 'Mai 2019', Nombre: 70, Montant: 700,
+    //     name: 'Mai 2019', Nombre: 24, Montant: 245,
     // },
     // {
-    //     name: 'Juin 2019', Nombre: 100, Montant: 800,
+    //     name: 'Juin 2019', Nombre: 35, Montant: 280,
     // },
     // {
-    //     name: 'Juil. 2019', Nombre: 334, Montant: 2338,
+    //     name: 'Juil. 2019', Nombre: 117, Montant: 818,
     // },
     // {
-    //     name: 'Août 2019', Nombre: 4, Montant: 60,
+    //     name: 'Août 2019', Nombre: 1, Montant: 21,
     // },
     {
-        name: 'Sept. 2019', Nombre: 158, Montant: 1896,
+        name: 'Sept. 2019', Nombre: 55, Montant: 664,
     },
     {
-        name: 'Oct. 2019', Nombre: 364, Montant: 5816,
+        name: 'Oct. 2019', Nombre: 127, Montant: 2036,
     },
     {
-        name: 'Nov. 2019', Nombre: 140, Montant: 1960,
+        name: 'Nov. 2019', Nombre: 49, Montant: 686,
     },
     {
-        name: 'Déc. 2019', Nombre: 202, Montant: 5050,
+        name: 'Déc. 2019', Nombre: 71, Montant: 1767,
     },
     {
-        name: 'Janv. 2020', Nombre: 180, Montant: 3060,
+        name: 'Janv. 2020', Nombre: 63, Montant: 1071,
     },
     {
-        name: 'Fev. 2020', Nombre: 130, Montant: 1300,
+        name: 'Fev. 2020', Nombre: 45, Montant: 455,
     },
 ];
 
@@ -151,14 +130,14 @@ class CustomizedAxisTick extends PureComponent {
 
 // ---------------------------------------  Data + Dynamic graphics  -------------------------------------------------
 
-class Home extends React.Component {
+class DashboardPA extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            MontantTotal: 25458,
-            DonMoyen: 25458/2082,
-            TotalDon: 2082,
+            MontantTotal: 8910,
+            DonMoyen: 8910/729,
+            TotalDon: 729,
         };
     }
 
@@ -388,7 +367,6 @@ render() {
                                         <Dropdown.Menu className="super-colors">
                                             <Dropdown.Item href="/dashboard"
                                                            eventKey="1"
-                                                           active
                                             >
                                                 Tous
                                             </Dropdown.Item>
@@ -404,6 +382,7 @@ render() {
                                             </Dropdown.Item>
                                             <Dropdown.Item href="/DashboardPA"
                                                            eventKey="4"
+                                                           active
                                             >
                                                 Plantations arbres
                                             </Dropdown.Item>
@@ -484,10 +463,10 @@ render() {
                             <div className="col-sm-3">
                                 <div className="bar-progress shadow text-left">
                                     <p className="ml-3 mr-3 mb-0">
-                                        <strong>100%</strong>
+                                        <strong>35%</strong>
                                     </p>
                                     <MDBProgress className="ml-3 mr-3"
-                                                 material value={100}
+                                                 material value={35}
                                                  color="warning"
                                                  height="20px"
                                                  animated
@@ -515,6 +494,9 @@ render() {
 
                                 <div className="card container-fluid border-0 shadow-none">
                                     <div className="col-sm-12 card-body card-graphic">
+                                        {/*<h6 className="card-title">*/}
+                                        {/*    Répartition des dons en nombre et montant*/}
+                                        {/*</h6>*/}
                                         <ResponsiveContainer>
                                             <AreaChart
                                                 data={data}
@@ -601,17 +583,6 @@ render() {
                                 </div>
                                 <div className="col-lg-3">
 
-{/*--------------------------------------------------------- DataSet ------------------------------------------------*/}
-{/*                                    <ExcelFile element={<button className="btn btn-warning">Export</button>}>*/}
-{/*                                        <ExcelSheet data={dataSet} name="Dons récents">*/}
-{/*                                            <ExcelColumn label="Projet" value="project"/>*/}
-{/*                                            <ExcelColumn label="Collecteur" value="collect"/>*/}
-{/*                                            <ExcelColumn label="Montant" value="amount"/>*/}
-{/*                                            <ExcelColumn label="Email" value="email"/>*/}
-{/*                                        </ExcelSheet>*/}
-{/*                                    </ExcelFile>*/}
-{/*--------------------------------------------------------- End DataSet --------------------------------------------*/}
-
 {/*-------------------------------------  Export Data multiDataSet --------------------------------------------------*/}
                                     <div>
                                         <ExcelFile element={<button className="btn btn-warning">Export</button>}>
@@ -633,27 +604,6 @@ render() {
                                             <td>2€</td>
                                             <td>doom.elegant@hell.com</td>
                                         </tr>
-                                        <tr className="line2-custom">
-                                            <td>Biscuits solidaire</td>
-                                            <td>Loka'Mobile</td>
-                                            <td>01/10/2019</td>
-                                            <td>20€</td>
-                                            <td></td>
-                                        </tr>
-                                        <tr className="line-custom">
-                                            <td>Biscuits solidaire</td>
-                                            <td>Loka'Borne</td>
-                                            <td>20/09/2019</td>
-                                            <td>5€</td>
-                                            <td>limo.zenit@gmail.com</td>
-                                        </tr>
-                                        <tr className="line2-custom">
-                                            <td>Handidanse</td>
-                                            <td>Loka'Mobile</td>
-                                            <td>03/09/2019</td>
-                                            <td>10€</td>
-                                            <td></td>
-                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -671,4 +621,4 @@ render() {
     }
 }
 
-export default Home
+export default DashboardPA

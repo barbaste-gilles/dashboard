@@ -2,14 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e564fbf9-1fd1-4d70-a36c-58014a607924" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/champignons.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/haie.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dashboard/indexBS.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dashboard/indexH.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dashboard/indexPA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dashboardBorne/indexBS.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dashboardBorne/indexH.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dashboardBorne/indexPA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dashboardMobile/indexBS.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dashboardMobile/indexH.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dashboardMobile/indexPA.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/dashboard/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/dashboardBorne/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboardBorne/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/dashboardMobile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboardMobile/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/project/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/project/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +59,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/dashboardMobile" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -57,12 +67,19 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dashboard\src\components\dashboardMobile" />
+      <recent name="C:\dashboard\src\components\dashboardBorne" />
+      <recent name="C:\dashboard\src\components\dashboard" />
       <recent name="C:\dashboard\src\components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dashboard\src\components\dashboard" />
+      <recent name="C:\dashboard\src\components\dashboardBS" />
     </key>
   </component>
   <component name="RunManager">
@@ -145,6 +162,8 @@
       <workItem from="1582188225067" duration="20907000" />
       <workItem from="1582278492001" duration="37338000" />
       <workItem from="1582320503698" duration="463000" />
+      <workItem from="1582535673291" duration="19690000" />
+      <workItem from="1582621791675" duration="28933000" />
     </task>
     <servers />
   </component>
@@ -163,9 +182,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="233" y="20" key="#Inspections/0.0.1280.720@0.0.1280.720" timestamp="1580743045055" />
-    <state x="371" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581957372646">
+    <state x="371" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1582539632321">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
+    <state x="371" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.720/1920.0.1920.1080@0.0.1280.720" timestamp="1582539632321" />
     <state x="371" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.720@0.0.1280.720" timestamp="1581957372646" />
     <state x="421" y="120" key="FileChooserDialogImpl" timestamp="1580145705773">
       <screen x="0" y="0" width="1280" height="720" />
@@ -235,9 +255,9 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state width="1259" height="220" key="GridCell.Tab.3.right/0.0.1280.720@0.0.1280.720" timestamp="1579544314966" />
-    <state x="144" y="7" key="SettingsEditor" timestamp="1580310753476">
+    <state x="125" y="6" width="1015" height="714" key="SettingsEditor" timestamp="1582622008441">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="144" y="7" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1580310753476" />
+    <state x="125" y="6" width="1015" height="714" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1582622008441" />
   </component>
 </project>

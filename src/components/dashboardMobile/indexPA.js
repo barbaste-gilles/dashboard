@@ -2,9 +2,9 @@ import React, { PureComponent } from 'react';
 import {Button, ButtonGroup, ButtonToolbar, Dropdown} from 'react-bootstrap';
 import { MDBProgress } from 'mdbreact';
 import NumberFormat from 'react-number-format';
-import Parameter from '../../assets/parameter-test.png';
-// import Help from '../../assets/Help.png'
-import logohandidanse from "../../assets/Logo_Handidanse.png";
+import logohandidanse from '../../assets/Logo_Handidanse.png';
+import Parameter from "../../assets/parameter-test.png";
+// import Help from "../../assets/Help.png";
 import Logout from "../../assets/Logout.png";
 import logo from "../../assets/Logo.png";
 import {
@@ -53,34 +53,7 @@ const multiDataSet = [
     {
         columns: ["Projet", "Collecteur", "Date", "Montant", "Email"],
         data: [
-            [
-                {value: "Plantations arbres", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
-                {value: "Loka'Borne", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
-                {value: "02/10/2019", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
-                {value: "2€", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
-                {value: "doom.elegant@hell.com", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
-            ],
-            [
-                {value: "Biscuits solidaire"},
-                {value: "LOKA'Mobile"},
-                {value: "01/10/2019"},
-                {value: "20€"},
-                {value: ""},
-            ],
-            [
-                {value: "Biscuits solidaire", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
-                {value: "Loka'Borne", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
-                {value: "20/09/2019", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
-                {value: "5€", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
-                {value: "limo.zenit@gmail.com", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
-            ],
-            [
-                {value: "Handidanse"},
-                {value: "LOKA'Mobile"},
-                {value: "03/09/2019"},
-                {value: "10€"},
-                {value: ""},
-            ],
+
         ],
     }
 ];
@@ -89,40 +62,40 @@ const multiDataSet = [
 
 const data = [
     // {
-    //     name: 'Mars 2019', Nombre: 250, Montant: 1000,
+    //     name: 'Mars 2019', Nombre: 17, Montant: 87,
     // },
     // {
-    //     name: 'Avr. 2019', Nombre: 150, Montant: 1500,
+    //     name: 'Avr. 2019', Nombre: 31, Montant: 262,
     // },
     // {
-    //     name: 'Mai 2019', Nombre: 70, Montant: 700,
+    //     name: 'Mai 2019', Nombre: 14, Montant: 122,
     // },
     // {
-    //     name: 'Juin 2019', Nombre: 100, Montant: 800,
+    //     name: 'Juin 2019', Nombre: 21, Montant: 140,
     // },
     // {
-    //     name: 'Juil. 2019', Nombre: 334, Montant: 2338,
+    //     name: 'Juil. 2019', Nombre: 66, Montant: 437,
     // },
     // {
-    //     name: 'Août 2019', Nombre: 4, Montant: 60,
+    //     name: 'Août 2019', Nombre: 1, Montant: 10,
     // },
     {
-        name: 'Sept. 2019', Nombre: 158, Montant: 1896,
+        name: 'Sept. 2019', Nombre: 32, Montant: 331,
     },
     {
-        name: 'Oct. 2019', Nombre: 364, Montant: 5816,
+        name: 'Oct. 2019', Nombre: 73, Montant: 1211,
     },
     {
-        name: 'Nov. 2019', Nombre: 140, Montant: 1960,
+        name: 'Nov. 2019', Nombre: 29, Montant: 315,
     },
     {
-        name: 'Déc. 2019', Nombre: 202, Montant: 5050,
+        name: 'Déc. 2019', Nombre: 42, Montant: 875,
     },
     {
-        name: 'Janv. 2020', Nombre: 180, Montant: 3060,
+        name: 'Janv. 2020', Nombre: 31, Montant: 535,
     },
     {
-        name: 'Fev. 2020', Nombre: 130, Montant: 1300,
+        name: 'Fev. 2020', Nombre: 34, Montant: 227,
     },
 ];
 
@@ -151,14 +124,14 @@ class CustomizedAxisTick extends PureComponent {
 
 // ---------------------------------------  Data + Dynamic graphics  -------------------------------------------------
 
-class Home extends React.Component {
+class MobilePA extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            MontantTotal: 25458,
-            DonMoyen: 25458/2082,
-            TotalDon: 2082,
+            MontantTotal: 5346,
+            DonMoyen: 5346/364,
+            TotalDon: 364,
         };
     }
 
@@ -169,39 +142,37 @@ class Home extends React.Component {
         },
     };
 
-handleMouseEnter = (o) => {
-    const { dataKey } = o;
-    const { opacity } = this.state;
+    handleMouseEnter = (o) => {
+        const { dataKey } = o;
+        const { opacity } = this.state;
 
-    this.setState({
-        opacity: { ...opacity, [dataKey]: 0.5 },
-    });
-}
+        this.setState({
+            opacity: { ...opacity, [dataKey]: 0.5 },
+        });
+    }
 
-handleMouseLeave = (o) => {
-    const { dataKey } = o;
-    const { opacity } = this.state;
+    handleMouseLeave = (o) => {
+        const { dataKey } = o;
+        const { opacity } = this.state;
 
-    this.setState({
-        opacity: { ...opacity, [dataKey]: 1 },
-    });
-}
+        this.setState({
+            opacity: { ...opacity, [dataKey]: 1 },
+        });
+    }
 
+    render() {
 
-render() {
-
-    // const { opacity } = this.state;
+        // const { opacity } = this.state;
 
         return (
         <div>
 
 {/* ----------------------------------------- Horizontal navigation bar ---------------------------------------------*/}
 
-          {/*< Navigation />*/}
+            {/*< Navigation />*/}
 
 
 {/* ----------------------------------------- Vertical navigation bar -----------------------------------------------*/}
-
             <div className="row">
                 <div className="col-md-3 navbar-expand-xl">
                     <div className="nav flex-column nav-pills bg-custom ml-0 my-1 navbar-collapse navbar-light navbar-height text-center"
@@ -232,6 +203,7 @@ render() {
                                 className="logohandidanse center-block"
                                 src={logohandidanse}
                                 alt="Logo Handidanse"
+
                             />
                             <h3 className="SidebarTitre">Domaine des Possibles</h3>
                         </a>
@@ -244,6 +216,7 @@ render() {
                         >
                             <strong>Général</strong>
                         </Button>
+
                         <Button className="link-custom round" href="/project"
                                 variant="outline-warning"
                                 type="submit"
@@ -253,22 +226,22 @@ render() {
                             <strong>Projets</strong>
                         </Button>
                         <Button className="link-custom round" href="/dashboard"
-                                variant="outline-warning"
-                                type="submit"
-                                size="lg"
-                                color="#003135"
-                        >
-                            <strong>Dons</strong>
-                        </Button>
+                                         variant="outline-warning"
+                                         type="submit"
+                                         size="lg"
+                                         color="#003135"
+                    >
+                        <strong>Dons</strong>
+                    </Button>
                         <br/><br/><br/>
                         <div className="row container-fluid justify-content-center">
                             <div className="flotte">
-                            <img
-                                className="parameter"
-                                src={Parameter}
-                                alt="Paramétres"
+                                <img
+                                    className="parameter"
+                                    src={Parameter}
+                                    alt="Paramétres"
 
-                            />
+                                />
                             </div>
                             <a className="link-custom text-custom"
                                id="v-pills-profil-tab"
@@ -358,13 +331,13 @@ render() {
                                     <Button href="/dashboard"
                                             variant="outline-warning"
                                             size="sm"
-                                            active
                                     >
                                         Ensemble
                                     </Button>
                                     <Button href="/dashboardMobile"
                                             variant="outline-warning"
                                             size="sm"
+                                            active
                                     >
                                         LOKA'Mobile
                                     </Button>
@@ -384,26 +357,27 @@ render() {
                                             Projets
                                         </Button>
                                         <Dropdown.Toggle split variant="warning"
-                                                         id="dropdown-custom-2" />
+                                                         id="dropdown-custom-2"
+                                        />
                                         <Dropdown.Menu className="super-colors">
-                                            <Dropdown.Item href="/dashboard"
+                                            <Dropdown.Item href="/DashboardMobile"
                                                            eventKey="1"
-                                                           active
                                             >
                                                 Tous
                                             </Dropdown.Item>
-                                            <Dropdown.Item href="/dashboardBS"
+                                            <Dropdown.Item href="/DashboardMobileBS"
                                                            eventKey="2"
                                             >
                                                 Biscuits solidaire
                                             </Dropdown.Item>
-                                            <Dropdown.Item href="/DashboardH"
+                                            <Dropdown.Item href="/DashboardMobileH"
                                                            eventKey="3"
                                             >
                                                 Handidanse
                                             </Dropdown.Item>
-                                            <Dropdown.Item href="/DashboardPA"
+                                            <Dropdown.Item href="/DashboardMobilePA"
                                                            eventKey="4"
+                                                           active
                                             >
                                                 Plantations arbres
                                             </Dropdown.Item>
@@ -480,19 +454,18 @@ render() {
                                     </h5>
                                 </div>
                             </div>
-
                             <div className="col-sm-3">
                                 <div className="bar-progress shadow text-left">
                                     <p className="ml-3 mr-3 mb-0">
-                                        <strong>100%</strong>
+                                        <strong>21%</strong>
                                     </p>
                                     <MDBProgress className="ml-3 mr-3"
-                                                 material value={100}
+                                                 material value={21}
                                                  color="warning"
                                                  height="20px"
                                                  animated
                                     />
-                                    <p className="ml-3 mr-3"><strong>Ensemble</strong></p>
+                                    <p className="ml-3 mr-3"><strong>LOKA'Mobile</strong></p>
                                 </div>
                             </div>
 
@@ -511,10 +484,13 @@ render() {
                              aria-labelledby="v-pills-acceuil-tab">
 
 {/* ----------------------------------------------------- Dynamic graphics ----------------------------------------- */}
-                            < div className = "card-deck" >
+                            < div className = "card-deck " >
 
                                 <div className="card container-fluid border-0 shadow-none">
                                     <div className="col-sm-12 card-body card-graphic">
+                                        {/*<h6 className="card-title">*/}
+                                        {/*    Répartition des dons en nombre et montant*/}
+                                        {/*</h6>*/}
                                         <ResponsiveContainer>
                                             <AreaChart
                                                 data={data}
@@ -554,15 +530,12 @@ render() {
                                                        height={60}
                                                        tick={<CustomizedAxisTick />}
                                                 />
-                                                {/*<YAxis />*/}
-                                                {/*<YAxis yAxisId="left" />*/}
                                                 <YAxis yAxisId="right"
                                                        orientation="right" />
                                                 <Tooltip />
                                                 <Legend onMouseEnter={this.handleMouseEnter}
                                                         onMouseLeave={this.handleMouseLeave} />
 
-                                                {/*<Line yAxisId="left" type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />*/}
                                                 <Line yAxisId="right"
                                                       type="monotone"
                                                       stroke="#003135" />
@@ -570,14 +543,14 @@ render() {
                                                 <Area yAxisId="right"
                                                       type="monotone"
                                                       dataKey="Montant"
-                                                      stroke="#FFC491"
+                                                      stroke="#FFEADC"
                                                       fillOpacity={1}
                                                       fill="url(#colorMontant)" />
 
                                                 <Area yAxisId="right"
                                                       type="monotone"
                                                       dataKey="Nombre"
-                                                      stroke="#FFA42B"
+                                                      stroke="#FFC491"
                                                       fillOpacity={1}
                                                       fill="url(#colorNombre)" />
                                             </AreaChart>
@@ -588,81 +561,49 @@ render() {
                                 </div>
 
                             </div>
-{/* -----------------------------------------------  End Dynamic graphics ----------------------------------------- */}
+{/* ----------------------------------------------------- Dynamic graphics ----------------------------------------- */}
 
 
-{/* ------------------------------------     Liste des donateurs récents      -------------------------------------- */}
+                    {/* --------------      Liste des projets à intégrer ici       -------------- */}
 
-                        <div className="container-fluid text-center">
 
-                            <div className="row mb-0 mt-0 justify-content-center text-center">
-                                <div className="col-sm-9">
-                                    <h3 className="h3-custom">Donateurs récents</h3>
-                                </div>
-                                <div className="col-lg-3">
+{/* ---------------------------- (END) Displays the Dashboard to the right of the navigation bar --------------------- */}
 
-{/*--------------------------------------------------------- DataSet ------------------------------------------------*/}
-{/*                                    <ExcelFile element={<button className="btn btn-warning">Export</button>}>*/}
-{/*                                        <ExcelSheet data={dataSet} name="Dons récents">*/}
-{/*                                            <ExcelColumn label="Projet" value="project"/>*/}
-{/*                                            <ExcelColumn label="Collecteur" value="collect"/>*/}
-{/*                                            <ExcelColumn label="Montant" value="amount"/>*/}
-{/*                                            <ExcelColumn label="Email" value="email"/>*/}
-{/*                                        </ExcelSheet>*/}
-{/*                                    </ExcelFile>*/}
-{/*--------------------------------------------------------- End DataSet --------------------------------------------*/}
+                            {/* ------------------------------------     Liste des donateurs récents      -------------------------------------- */}
+
+                            <div className="container-fluid text-center">
+
+                                <div className="row mb-0 mt-0 justify-content-center text-center">
+                                    <div className="col-sm-9">
+                                        <h3 className="h3-custom">Donateurs récents</h3>
+                                    </div>
+                                    <div className="col-lg-3">
 
 {/*-------------------------------------  Export Data multiDataSet --------------------------------------------------*/}
-                                    <div>
-                                        <ExcelFile element={<button className="btn btn-warning">Export</button>}>
-                                            <ExcelSheet dataSet={multiDataSet} name="Dons récents"/>
-                                        </ExcelFile>
-                                    </div>
+                                        <div>
+                                            <ExcelFile element={<button className="btn btn-warning">Export</button>}>
+                                                <ExcelSheet dataSet={multiDataSet} name="Dons récents"/>
+                                            </ExcelFile>
+                                        </div>
 {/*------------------------------------- End Export Data multiDataSet -----------------------------------------------*/}
 
+                                    </div>
+                                </div>
+
+                                <div className="table-responsive-sm"  >
+                                    <table className="table shadow justify-content-around">
+                                        <tbody>
+                                        <tr className="line2-custom">
+                                            <td>Pas de don récent</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
 
-                            <div className="table-responsive-sm">
-                                <table className="table shadow justify-content-around">
-                                    <tbody>
-                                        <tr className="line-custom">
-                                            <td>Plantations arbres</td>
-                                            <td>Loka'Borne</td>
-                                            <td>02/10/2019</td>
-                                            <td>2€</td>
-                                            <td>doom.elegant@hell.com</td>
-                                        </tr>
-                                        <tr className="line2-custom">
-                                            <td>Biscuits solidaire</td>
-                                            <td>Loka'Mobile</td>
-                                            <td>01/10/2019</td>
-                                            <td>20€</td>
-                                            <td></td>
-                                        </tr>
-                                        <tr className="line-custom">
-                                            <td>Biscuits solidaire</td>
-                                            <td>Loka'Borne</td>
-                                            <td>20/09/2019</td>
-                                            <td>5€</td>
-                                            <td>limo.zenit@gmail.com</td>
-                                        </tr>
-                                        <tr className="line2-custom">
-                                            <td>Handidanse</td>
-                                            <td>Loka'Mobile</td>
-                                            <td>03/09/2019</td>
-                                            <td>10€</td>
-                                            <td></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-{/* ------------------------------------  End - Liste des donateurs récents   -------------------------------------- */}
                     </div>
                 </main>
             </div>
-{/* ---------------------------- (END) Displays the Dashboard to the right of the navigation bar --------------------- */}
             </div>
         </div>
 
@@ -671,4 +612,4 @@ render() {
     }
 }
 
-export default Home
+export default MobilePA

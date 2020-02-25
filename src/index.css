@@ -45,6 +45,10 @@ code {
   width: 5rem;
   padding-bottom: 20px;
   }
+.logo2 {
+  border-radius: 5px 5px 0 0;
+  width: 5rem;
+}
 .logomot{
   width: 15rem;
   margin-left: 150px;
@@ -316,6 +320,10 @@ header{
 }
 .h4-custom{
   margin-top: 20px;
+}
+.h4-custom2{
+  margin-top: -30px;
+  margin-bottom: 20px;
 }
 .border-custom{
   max-width: 15rem;

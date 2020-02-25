@@ -53,62 +53,50 @@ const multiDataSet = [
     {
         columns: ["Projet", "Collecteur", "Date", "Montant", "Email"],
         data: [
-            [
-                {value: "Plantations arbres", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
-                {value: "Loka'Borne", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
-                {value: "02/10/2019", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
-                {value: "2€", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
-                {value: "doom.elegant@hell.com", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
-            ],
-            [
-                {value: "Biscuits solidaire", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
-                {value: "Loka'Borne", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
-                {value: "20/09/2019", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
-                {value: "5€", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
-                {value: "limo.zenit@gmail.com", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
-            ],
+
         ],
     }
 ];
 
 // ----------------------------------------- Data + Dynamic graphics  -------------------------------------------------
 
+
 const data = [
     // {
-    //     name: 'Mars 2019', Nombre: 200, Montant: 750,
+    //     name: 'Mars 2019', Nombre: 45, Montant: 338,
     // },
     // {
-    //     name: 'Avr. 2019', Nombre: 60, Montant: 750,
+    //     name: 'Avr. 2019', Nombre: 27, Montant: 338,
     // },
     // {
-    //     name: 'Mai 2019', Nombre: 38, Montant: 350,
+    //     name: 'Mai 2019', Nombre: 17, Montant: 158,
     // },
     // {
-    //     name: 'Juin 2019', Nombre: 40, Montant: 400,
+    //     name: 'Juin 2019', Nombre: 18, Montant: 180,
     // },
     // {
-    //     name: 'Juil. 2019', Nombre: 144, Montant: 1088,
+    //     name: 'Juil. 2019', Nombre: 65, Montant: 490,
     // },
     // {
-    //     name: 'Août 2019', Nombre: 1, Montant: 30,
+    //     name: 'Août 2019', Nombre: 1, Montant: 15,
     // },
     {
-        name: 'Sept. 2019', Nombre: 64, Montant: 948,
+        name: 'Sept. 2019', Nombre: 29, Montant: 427,
     },
     {
-        name: 'Oct. 2019', Nombre: 154, Montant: 2356,
+        name: 'Oct. 2019', Nombre: 69, Montant: 1060,
     },
     {
-        name: 'Nov. 2019', Nombre: 56, Montant: 960,
+        name: 'Nov. 2019', Nombre: 25, Montant: 432,
     },
     {
-        name: 'Déc. 2019', Nombre: 120, Montant: 2450,
+        name: 'Déc. 2019', Nombre: 54, Montant: 1103,
     },
     {
-        name: 'Janv. 2020', Nombre: 90, Montant: 1530,
+        name: 'Janv. 2020', Nombre: 41, Montant: 689,
     },
     {
-        name: 'Fev. 2020', Nombre: 42, Montant: 650,
+        name: 'Fev. 2020', Nombre: 19, Montant: 293,
     },
 ];
 
@@ -138,14 +126,14 @@ class CustomizedAxisTick extends PureComponent {
 
 // ---------------------------------------  Data + Dynamic graphics  -------------------------------------------------
 
-class Borne extends React.Component {
+class BorneH extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            MontantTotal: 10183,
-            DonMoyen: 10183/1041,
-            TotalDon: 1041,
+            MontantTotal: 4582,
+            DonMoyen: 4582/208,
+            TotalDon: 208,
         };
     }
 
@@ -337,7 +325,7 @@ class Borne extends React.Component {
                             <div className="row">
                                 <div className="col-sm-10 text-center h4-custom2">
                                     <h4>
-                                        Tous les projets
+                                        Handidanse
                                     </h4>
                                 </div>
                                 <div className="col-sm-10">
@@ -374,7 +362,6 @@ class Borne extends React.Component {
                                             <Dropdown.Menu className="super-colors">
                                                 <Dropdown.Item href="/dashboardBorne"
                                                                eventKey="1"
-                                                               active
                                                 >
                                                     Tous
                                                 </Dropdown.Item>
@@ -385,6 +372,7 @@ class Borne extends React.Component {
                                                 </Dropdown.Item>
                                                 <Dropdown.Item href="/dashboardBorneH"
                                                                eventKey="3"
+                                                               active
                                                 >
                                                     Handidanse
                                                 </Dropdown.Item>
@@ -470,10 +458,10 @@ class Borne extends React.Component {
                                 <div className="col-sm-3">
                                     <div className="bar-progress shadow text-left">
                                         <p className="ml-3 mr-3 mb-0">
-                                            <strong>40%</strong>
+                                            <strong>18%</strong>
                                         </p>
                                         <MDBProgress className="ml-3 mr-3"
-                                                     material value={40}
+                                                     material value={18}
                                                      color="warning"
                                                      height="20px"
                                                      animated
@@ -603,19 +591,8 @@ class Borne extends React.Component {
                                     <div className="table-responsive-sm">
                                         <table className="table shadow justify-content-around">
                                             <tbody>
-                                            <tr className="line-custom">
-                                                <td>Plantations arbres</td>
-                                                <td>Loka'Borne</td>
-                                                <td>02/10/2019</td>
-                                                <td>2€</td>
-                                                <td>doom.elegant@hell.com</td>
-                                            </tr>
                                             <tr className="line2-custom">
-                                                <td>Biscuits solidaire</td>
-                                                <td>Loka'Borne</td>
-                                                <td>20/09/2019</td>
-                                                <td>5€</td>
-                                                <td>limo.zenit@gmail.com</td>
+                                                <td>Pas de don récent</td>
                                             </tr>
                                             </tbody>
                                         </table>
@@ -633,4 +610,4 @@ class Borne extends React.Component {
     }
 }
 
-export default Borne
+export default BorneH

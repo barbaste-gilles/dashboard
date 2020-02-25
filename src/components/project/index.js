@@ -10,6 +10,7 @@ import projetAjout from "../../assets/projetAjout.png";
 import NumberFormat from "react-number-format";
 import hedge from "../../assets/haie.png"
 import mushroom from '../../assets/champignons.png'
+import logo from "../../assets/Logo.png";
 
 
 class Project extends React.Component {
@@ -45,6 +46,19 @@ class Project extends React.Component {
                                  id="v-pills-tab"
                                  role="tablist"
                                  aria-orientation="vertical">
+
+                                <a className="nav-link link-custom"
+                                   id="v-pills-profil-tab"
+                                   data-toggle="pill"
+                                   href="/dashboard"
+                                   role="tab"
+                                   aria-controls="v-pills-profil"
+                                   aria-selected="false">
+                                    <img className="logo2 center-block"
+                                         src={logo}
+                                         alt="Logo Lokalero"
+                                    />
+                                </a>
                                 <a className="nav-link link-custom"
                                    id="v-pills-profil-tab"
                                    data-toggle="pill"

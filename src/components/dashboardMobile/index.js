@@ -6,33 +6,92 @@ import logohandidanse from '../../assets/Logo_Handidanse.png';
 import Parameter from "../../assets/parameter-test.png";
 // import Help from "../../assets/Help.png";
 import Logout from "../../assets/Logout.png";
-
-// ----------------------------------------- Data + Dynamic graphics  -------------------------------------------------
-
+import logo from "../../assets/Logo.png";
 import {
     AreaChart, Area, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend,
 } from 'recharts';
+// ----------------------------------- Data + Export Excel ------------------------------------------------------------
+import ReactExport from "react-export-excel";
 
+const ExcelFile = ReactExport.ExcelFile;
+const ExcelSheet = ReactExport.ExcelFile.ExcelSheet;
+// const ExcelColumn = ReactExport.ExcelFile.ExcelColumn;
+
+// ----------------------------------------- DataSet ------------------------------------------------
+// const dataSet = [
+//     {
+//         project: "Plantations arbres",
+//         collect: "Loka'Borne",
+//         date: "02/10/2019",
+//         amount: "2€",
+//         email: "doom.elegant@hell.com",
+//     },
+//     {
+//         project: "Biscuits solidaire",
+//         collect: "Loka'Mobile",
+//         date: "01/10/2019",
+//         amount: "20€",
+//         email: "",
+//     },
+//     {
+//         project: "Biscuits solidaire",
+//         collect: "Loka'Borne",
+//         date: "20/09/2019",
+//         amount: "5€",
+//         email: "limo.zenit@gmail.com",
+//     },
+//     {
+//         project: "Handidanse",
+//         collect: "Loka'Mobile",
+//         date: "03/09/2019",
+//         amount: "10€",
+//         email: "",
+//     },
+// ];
+// ----------------------------------------- End DataSet ------------------------------------------------
+const multiDataSet = [
+    {
+        columns: ["Projet", "Collecteur", "Date", "Montant", "Email"],
+        data: [
+            [
+                {value: "Biscuits solidaire"},
+                {value: "LOKA'Mobile"},
+                {value: "01/10/2019"},
+                {value: "20€"},
+                {value: ""},
+            ],
+            [
+                {value: "Handidanse"},
+                {value: "LOKA'Mobile"},
+                {value: "03/09/2019"},
+                {value: "10€"},
+                {value: ""},
+            ],
+        ],
+    }
+];
+
+// ----------------------------------------- Data + Dynamic graphics  -------------------------------------------------
 
 const data = [
-    {
-        name: 'Mars 2019', Nombre: 50, Montant: 250,
-    },
-    {
-        name: 'Avr. 2019', Nombre: 90, Montant: 750,
-    },
-    {
-        name: 'Mai 2019', Nombre: 42, Montant: 350,
-    },
-    {
-        name: 'Juin 2019', Nombre: 60, Montant: 400,
-    },
-    {
-        name: 'Juil. 2019', Nombre: 190, Montant: 1250,
-    },
-    {
-        name: 'Août 2019', Nombre: 3, Montant: 30,
-    },
+    // {
+    //     name: 'Mars 2019', Nombre: 50, Montant: 250,
+    // },
+    // {
+    //     name: 'Avr. 2019', Nombre: 90, Montant: 750,
+    // },
+    // {
+    //     name: 'Mai 2019', Nombre: 42, Montant: 350,
+    // },
+    // {
+    //     name: 'Juin 2019', Nombre: 60, Montant: 400,
+    // },
+    // {
+    //     name: 'Juil. 2019', Nombre: 190, Montant: 1250,
+    // },
+    // {
+    //     name: 'Août 2019', Nombre: 3, Montant: 30,
+    // },
     {
         name: 'Sept. 2019', Nombre: 94, Montant: 948,
     },
@@ -133,6 +192,19 @@ class Mobile extends React.Component {
                          id="v-pills-tab"
                          role="tablist"
                          aria-orientation="vertical">
+
+                        <a className="nav-link link-custom"
+                           id="v-pills-profil-tab"
+                           data-toggle="pill"
+                           href="/dashboard"
+                           role="tab"
+                           aria-controls="v-pills-profil"
+                           aria-selected="false">
+                            <img className="logo2 center-block"
+                                 src={logo}
+                                 alt="Logo Lokalero"
+                            />
+                        </a>
                         <a className="nav-link link-custom"
                            id="v-pills-profil-tab"
                            data-toggle="pill"
@@ -262,24 +334,66 @@ class Mobile extends React.Component {
 
                         {/*  -------------------------- Call up the selected page ------------------------------*/}
                         <div className="row">
-
+                            <div className="col-sm-10 text-center h4-custom2">
+                                <h4>
+                                    Tous les projets
+                                </h4>
+                            </div>
                             <div className="col-sm-10">
                                 <ButtonToolbar className="justify-content-center">
-                                    <Button href="/dashboard" variant="outline-warning" size="sm" >Ensemble</Button>
-                                    <Button href="/dashboardMobile" variant="outline-warning" size="sm" active>LOKA'Mobile</Button>
-                                    <Button href="/dashboardBorne" variant="outline-warning" size="sm">LOKA'Borne</Button>
+                                    <Button href="/dashboard"
+                                            variant="outline-warning"
+                                            size="sm"
+                                    >
+                                        Ensemble
+                                    </Button>
+                                    <Button href="/dashboardMobile"
+                                            variant="outline-warning"
+                                            size="sm"
+                                            active
+                                    >
+                                        LOKA'Mobile
+                                    </Button>
+                                    <Button href="/dashboardBorne"
+                                            variant="outline-warning"
+                                            size="sm"
+                                    >
+                                        LOKA'Borne
+                                    </Button>
 
                                     <div className="col-sm-1">
                                     </div>
                                     <Dropdown as={ButtonGroup}>
-                                        <Button variant="outline-warning" size="sm">Projets</Button>
-                                        <Dropdown.Toggle split variant="warning" id="dropdown-custom-2" />
+                                        <Button variant="outline-warning"
+                                                size="sm"
+                                        >
+                                            Projets
+                                        </Button>
+                                        <Dropdown.Toggle split variant="warning"
+                                                         id="dropdown-custom-2"
+                                        />
                                         <Dropdown.Menu className="super-colors">
-                                            <Dropdown.Item href="/project" eventKey="1" active>
-                                                Projet 1
+                                            <Dropdown.Item href="/DashboardMobile"
+                                                           eventKey="1"
+                                                           active
+                                            >
+                                                Tous
                                             </Dropdown.Item>
-                                            <Dropdown.Item href="/project" eventKey="2">Projet 2</Dropdown.Item>
-                                            <Dropdown.Item href="/project" eventKey="3">Projet 3</Dropdown.Item>
+                                            <Dropdown.Item href="/DashboardMobileBS"
+                                                           eventKey="2"
+                                            >
+                                                Biscuits solidaire
+                                            </Dropdown.Item>
+                                            <Dropdown.Item href="/DashboardMobileH"
+                                                           eventKey="3"
+                                            >
+                                                Handidanse
+                                            </Dropdown.Item>
+                                            <Dropdown.Item href="/DashboardMobilePA"
+                                                           eventKey="4"
+                                            >
+                                                Plantations arbres
+                                            </Dropdown.Item>
                                         </Dropdown.Menu>
                                     </Dropdown>
 
@@ -471,12 +585,30 @@ class Mobile extends React.Component {
                             {/* ------------------------------------     Liste des donateurs récents      -------------------------------------- */}
 
                             <div className="container-fluid text-center">
-                                <h3 className="h3-custom">Donateurs récents</h3>
+
+                                <div className="row mb-0 mt-0 justify-content-center text-center">
+                                    <div className="col-sm-9">
+                                        <h3 className="h3-custom">Donateurs récents</h3>
+                                    </div>
+                                    <div className="col-lg-3">
+
+{/*-------------------------------------  Export Data multiDataSet --------------------------------------------------*/}
+                                        <div>
+                                            <ExcelFile element={<button className="btn btn-warning">Export</button>}>
+                                                <ExcelSheet dataSet={multiDataSet} name="Dons récents"/>
+                                            </ExcelFile>
+                                        </div>
+{/*------------------------------------- End Export Data multiDataSet -----------------------------------------------*/}
+
+                                    </div>
+                                </div>
+
                                 <div className="table-responsive-sm"  >
                                     <table className="table shadow justify-content-around">
                                         <tbody>
                                         <tr className="line-custom">
                                             <td>Biscuits solidaire</td>
+                                            <td>Loka'Mobile</td>
                                             <td>01/10/2019</td>
                                             <td>20€</td>
                                             <td></td>

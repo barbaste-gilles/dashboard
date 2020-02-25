@@ -54,27 +54,6 @@ const multiDataSet = [
         columns: ["Projet", "Collecteur", "Date", "Montant", "Email"],
         data: [
             [
-                {value: "Plantations arbres", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
-                {value: "Loka'Borne", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
-                {value: "02/10/2019", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
-                {value: "2€", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
-                {value: "doom.elegant@hell.com", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
-            ],
-            [
-                {value: "Biscuits solidaire"},
-                {value: "LOKA'Mobile"},
-                {value: "01/10/2019"},
-                {value: "20€"},
-                {value: ""},
-            ],
-            [
-                {value: "Biscuits solidaire", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
-                {value: "Loka'Borne", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
-                {value: "20/09/2019", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
-                {value: "5€", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
-                {value: "limo.zenit@gmail.com", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
-            ],
-            [
                 {value: "Handidanse"},
                 {value: "LOKA'Mobile"},
                 {value: "03/09/2019"},
@@ -89,40 +68,40 @@ const multiDataSet = [
 
 const data = [
     // {
-    //     name: 'Mars 2019', Nombre: 250, Montant: 1000,
+    //     name: 'Mars 2019', Nombre: 113, Montant: 450,
     // },
     // {
-    //     name: 'Avr. 2019', Nombre: 150, Montant: 1500,
+    //     name: 'Avr. 2019', Nombre: 68, Montant: 675,
     // },
     // {
-    //     name: 'Mai 2019', Nombre: 70, Montant: 700,
+    //     name: 'Mai 2019', Nombre: 32, Montant: 315,
     // },
     // {
-    //     name: 'Juin 2019', Nombre: 100, Montant: 800,
+    //     name: 'Juin 2019', Nombre: 45, Montant: 360,
     // },
     // {
-    //     name: 'Juil. 2019', Nombre: 334, Montant: 2338,
+    //     name: 'Juil. 2019', Nombre: 150, Montant: 1052,
     // },
     // {
-    //     name: 'Août 2019', Nombre: 4, Montant: 60,
+    //     name: 'Août 2019', Nombre: 2, Montant: 27,
     // },
     {
-        name: 'Sept. 2019', Nombre: 158, Montant: 1896,
+        name: 'Sept. 2019', Nombre: 71, Montant: 853,
     },
     {
-        name: 'Oct. 2019', Nombre: 364, Montant: 5816,
+        name: 'Oct. 2019', Nombre: 164, Montant: 2617,
     },
     {
-        name: 'Nov. 2019', Nombre: 140, Montant: 1960,
+        name: 'Nov. 2019', Nombre: 63, Montant: 882,
     },
     {
-        name: 'Déc. 2019', Nombre: 202, Montant: 5050,
+        name: 'Déc. 2019', Nombre: 91, Montant: 2273,
     },
     {
-        name: 'Janv. 2020', Nombre: 180, Montant: 3060,
+        name: 'Janv. 2020', Nombre: 81, Montant: 1377,
     },
     {
-        name: 'Fev. 2020', Nombre: 130, Montant: 1300,
+        name: 'Fev. 2020', Nombre: 59, Montant: 585,
     },
 ];
 
@@ -151,14 +130,14 @@ class CustomizedAxisTick extends PureComponent {
 
 // ---------------------------------------  Data + Dynamic graphics  -------------------------------------------------
 
-class Home extends React.Component {
+class DashboardH extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            MontantTotal: 25458,
-            DonMoyen: 25458/2082,
-            TotalDon: 2082,
+            MontantTotal: 11456,
+            DonMoyen: 11456/937,
+            TotalDon: 937,
         };
     }
 
@@ -350,7 +329,7 @@ render() {
                         <div className="row">
                             <div className="col-sm-10 text-center h4-custom2">
                                 <h4>
-                                    Tous les projets
+                                    Handidanse
                                 </h4>
                             </div>
                             <div className="col-sm-10">
@@ -388,7 +367,6 @@ render() {
                                         <Dropdown.Menu className="super-colors">
                                             <Dropdown.Item href="/dashboard"
                                                            eventKey="1"
-                                                           active
                                             >
                                                 Tous
                                             </Dropdown.Item>
@@ -397,8 +375,9 @@ render() {
                                             >
                                                 Biscuits solidaire
                                             </Dropdown.Item>
-                                            <Dropdown.Item href="/DashboardH"
+                                            <Dropdown.Item href="/dashboardH"
                                                            eventKey="3"
+                                                           active
                                             >
                                                 Handidanse
                                             </Dropdown.Item>
@@ -484,10 +463,10 @@ render() {
                             <div className="col-sm-3">
                                 <div className="bar-progress shadow text-left">
                                     <p className="ml-3 mr-3 mb-0">
-                                        <strong>100%</strong>
+                                        <strong>45%</strong>
                                     </p>
                                     <MDBProgress className="ml-3 mr-3"
-                                                 material value={100}
+                                                 material value={45}
                                                  color="warning"
                                                  height="20px"
                                                  animated
@@ -515,6 +494,9 @@ render() {
 
                                 <div className="card container-fluid border-0 shadow-none">
                                     <div className="col-sm-12 card-body card-graphic">
+                                        {/*<h6 className="card-title">*/}
+                                        {/*    Répartition des dons en nombre et montant*/}
+                                        {/*</h6>*/}
                                         <ResponsiveContainer>
                                             <AreaChart
                                                 data={data}
@@ -601,17 +583,6 @@ render() {
                                 </div>
                                 <div className="col-lg-3">
 
-{/*--------------------------------------------------------- DataSet ------------------------------------------------*/}
-{/*                                    <ExcelFile element={<button className="btn btn-warning">Export</button>}>*/}
-{/*                                        <ExcelSheet data={dataSet} name="Dons récents">*/}
-{/*                                            <ExcelColumn label="Projet" value="project"/>*/}
-{/*                                            <ExcelColumn label="Collecteur" value="collect"/>*/}
-{/*                                            <ExcelColumn label="Montant" value="amount"/>*/}
-{/*                                            <ExcelColumn label="Email" value="email"/>*/}
-{/*                                        </ExcelSheet>*/}
-{/*                                    </ExcelFile>*/}
-{/*--------------------------------------------------------- End DataSet --------------------------------------------*/}
-
 {/*-------------------------------------  Export Data multiDataSet --------------------------------------------------*/}
                                     <div>
                                         <ExcelFile element={<button className="btn btn-warning">Export</button>}>
@@ -626,27 +597,6 @@ render() {
                             <div className="table-responsive-sm">
                                 <table className="table shadow justify-content-around">
                                     <tbody>
-                                        <tr className="line-custom">
-                                            <td>Plantations arbres</td>
-                                            <td>Loka'Borne</td>
-                                            <td>02/10/2019</td>
-                                            <td>2€</td>
-                                            <td>doom.elegant@hell.com</td>
-                                        </tr>
-                                        <tr className="line2-custom">
-                                            <td>Biscuits solidaire</td>
-                                            <td>Loka'Mobile</td>
-                                            <td>01/10/2019</td>
-                                            <td>20€</td>
-                                            <td></td>
-                                        </tr>
-                                        <tr className="line-custom">
-                                            <td>Biscuits solidaire</td>
-                                            <td>Loka'Borne</td>
-                                            <td>20/09/2019</td>
-                                            <td>5€</td>
-                                            <td>limo.zenit@gmail.com</td>
-                                        </tr>
                                         <tr className="line2-custom">
                                             <td>Handidanse</td>
                                             <td>Loka'Mobile</td>
@@ -671,4 +621,4 @@ render() {
     }
 }
 
-export default Home
+export default DashboardH
