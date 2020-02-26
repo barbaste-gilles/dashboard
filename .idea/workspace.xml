@@ -2,22 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e564fbf9-1fd1-4d70-a36c-58014a607924" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/dashboard/indexBS.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/dashboard/indexH.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/dashboard/indexPA.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/dashboardBorne/indexBS.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/dashboardBorne/indexH.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/dashboardBorne/indexPA.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/dashboardMobile/indexBS.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/dashboardMobile/indexH.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/dashboardMobile/indexPA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/don/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/dashboard/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboard/indexBS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/indexBS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboard/indexH.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/indexH.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboard/indexPA.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/indexPA.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/dashboardBorne/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboardBorne/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboardBorne/indexBS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboardBorne/indexBS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboardBorne/indexH.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboardBorne/indexH.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboardBorne/indexPA.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboardBorne/indexPA.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/dashboardMobile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboardMobile/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/project/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/project/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboardMobile/indexBS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboardMobile/indexBS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboardMobile/indexH.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboardMobile/indexH.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboardMobile/indexPA.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboardMobile/indexPA.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
@@ -59,7 +57,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/dashboardMobile" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -67,7 +65,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
@@ -163,7 +161,10 @@
       <workItem from="1582278492001" duration="37338000" />
       <workItem from="1582320503698" duration="463000" />
       <workItem from="1582535673291" duration="19690000" />
-      <workItem from="1582621791675" duration="28933000" />
+      <workItem from="1582621791675" duration="29528000" />
+      <workItem from="1582708622788" duration="80000" />
+      <workItem from="1582712602974" duration="1066000" />
+      <workItem from="1582727794844" duration="6574000" />
     </task>
     <servers />
   </component>
@@ -182,6 +183,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="233" y="20" key="#Inspections/0.0.1280.720@0.0.1280.720" timestamp="1580743045055" />
+    <state x="233" y="19" key="#Notifications" timestamp="1582728235182">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="233" y="19" key="#Notifications/0.0.1280.720@0.0.1280.720" timestamp="1582728235182" />
     <state x="371" y="107" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1582539632321">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
@@ -255,9 +260,13 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state width="1259" height="220" key="GridCell.Tab.3.right/0.0.1280.720@0.0.1280.720" timestamp="1579544314966" />
-    <state x="125" y="6" width="1015" height="714" key="SettingsEditor" timestamp="1582622008441">
+    <state x="220" y="94" key="IDE.errors.dialog" timestamp="1582727625455">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="125" y="6" width="1015" height="714" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1582622008441" />
+    <state x="220" y="94" key="IDE.errors.dialog/0.0.1280.720@0.0.1280.720" timestamp="1582727625455" />
+    <state x="125" y="6" width="1015" height="714" key="SettingsEditor" timestamp="1582727698885">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="125" y="6" width="1015" height="714" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1582727698885" />
   </component>
 </project>

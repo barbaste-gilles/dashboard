@@ -232,7 +232,7 @@ class BornePA extends React.Component {
                             >
                                 <strong>Projets</strong>
                             </Button>
-                            <Button className="link-custom round" href="/dashboard"
+                            <Button className="link-custom round" href="/don"
                                     variant="outline-warning"
                                     type="submit"
                                     size="lg"

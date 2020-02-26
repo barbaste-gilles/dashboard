@@ -17,6 +17,7 @@ import DashboardBorneH from './components/dashboardBorne/indexH';
 import DashboardBornePA from './components/dashboardBorne/indexPA';
 import Project from './components/project/index';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Don from './components/don/index';
 import {
   BrowserRouter as Router,
   Switch,
@@ -42,6 +43,7 @@ class App extends React.Component {
                   <Route exact path="/dashboardBorneH" component={DashboardBorneH} />
                   <Route exact path="/dashboardBornePA" component={DashboardBornePA} />
                   <Route exact path="/project" component={Project} />
+                  <Route exact path="/don" component={Don} />
               </Switch>
           </Router>
         )

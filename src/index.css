@@ -294,6 +294,10 @@ header{
 .h3-custom{
   margin-bottom: 30px;
 }
+.Entete-custom{
+  background-color: #FFA42B;
+  border: 1px solid #003135;
+}
 .line-custom{
   background-color: #FFFFFF;
 }
@@ -365,4 +369,7 @@ header{
 }
 .mushroom{
   width: 5rem;
+}
+.listeDon{
+  margin-top: 20px;
 }
