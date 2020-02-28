@@ -1,16 +1,13 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
-import Parameter from '../../assets/parameter-test.png';
 // import Help from '../../assets/Help.png';
-import Logout from "../../assets/Logout.png";
-import logohandidanse from "../../assets/Logo_Handidanse.png";
 import projetTest from "../../assets/projetTest.png";
 import projetTest2 from "../../assets/projetTest2.png";
 import projetAjout from "../../assets/projetAjout.png";
 import NumberFormat from "react-number-format";
 import hedge from "../../assets/haie.png"
 import mushroom from '../../assets/champignons.png'
-import logo from "../../assets/Logo.png";
+import Sidebar from "../sidebar";
 
 
 class Project extends React.Component {
@@ -23,13 +20,11 @@ class Project extends React.Component {
             NombreDonateur: 48,
             DonateurEncours: 0,
             UrlProjetr: 'www.donateur-association-complementaire-de-france.fr',
-            UrlProjetr2: 'Votre lien web de don sera affiché ici',
+            UrlProjetr2: 'Votre lien web de payment sera affiché ici',
         };
     }
 
     render() {
-
-        // const { opacity } = this.state;
 
         return (
             <div>
@@ -39,136 +34,8 @@ class Project extends React.Component {
                 {/*< Navigation />*/}
 
                 <div className="row">
-{/* ----------------------------------------- Vertical navigation bar -----------------------------------------------*/}
 
-                        <div className="col-md-3 navbar-expand-xl">
-                            <div className="nav flex-column nav-pills bg-custom ml-0 my-1 navbar-collapse navbar-light navbar-height text-center"
-                                 id="v-pills-tab"
-                                 role="tablist"
-                                 aria-orientation="vertical">
-
-                                <a className="nav-link link-custom"
-                                   id="v-pills-profil-tab"
-                                   data-toggle="pill"
-                                   href="/dashboard"
-                                   role="tab"
-                                   aria-controls="v-pills-profil"
-                                   aria-selected="false">
-                                    <img className="logo2 center-block"
-                                         src={logo}
-                                         alt="Logo Lokalero"
-                                    />
-                                </a>
-                                <a className="nav-link link-custom"
-                                   id="v-pills-profil-tab"
-                                   data-toggle="pill"
-                                   href="#v-pills-profil"
-                                   role="tab"
-                                   aria-controls="v-pills-profil"
-                                   aria-selected="false">
-                                    <img
-                                        className="logohandidanse center-block"
-                                        src={logohandidanse}
-                                        alt="Logo Handidanse"
-
-                                    />
-                                    <h3 className="SidebarTitre">Domaine des Possibles</h3>
-                                </a>
-                                <Button className="link-custom round" href="/dashboard"
-                                        variant="outline-warning"
-                                        type="submit"
-                                        size="lg"
-                                        color="#003135"
-                                >
-                                    <strong>Général</strong>
-                                </Button>
-                                <Button className="link-custom round" href="/project"
-                                        variant="outline-warning"
-                                        type="submit"
-                                        size="lg"
-                                        color="#003135"
-                                        active
-                                >
-                                    <strong>Projets</strong>
-                                </Button>
-                                <Button className="link-custom round" href="/dashboard"
-                                        variant="outline-warning"
-                                        type="submit"
-                                        size="lg"
-                                        color="#003135"
-                                >
-                                    <strong>Dons</strong>
-                                </Button>
-                                <br/><br/><br/>
-                                <div className="row container-fluid justify-content-center">
-                                    <div className="flotte">
-                                        <img
-                                            className="parameter"
-                                            src={Parameter}
-                                            alt="Paramétres"
-
-                                        />
-                                    </div>
-                                    <a className="link-custom text-custom"
-                                       id="v-pills-profil-tab"
-                                       data-toggle="pill"
-                                       href="#v-pills-profil"
-                                       role="tab"
-                                       aria-controls="v-pills-profil"
-                                       aria-selected="false"
-                                    >
-                                        <h5><strong>Paramétres</strong></h5>
-                                        <p className="p-custom">Profil et paiements</p>
-                                    </a>
-                                </div>
-                                <div className="row container-fluid justify-content-center">
-                                    {/*Button help disable*/}
-
-                                    {/*<div className="flotte">*/}
-                                    {/*<img*/}
-                                    {/*    className="help center-block"*/}
-                                    {/*    src={Help}*/}
-                                    {/*    alt=" Aide"*/}
-
-                                    {/*/>*/}
-                                    {/*</div>*/}
-                                    {/*<a className="link-custom text-custom"*/}
-                                    {/*   id="v-pills-profil-tab"*/}
-                                    {/*   data-toggle="pill"*/}
-                                    {/*   href="#v-pills-profil"*/}
-                                    {/*   role="tab"*/}
-                                    {/*   aria-controls="v-pills-profil"*/}
-                                    {/*   aria-selected="false"*/}
-                                    {/*>*/}
-
-                                    {/*<h5><strong>Aide</strong></h5>*/}
-                                    {/*    <p className="p-custom">FAQ et assistance</p>*/}
-                                    {/*</a>*/}
-
-                                    {/*End Button help disable*/}
-                                    <div className="flotte">
-                                        <img
-                                            className="logout"
-                                            src={Logout}
-                                            alt="Déconnexion"
-
-                                        />
-                                    </div>
-                                    <a className="link-custom text-custom"
-                                       id="v-pills-profil-tab"
-                                       data-toggle="pill"
-                                       href="/"
-                                       role="tab"
-                                       aria-controls="v-pills-profil"
-                                       aria-selected="false"
-                                    >
-                                        <h5><strong>Déconnexion</strong></h5>
-                                    </a>
-
-                                </div>
-                            </div>
-                        </div>
-
+                    <Sidebar />
 {/* ---------------------------------------- End Vertical navigation bar ------------------------------------------- */}
 
 {/* -------------------------------- Displays the Dashboard to the right of the navigation bar --------------------- */}
@@ -213,7 +80,7 @@ class Project extends React.Component {
                                             {this.state.UrlProjetr}
                                         </form>
                                         <a className="a-custom"
-                                           href="/project">
+                                           href="/detailproject">
                                             <strong>
                                                 <p>
                                                     Voir
@@ -256,7 +123,7 @@ class Project extends React.Component {
                                             {this.state.UrlProjetr2}
                                         </form>
                                         <a className="a-custom"
-                                           href="/project">
+                                           href="/detailproject">
                                             <strong>
                                                 <p>
                                                     Modifier
@@ -276,7 +143,7 @@ class Project extends React.Component {
                                             />
                                         </a>
                                         <a className="a-custom"
-                                           href="/project">
+                                           href="/detailproject">
                                             <strong>
                                                 <p>
                                                     Nouveau projet
@@ -342,25 +209,30 @@ class Project extends React.Component {
                                     <tbody>
                                     <tr className="line-custom">
                                         <td className="align-middle">Plantations des haies</td>
-                                        <td className="align-middle"><img className="hedge"
+                                        <td className="align-middle">
+                                            <img className="hedge"
                                                  src={hedge}
-                                                 alt="Haie"/></td>
+                                                 alt="Haie"/>
+                                        </td>
                                         <td className="align-middle">27/01/2020</td>
                                         <td className="align-middle">31/03/2020</td>
                                         <td className="align-middle">10500€</td>
                                     </tr>
                                     <tr className="line2-custom">
                                         <td className="align-middle">Chasse aux champignons</td>
-                                        <td className="align-middle"><img className="mushroom"
+                                        <td className="align-middle">
+                                            <img className="mushroom"
                                                  src={mushroom}
-                                                 alt="Chasse aux champignons"/></td>
+                                                 alt="Chasse aux champignons"/>
+                                        </td>
                                         <td className="align-middle">15/01/2020</td>
                                         <td className="align-middle">28/02/2020</td>
                                         <td className="align-middle">10500€</td>
                                     </tr>
                                     <tr className="line-custom">
                                         <td className="align-middle">Plantations des haies</td>
-                                        <td className="align-middle"><img className="hedge"
+                                        <td className="align-middle">
+                                            <img className="hedge"
                                                  src={hedge}
                                                  alt="Haie"/>
                                         </td>
