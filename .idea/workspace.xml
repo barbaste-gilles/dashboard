@@ -2,24 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e564fbf9-1fd1-4d70-a36c-58014a607924" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/Plantation.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/project/indexDetail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/gauge/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dashboard/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dashboard/indexBS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/indexBS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dashboard/indexH.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/indexH.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dashboard/indexPA.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/indexPA.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dashboardBorne/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboardBorne/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dashboardBorne/indexBS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboardBorne/indexBS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dashboardBorne/indexH.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboardBorne/indexH.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dashboardBorne/indexPA.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboardBorne/indexPA.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dashboardMobile/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboardMobile/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dashboardMobile/indexBS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboardMobile/indexBS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dashboardMobile/indexH.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboardMobile/indexH.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dashboardMobile/indexPA.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboardMobile/indexPA.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/don/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/payment/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/project/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/project/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sidebar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebar/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/project/indexDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/project/indexDetail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
@@ -171,6 +156,7 @@
       <workItem from="1582727794844" duration="7166000" />
       <workItem from="1582798574003" duration="26186000" />
       <workItem from="1582881097352" duration="27744000" />
+      <workItem from="1583140852394" duration="15365000" />
     </task>
     <servers />
   </component>

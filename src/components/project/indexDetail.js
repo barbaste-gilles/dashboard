@@ -3,6 +3,7 @@ import logohandidanse from "../../assets/Logo_Handidanse.png";
 import hedge from "../../assets/haie.png";
 import plantation from "../../assets/Plantation.jpg"
 import Sidebar from "../sidebar";
+import Gauge from "../gauge";
 
 class DetailProject extends React.Component {
 
@@ -16,19 +17,19 @@ class DetailProject extends React.Component {
         return (
             <div>
 
-{/* ----------------------------------------- Horizontal navigation bar ---------------------------------------------*/}
+                {/* ----------------------------------------- Horizontal navigation bar ---------------------------------------------*/}
 
                 {/*< Navigation />*/}
 
 
-{/* ----------------------------------------- Vertical navigation bar -----------------------------------------------*/}
+                {/* ----------------------------------------- Vertical navigation bar -----------------------------------------------*/}
 
                 <div className="row">
 
-                    <Sidebar />
-{/* ---------------------------------------- End Vertical navigation bar ------------------------------------------- */}
+                    <Sidebar/>
+                    {/* ---------------------------------------- End Vertical navigation bar ------------------------------------------- */}
 
-{/* -------------------------------- Displays the Dashboard to the right of the navigation bar --------------------- */}
+                    {/* -------------------------------- Displays the Dashboard to the right of the navigation bar --------------------- */}
 
                     <div className="col-md-9">
 
@@ -53,12 +54,14 @@ class DetailProject extends React.Component {
                             </div>
 
                             <div className="container-fluid text-center">
-                                <strong><h4 className="h4-custom3">Jaude de don</h4></strong>
+                                <strong><h4 className="h4-custom3">Jauge de don</h4></strong>
                                 <div className="mx-auto">
-                                    <h5>Cliquez sur les points puis changer<br/>la valeur du don et le message du bénéfice</h5>
+                                    <h5>Cliquez sur les points puis changer<br/>la valeur du don et le message du
+                                        bénéfice</h5>
                                 </div>
                                 <div className="gauge-custom mx-auto">
                                     <h5>La JAUGE</h5>
+                                    < Gauge />
                                 </div>
                                 <div className="row mx-auto mb-0 mt-0 justify-content-center text-center">
                                     <div className="the-gift">
@@ -85,22 +88,29 @@ class DetailProject extends React.Component {
                                             <h4 className="h4-custom3">Présentation rapide</h4>
                                         </strong>
                                         <div className="mx-auto">
-                                            <h5>Décrivez brièvement qui vous êtes<br/>et quel est votre objectif principal</h5>
+                                            <h5>Décrivez brièvement qui vous êtes<br/>et quel est votre objectif
+                                                principal</h5>
                                         </div>
                                         <div className="position-custom position-relative">
                                             <div className="p-custom4 mx-auto my-auto position-absolute">
                                             </div>
                                             <div className="p-custom3 mx-auto my-auto position-absolute">
                                                 <p className="p-custom5">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi in laborum
-                                                    nobis sed voluptates. Atque cum fuga nobis quod voluptatibus. Deleniti
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi in
+                                                    laborum
+                                                    nobis sed voluptates. Atque cum fuga nobis quod voluptatibus.
+                                                    Deleniti
                                                     dolorem doloribus dolorum, nemo pariatur tempora. Inventore, iure,
                                                     voluptatem.
-                                                    Deleniti facilis id libero neque non obcaecati pariatur repellat totam,
-                                                    ullam vero! Excepturi, harum, odio. At, blanditiis earum esse est id illum
+                                                    Deleniti facilis id libero neque non obcaecati pariatur repellat
+                                                    totam,
+                                                    ullam vero! Excepturi, harum, odio. At, blanditiis earum esse est id
+                                                    illum
                                                     quibusdam quod! Dolorem nihil nulla obcaecati porro ut.
-                                                    Consectetur hic labore laudantium maiores rem similique veniam veritatis! A
-                                                    ad asperiores beatae deleniti doloribus, error ex explicabo laudantium
+                                                    Consectetur hic labore laudantium maiores rem similique veniam
+                                                    veritatis! A
+                                                    ad asperiores beatae deleniti doloribus, error ex explicabo
+                                                    laudantium
                                                     magnam maiores nisi nulla odit pariatur quo reiciendis, unde vitae
                                                     voluptate.
                                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -119,7 +129,8 @@ class DetailProject extends React.Component {
                             <div className="container-fluid text-center">
                                 <strong><h4 className="h4-custom3">Présentation projet</h4></strong>
                                 <div className="div-custom mx-auto">
-                                    <h5>Ajoutez une image représentant au mieux votre objectif<br/>et décrivez en trois lignes vos moyens de l'atteindre</h5>
+                                    <h5>Ajoutez une image représentant au mieux votre objectif<br/>et décrivez en trois
+                                        lignes vos moyens de l'atteindre</h5>
                                 </div>
 
                                 <div className="position-relative">
@@ -134,21 +145,78 @@ class DetailProject extends React.Component {
                                              src={hedge}
                                              alt="Haie"/>
                                     </div>
+                                    <div className="position-custom3 position-absolute">
+                                        <h5 className="h5-custom4">Loka'Borne</h5>
+                                        <hr className="highlighted2"/>
+                                    </div>
+                                    <div className="div-custom2 position-absolute shadow-sm">
+                                        <p>Ajouter ou changer photo</p>
+                                    </div>
                                     <div className="img-custom3 position-absolute">
                                         <img className="plantation"
                                              src={plantation}
                                              alt="Plantation de Haie"/>
                                     </div>
-                                    <div className="div-custom2 position-absolute">
+                                    <div className="div-custom3 position-absolute shadow-sm">
                                         <p>Ajouter ou changer photo</p>
                                     </div>
                                 </div>
-
-
                             </div>
 
-                        </main>
+                            < div className="container-fluid text-center position-custm4">
+                                <div className="row mx-auto mb-0 mt-0 justify-content-center text-center">
+                                    <div className="the-gift5">
+                                        <strong>1</strong>
+                                    </div>
+                                    <div className="the-gift6">
+                                        <p className="p-custom5">Protéger les cultures contre les vents séchants grâce à un réseau de haies et des plants.
+                                        </p>
+                                    </div>
+                                    <div className="the-gift5">
+                                        <strong>2</strong>
+                                    </div>
+                                    <div className="the-gift6">
+                                        <p className="p-custom5">Préserver la fertilité des sols en construisant une haie à proximité d'une future rizière.
+                                        </p>
+                                    </div>
+                                    <div className="the-gift5">
+                                        <strong>3</strong>
+                                    </div>
+                                    <div className="the-gift6">
+                                        <p className="p-custom5">Continuer la plantation de 3000 plantes entamée en 2018.
+                                        </p>
+                                    </div>
+                                </div>
 
+                                <div className="row mx-auto mb-0 mt-0 justify-content-center text-center">
+                                    <div className="the-gift5">
+                                        <strong> </strong>
+                                    </div>
+                                    <div className="the-gift7">
+                                        <p>100 caractères maximum</p>
+                                    </div>
+                                    <div className="the-gift5">
+                                    <strong> </strong>
+                                </div>
+                                    <div className="the-gift7">
+                                        <p>100 caractères maximum</p>
+                                    </div>
+                                    <div className="the-gift5">
+                                        <strong> </strong>
+                                    </div>
+                                    <div className="the-gift7">
+                                        <p>100 caractères maximum</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="row mx-auto mb-0 mt-0 justify-content-center text-center">
+                                <button className="btn-custom">
+                                    <p>Sauvegarder</p>
+                                </button>
+                            </div>
+
+
+                        </main>
 
 
                     </div>

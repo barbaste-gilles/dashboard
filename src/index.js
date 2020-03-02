@@ -17,6 +17,7 @@ import DashboardBorneH from './components/dashboardBorne/indexH';
 import DashboardBornePA from './components/dashboardBorne/indexPA';
 import Project from './components/project/index';
 import Payment from "./components/payment/index";
+import Gauge from "./components/gauge/index";
 import DetailProject from './components/project/indexDetail';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
@@ -46,6 +47,8 @@ class App extends React.Component {
                   <Route exact path="/project" component={Project} />
                   <Route exact path="/detailProject" component={DetailProject} />
                   <Route exact path="/payment" component={Payment} />
+                  <Route exact path="/gauge" component={Gauge} />
+
               </Switch>
           </Router>
         )
