@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e564fbf9-1fd1-4d70-a36c-58014a607924" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/gauge/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/project/indexDetailAdd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/project/indexDetailUpdate.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/project/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/project/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/project/indexDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/project/indexDetail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
@@ -46,7 +48,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/project" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -54,19 +56,20 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dashboard\src\components\dashboard" />
+      <recent name="C:\dashboard\src\components\dashboardBS" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dashboard\src\components\project" />
       <recent name="C:\dashboard\src\components\dashboardMobile" />
       <recent name="C:\dashboard\src\components\dashboardBorne" />
       <recent name="C:\dashboard\src\components\dashboard" />
       <recent name="C:\dashboard\src\components" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\dashboard\src\components\dashboard" />
-      <recent name="C:\dashboard\src\components\dashboardBS" />
     </key>
   </component>
   <component name="RunManager">
@@ -157,6 +160,12 @@
       <workItem from="1582798574003" duration="26186000" />
       <workItem from="1582881097352" duration="27744000" />
       <workItem from="1583140852394" duration="15365000" />
+      <workItem from="1583423923026" duration="127000" />
+      <workItem from="1583426068021" duration="1926000" />
+      <workItem from="1583430019714" duration="174000" />
+      <workItem from="1583612617056" duration="1934000" />
+      <workItem from="1583747945029" duration="14937000" />
+      <workItem from="1583953435492" duration="5491000" />
     </task>
     <servers />
   </component>
@@ -256,9 +265,10 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="220" y="94" key="IDE.errors.dialog/0.0.1280.720@0.0.1280.720" timestamp="1582727625455" />
-    <state x="125" y="6" width="1015" height="714" key="SettingsEditor" timestamp="1582727698885">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state x="125" y="0" width="1015" height="680" key="SettingsEditor" timestamp="1583424053082">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="125" y="0" width="1015" height="680" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1583424053082" />
     <state x="125" y="6" width="1015" height="714" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1582727698885" />
     <state x="489" y="269" key="VCS.ChangelistChooser" timestamp="1582916989653">
       <screen x="0" y="0" width="1280" height="720" />

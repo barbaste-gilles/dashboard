@@ -123,7 +123,7 @@ class Project extends React.Component {
                                             {this.state.UrlProjetr2}
                                         </form>
                                         <a className="a-custom"
-                                           href="/detailproject">
+                                           href="/detailprojectUpdate">
                                             <strong>
                                                 <p>
                                                     Modifier
@@ -135,7 +135,7 @@ class Project extends React.Component {
 
                                 <div className="card container-fluid border-custom border-0 shadow-none my-auto">
                                     <div className="card-body text-center">
-                                        <a href="/project">
+                                        <a href="/detailprojectAdd">
                                             <img
                                                 className="projetAjout img-fluid center-block rounded"
                                                 src={projetAjout}
@@ -143,7 +143,7 @@ class Project extends React.Component {
                                             />
                                         </a>
                                         <a className="a-custom"
-                                           href="/detailproject">
+                                           href="/detailprojectAdd">
                                             <strong>
                                                 <p>
                                                     Nouveau projet

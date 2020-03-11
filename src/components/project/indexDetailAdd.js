@@ -5,7 +5,7 @@ import plantation from "../../assets/Plantation.jpg"
 import Sidebar from "../sidebar";
 import Gauge from "../gauge";
 
-class DetailProject extends React.Component {
+class DetailProjectAdd extends React.Component {
 
     constructor(props) {
         super(props);
@@ -94,28 +94,8 @@ class DetailProject extends React.Component {
                                             <div className="p-custom4 mx-auto my-auto position-absolute">
                                             </div>
                                             <div className="card card-custom4 shadow-none mx-auto my-auto">
-                                                <p className="card-text p-custom5">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi in
-                                                    laborum
-                                                    nobis sed voluptates. Atque cum fuga nobis quod voluptatibus.
-                                                    Deleniti
-                                                    dolorem doloribus dolorum, nemo pariatur tempora. Inventore, iure,
-                                                    voluptatem.
-                                                    Deleniti facilis id libero neque non obcaecati pariatur repellat
-                                                    totam,
-                                                    ullam vero! Excepturi, harum, odio. At, blanditiis earum esse est id
-                                                    illum
-                                                    quibusdam quod! Dolorem nihil nulla obcaecati porro ut.
-                                                    Consectetur hic labore laudantium maiores rem similique veniam
-                                                    veritatis! A
-                                                    ad asperiores beatae deleniti doloribus, error ex explicabo
-                                                    laudantium
-                                                    magnam maiores nisi nulla odit pariatur quo reiciendis, unde vitae
-                                                    voluptate.
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate et eveniet impedit, inventore ipsam magni minus molestiae officia perspiciatis porro quibusdam. Autem id in, molestiae neque omnis reiciendis sit!
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequuntur cum deleniti dicta eius eos, eum eveniet excepturi id in iusto nobis numquam omnis optio perspiciatis reiciendis, repellat ut velit.
-                                                 </p>
+                                                <textarea className="form-control rounded-0 p-custom6"
+                                                          id="Textarea1" rows="15"></textarea>
                                             </div>
                                         </div>
                                         <div className="the-gift4 mx-auto my-auto position-absolute">
@@ -168,22 +148,21 @@ class DetailProject extends React.Component {
                                         <strong>1</strong>
                                     </div>
                                     <div className="the-gift6">
-                                        <p className="p-custom5">Protéger les cultures contre les vents séchants grâce à un réseau de haies et des plants.
-                                        </p>
+                                        <textarea className="form-control rounded-0 p-custom6" id="Textarea2" rows="5"></textarea>
                                     </div>
                                     <div className="the-gift5">
                                         <strong>2</strong>
                                     </div>
                                     <div className="the-gift6">
-                                        <p className="p-custom5">Préserver la fertilité des sols en construisant une haie à proximité d'une future rizière.
-                                        </p>
+                                        <textarea className="form-control rounded-0 p-custom6"
+                                                  id="Textarea3" rows="5"></textarea>
                                     </div>
                                     <div className="the-gift5">
                                         <strong>3</strong>
                                     </div>
                                     <div className="the-gift6">
-                                        <p className="p-custom5">Continuer la plantation de 3000 plantes entamée en 2018.
-                                        </p>
+                                        <textarea className="form-control rounded-0 p-custom6"
+                                                  id="Textarea4" rows="5"></textarea>
                                     </div>
                                 </div>
 
@@ -229,4 +208,4 @@ class DetailProject extends React.Component {
     }
 }
 
-export default DetailProject
+export default DetailProjectAdd

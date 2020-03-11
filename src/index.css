@@ -469,11 +469,20 @@ header{
   top: 0;
   bottom: 0;
 }
+.card-custom4{
+    width: 60%;
+    height: 300px;
+    border:2px solid #8FE0EB;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    background-color:#8FE0EB;
+}
 .card-custom3{
   height: 630px;
 }
 .position-custom{
-  margin-top: 200px;
+  margin-top: 40px;
 }
 .the-gift4{
   width: 100%;;
@@ -501,6 +510,10 @@ header{
 }
 .p-custom5 {
   font-size: 1.1vw;
+  max-height: 250px;
+}
+.p-custom6{
+  font-size: 1.5vw;
 }
 .hedge-custom{
   width: 20%;
@@ -562,7 +575,6 @@ header{
   top: 20px;
   bottom: 0;
 }
-
 .div-custom3{
   width: 18%;
   height: 20px;
@@ -578,7 +590,7 @@ header{
   top: 210px;
   bottom: 0;
 }
-.position-custm4{
+.position-custom4{
   margin-top: 380px;
 }
 .the-gift5{
@@ -615,12 +627,13 @@ header{
   font-size: 1.1vw;
 }
 .btn-custom{
-  width: 15%;
+  width: 18%;
+  height: 50px;
   border:2px solid #FFA42B;
   -moz-border-radius:20px;
   -webkit-border-radius:20px;
   border-radius:20px;
-  padding: 0;
+  padding: 10px;
   background-color:#FFA42B;
   color: #FFFFFF;
   margin-bottom: 0;

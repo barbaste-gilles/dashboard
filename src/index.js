@@ -19,6 +19,8 @@ import Project from './components/project/index';
 import Payment from "./components/payment/index";
 import Gauge from "./components/gauge/index";
 import DetailProject from './components/project/indexDetail';
+import DetailProjectUpdate from './components/project/indexDetailUpdate';
+import DetailProjectAdd from './components/project/indexDetailAdd';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   BrowserRouter as Router,
@@ -46,6 +48,8 @@ class App extends React.Component {
                   <Route exact path="/dashboardBornePA" component={DashboardBornePA} />
                   <Route exact path="/project" component={Project} />
                   <Route exact path="/detailProject" component={DetailProject} />
+                  <Route exact path="/detailProjectUpdate" component={DetailProjectUpdate} />
+                  <Route exact path="/detailProjectAdd" component={DetailProjectAdd} />
                   <Route exact path="/payment" component={Payment} />
                   <Route exact path="/gauge" component={Gauge} />
 
