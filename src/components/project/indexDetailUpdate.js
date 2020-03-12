@@ -1,7 +1,7 @@
 import React from "react";
 import logohandidanse from "../../assets/Logo_Handidanse.png";
-import hedge from "../../assets/haie.png";
-import plantation from "../../assets/Plantation.jpg"
+// import hedge from "../../assets/haie.png";
+// import plantation from "../../assets/Plantation.jpg"
 import Sidebar from "../sidebar";
 import Gauge from "../gauge";
 
@@ -9,10 +9,44 @@ class DetailProjectUpdate extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {};
+        this.state = {
+            file: null,
+            file2: null
+        };
+        this.uploadSingleFile = this.uploadSingleFile.bind(this)
+        this.uploadSingleFile2 = this.uploadSingleFile2.bind(this)
+        // this.upload = this.upload.bind(this)
     }
 
+    uploadSingleFile(e) {
+        this.setState({
+            file: URL.createObjectURL(e.target.files[0])
+        })
+    }
+    uploadSingleFile2(f) {
+        this.setState({
+            file2: URL.createObjectURL(f.target.files[0])
+        })
+    }
+
+
+    // upload(e) {
+    //     e.preventDefault()
+    //     console.log(this.state.file)
+    // }
+
     render() {
+
+        let imgPreview;
+        let imgPreview2;
+
+        if (this.state.file) {
+            imgPreview = <img src={this.state.file} width="500%" alt='' />;
+        }
+
+        if (this.state.file2) {
+            imgPreview2 = <img src={this.state.file2} width="20%" alt='' />;
+        }
 
         return (
             <div>
@@ -93,9 +127,39 @@ class DetailProjectUpdate extends React.Component {
                                         <div className="position-custom position-relative">
                                             <div className="p-custom4 mx-auto my-auto position-absolute">
                                             </div>
-                                            <div className="card card-custom4 shadow-none mx-auto my-auto">
+                                            <div className="card p-custom6 the-gift8 mx-auto my-auto">
                                                 <textarea className="form-control rounded-0 p-custom6"
-                                                          id="Textarea1" rows="15"></textarea>
+                                                          id="Textarea1"
+                                                          rows="9"
+                                                          defaultValue="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi in
+                                                            laborum
+                                                            nobis sed voluptates. Atque cum fuga nobis quod voluptatibus.
+                                                            Deleniti
+                                                            dolorem doloribus dolorum, nemo pariatur tempora. Inventore, iure,
+                                                            voluptatem.
+                                                            Deleniti facilis id libero neque non obcaecati pariatur repellat
+                                                            totam,
+                                                            ullam vero! Excepturi, harum, odio. At, blanditiis earum esse est id
+                                                            illum
+                                                            quibusdam quod! Dolorem nihil nulla obcaecati porro ut.
+                                                            Consectetur hic labore laudantium maiores rem similique veniam
+                                                            veritatis! A
+                                                            ad asperiores beatae deleniti doloribus, error ex explicabo
+                                                            laudantium
+                                                            magnam maiores nisi nulla odit pariatur quo reiciendis, unde vitae
+                                                            voluptate.
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                            Aut cupiditate et eveniet impedit, inventore ipsam magni minus
+                                                            molestiae officia perspiciatis porro quibusdam. Autem id in,
+                                                            molestiae neque omnis reiciendis sit!
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                            Beatae consequuntur cum deleniti dicta eius eos, eum eveniet
+                                                            excepturi id in iusto nobis numquam omnis optio perspiciatis reiciendis,
+                                                            repellat ut velit."
+                                                >
+
+                                                </textarea>
                                             </div>
                                         </div>
                                         <div className="the-gift4 mx-auto my-auto position-absolute">
@@ -119,25 +183,52 @@ class DetailProjectUpdate extends React.Component {
                                         <h5 className="h5-custom4">Loka'Mobile</h5>
                                         <hr className="highlighted"/>
                                     </div>
-                                    <div className="img-custom2 position-absolute">
-                                        <img className="hedge-custom"
-                                             src={hedge}
-                                             alt="Haie"/>
-                                    </div>
+
+                                    {/*Gestion de la sélection de l'image*/}
+                                    <form className="img-custom3 position-absolute">
+                                        <div className="form-group img-custom3 preview">
+                                            {imgPreview}
+                                        </div>
+                                        {/*<div className="div-custom2 position-absolute shadow-sm">*/}
+                                        {/*    <p>Ajouter ou changer photo</p>*/}
+                                        {/*    <input type="file" onChange={this.uploadSingleFile}/>*/}
+                                        {/*</div>*/}
+                                        {/*<div className="form-group">*/}
+                                        {/*    <input type="file" className="form-control" onChange={this.uploadSingleFile} />*/}
+                                        {/*</div>*/}
+                                        {/*<button type="button" className="btn btn-primary btn-block" onClick={this.upload}>Upload</button>*/}
+                                    </form >
+                                    {/*Fin de Gestion de la sélection de l'image*/}
+
+                                    {/*Gestion de la sélection de la 2éme image*/}
+                                    <form className="img-custom2 position-absolute">
+                                        <div className="form-group img-custom2 preview">
+                                            {imgPreview2}
+                                        </div>
+                                    </form>
+                                    {/*Fin de Gestion de la sélection de la 2éme image*/}
+
+                                    {/*<div className="img-custom2 position-absolute">*/}
+                                    {/*    <img className="hedge-custom"*/}
+                                    {/*         src={hedge}*/}
+                                    {/*         alt="Haie"/>*/}
+                                    {/*</div>*/}
                                     <div className="position-custom3 position-absolute">
                                         <h5 className="h5-custom4">Loka'Borne</h5>
                                         <hr className="highlighted2"/>
                                     </div>
                                     <div className="div-custom2 position-absolute shadow-sm">
                                         <p>Ajouter ou changer photo</p>
+                                        <input type="file" onChange={this.uploadSingleFile}/>
                                     </div>
-                                    <div className="img-custom3 position-absolute">
-                                        <img className="plantation"
-                                             src={plantation}
-                                             alt="Plantation de Haie"/>
-                                    </div>
+                                    {/*<div className="img-custom3 position-absolute">*/}
+                                    {/*    <img className="plantation"*/}
+                                    {/*         src={plantation}*/}
+                                    {/*         alt="Plantation de Haie"/>*/}
+                                    {/*</div>*/}
                                     <div className="div-custom3 position-absolute shadow-sm">
                                         <p>Ajouter ou changer photo</p>
+                                        <input type="file" onChange={this.uploadSingleFile2}/>
                                     </div>
                                 </div>
                             </div>
@@ -148,21 +239,24 @@ class DetailProjectUpdate extends React.Component {
                                         <strong>1</strong>
                                     </div>
                                     <div className="the-gift6">
-                                        <textarea className="form-control rounded-0 p-custom6" id="Textarea2" rows="5"></textarea>
+                                        <textarea className="form-control rounded-0 p-custom6" id="Textarea2" rows="5" defaultValue="Protéger les cultures contre les vents séchants grâce à un réseau de haies et des plants.">
+                                        </textarea>
                                     </div>
                                     <div className="the-gift5">
                                         <strong>2</strong>
                                     </div>
                                     <div className="the-gift6">
                                         <textarea className="form-control rounded-0 p-custom6"
-                                                  id="Textarea3" rows="5"></textarea>
+                                                  id="Textarea3" rows="5" defaultValue="Préserver la fertilité des sols en construisant une haie à proximité d'une future rizière.">
+                                        </textarea>
                                     </div>
                                     <div className="the-gift5">
                                         <strong>3</strong>
                                     </div>
                                     <div className="the-gift6">
                                         <textarea className="form-control rounded-0 p-custom6"
-                                                  id="Textarea4" rows="5"></textarea>
+                                                  id="Textarea4" rows="5" defaultValue="Continuer la plantation de 3000 plantes entamée en 2018.">
+                                        </textarea>
                                     </div>
                                 </div>
 

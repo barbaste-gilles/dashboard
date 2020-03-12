@@ -93,9 +93,9 @@ class DetailProjectAdd extends React.Component {
                                         <div className="position-custom position-relative">
                                             <div className="p-custom4 mx-auto my-auto position-absolute">
                                             </div>
-                                            <div className="card card-custom4 shadow-none mx-auto my-auto">
+                                            <div className="card p-custom6 the-gift8 mx-auto my-auto">
                                                 <textarea className="form-control rounded-0 p-custom6"
-                                                          id="Textarea1" rows="15"></textarea>
+                                                          id="Textarea1" rows="9"></textarea>
                                             </div>
                                         </div>
                                         <div className="the-gift4 mx-auto my-auto position-absolute">

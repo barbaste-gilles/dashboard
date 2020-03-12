@@ -4,16 +4,16 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^4.4.1",
-    "mdbreact": "^4.25.1",
+    "mdbreact": "^4.25.3",
     "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "^16.12.0",
     "react-export-excel": "^0.5.3",
-    "react-number-format": "^4.3.1",
+    "react-number-format": "^4.4.1",
     "react-responsive": "^8.0.3",
     "react-responsive-container": "0.0.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "^3.3.1",
-    "recharts": "^2.0.0-beta.1"
+    "recharts": "^2.0.0-beta.2"
   },
   "scripts": {
     "start": "react-scripts start",
