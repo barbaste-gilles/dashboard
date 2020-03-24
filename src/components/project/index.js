@@ -1,8 +1,7 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 // import Help from '../../assets/Help.png';
-import projetTest from "../../assets/projetTest.png";
-import projetTest2 from "../../assets/projetTest2.png";
+import projetVierge from "../../assets/projetvierge.png";
 import projetAjout from "../../assets/projetAjout.png";
 import NumberFormat from "react-number-format";
 import hedge from "../../assets/haie.png"
@@ -53,9 +52,9 @@ class Project extends React.Component {
                                             En ligne
                                         </p>
                                         <img
-                                            className="projetTest img-fluid center-block rounded"
-                                            src={projetTest}
-                                            alt="Projet de test"
+                                            className="img-fluid center-block rounded"
+                                            src={hedge}
+                                            alt="Projet en ligne"
                                         />
                                         <p className="card-text">
                                             Plantations de haies
@@ -96,8 +95,8 @@ class Project extends React.Component {
                                             Hors ligne
                                         </p>
                                         <img
-                                            className="projetTest2 img-fluid center-block rounded"
-                                            src={projetTest2}
+                                            className="img-fluid center-block rounded"
+                                            src={projetVierge}
                                             alt="Projet en cours"
                                         />
                                         <p className="card-text">

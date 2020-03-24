@@ -148,16 +148,10 @@ class DetailProject extends React.Component {
                                         <h5 className="h5-custom4">Loka'Borne</h5>
                                         <hr className="highlighted2"/>
                                     </div>
-                                    <div className="div-custom2 position-absolute shadow-sm">
-                                        <p>Ajouter ou changer photo</p>
-                                    </div>
                                     <div className="img-custom3 position-absolute">
                                         <img className="plantation"
                                              src={plantation}
                                              alt="Plantation de Haie"/>
-                                    </div>
-                                    <div className="div-custom3 position-absolute shadow-sm">
-                                        <p>Ajouter ou changer photo</p>
                                     </div>
                                 </div>
                             </div>
@@ -209,8 +203,12 @@ class DetailProject extends React.Component {
                                 </div>
                             </div>
                             <div className="row mx-auto mb-0 mt-0 justify-content-center text-center">
+                                <button className="btn-return waves-effect z-depth-0"  type="submit">
+                                    <a href="/Project">Retour</a>
+                                </button>
+                                <form className="col-2"></form>
                                 <button className="btn-custom waves-effect z-depth-0"  type="submit">
-                                    <a href="/detailproject">Sauvegarder</a>
+                                    <a href="/detailprojectUpdate">Modifier</a>
                                 </button>
                             </div>
 
