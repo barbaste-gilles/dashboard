@@ -41,19 +41,19 @@ class Profil extends React.Component {
         return (
             <div>
 
-                {/* ----------------------------------------- Horizontal navigation bar ---------------------------------------------*/}
+{/* ----------------------------------------- Horizontal navigation bar ---------------------------------------------*/}
 
                 {/*< Navigation />*/}
 
 
-                {/* ----------------------------------------- Vertical navigation bar -----------------------------------------------*/}
+{/* ----------------------------------------- Vertical navigation bar -----------------------------------------------*/}
 
                 <div className="row">
 
                     <Sidebar/>
-                    {/* ---------------------------------------- End Vertical navigation bar ------------------------------------------- */}
+{/* ---------------------------------------- End Vertical navigation bar ------------------------------------------- */}
 
-                    {/* -------------------------------- Displays the Dashboard to the right of the navigation bar --------------------- */}
+{/* -------------------------------- Displays the Dashboard to the right of the navigation bar --------------------- */}
 
                     <div className="col-md-9">
 

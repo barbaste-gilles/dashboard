@@ -3,19 +3,22 @@
   "version": "0.2.0",
   "private": true,
   "dependencies": {
-    "@material-ui/core": "^4.9.7",
+    "@material-ui/core": "^4.9.10",
     "@material-ui/icons": "^4.9.1",
     "bootstrap": "^4.4.1",
     "mdbreact": "^4.25.3",
+    "prop-types": "^15.7.2",
     "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "^16.12.0",
     "react-export-excel": "^0.5.3",
     "react-number-format": "^4.4.1",
+    "react-redux": "^7.2.0",
     "react-responsive": "^8.0.3",
     "react-responsive-container": "0.0.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "^3.3.1",
-    "recharts": "^2.0.0-beta.2"
+    "recharts": "^2.0.0-beta.2",
+    "redux": "^4.0.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -37,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "redux-devtools": "^3.5.0"
   }
 }

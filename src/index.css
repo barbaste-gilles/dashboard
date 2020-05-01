@@ -406,17 +406,17 @@ header{
 
 .gauge-custom{
   width: 60%;
-  border:2px solid #003135;
+  border:2px solid #FFFFFF;
   -moz-border-radius:20px;
   -webkit-border-radius:20px;
   border-radius:20px;
   padding: 5px;
-  background-color:#FFA42B;
+  background-color:#FFFFFF;
   margin-bottom: 30px;
   margin-top: 30px;
 }
 .the-gift{
-  width: 10%;
+  width: 60%;
   border:2px solid #003135;
   -moz-border-radius:20px;
   -webkit-border-radius:20px;
@@ -763,6 +763,45 @@ header{
   margin-bottom: 0;
   margin-top: 130px;
 }
+.btn-custom2{
+  width:100%;
+  height: 50px;
+  border:2px solid #FFA42B;
+  -moz-border-radius:20px;
+  -webkit-border-radius:20px;
+  border-radius:20px;
+  padding: 10px;
+  background-color:#FFA42B;
+  color: #FFFFFF;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.btn-custom3{
+  width: 80%;
+  height: 32px;
+  border:2px solid #FFA42B;
+  -moz-border-radius:20px;
+  -webkit-border-radius:20px;
+  border-radius:20px;
+  padding: 0;
+  background-color:#FFA42B;
+  color: #FFFFFF;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.btn-custom4{
+  width: 80%;
+  height: 32px;
+  border:2px solid #002F33;
+  -moz-border-radius:20px;
+  -webkit-border-radius:20px;
+  border-radius:20px;
+  padding: 0;
+  background-color:#FFFFFF;
+  color: #002F33;
+  margin-bottom: 0;
+  margin-top: 0;
+}
 .btn-return{
    width: 18%;
    height: 50px;
@@ -801,4 +840,8 @@ header{
 }
 .cercle{
   width: 60%;
+}
+/* TaxReceipts */
+.modal-custom{
+  font-size: 24px;
 }

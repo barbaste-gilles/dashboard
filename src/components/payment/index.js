@@ -89,13 +89,13 @@ class Payment extends React.Component {
                                         </div>
                                         <div className="col-lg-3 listeDon">
 
-                                            {/*-------------------------------------  Export Data multiDataSet --------------------------------------------------*/}
+{/*-------------------------------------  Export Data multiDataSet --------------------------------------------------*/}
                                             <div>
                                                 <ExcelFile element={<button className="btn btn-warning">Export</button>}>
                                                     <ExcelSheet dataSet={multiDataSet} name="Dons récents"/>
                                                 </ExcelFile>
                                             </div>
-                                            {/*------------------------------------- End Export Data multiDataSet -----------------------------------------------*/}
+{/*------------------------------------- End Export Data multiDataSet -----------------------------------------------*/}
 
                                         </div>
                                     </div>

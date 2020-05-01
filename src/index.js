@@ -22,7 +22,8 @@ import DetailProject from './components/project/indexDetail';
 import DetailProjectUpdate from './components/project/indexDetailUpdate';
 import DetailProjectAdd from './components/project/indexDetailAdd';
 import Parameters from './components/parameters/index';
-import TaxReceipts from "./components/taxReceipts";
+import TaxReceipts from "./components/taxReceipts/index";
+import TaxReceiptsForm from "./components/taxReceipts/indexForm";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   BrowserRouter as Router,
@@ -56,6 +57,7 @@ class App extends React.Component {
                   <Route exact path="/gauge" component={Gauge} />
                   <Route exact path="/parameters" component={Parameters} />
                   <Route exact path="/taxReceipts" component={TaxReceipts} />
+                  <Route exact path="/taxReceiptsForm" component={TaxReceiptsForm} />
 
               </Switch>
           </Router>

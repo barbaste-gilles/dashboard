@@ -2,27 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e564fbf9-1fd1-4d70-a36c-58014a607924" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/Glary_Utilities_v5.138.0.164.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/banking-card.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/cercle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/facebook.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/instagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/linkedin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/projetvierge.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/web.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/parameters/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/taxReceipts/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/Download.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/taxReceipts/indexForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/projetTest.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/projetTest2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/project/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/project/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/gauge/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gauge/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/parameters/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/parameters/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/payment/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/payment/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/project/indexDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/project/indexDetail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/project/indexDetailAdd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/project/indexDetailAdd.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/project/indexDetailUpdate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/project/indexDetailUpdate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sidebar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebar/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/taxReceipts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taxReceipts/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
@@ -64,7 +55,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/taxReceipts" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -72,20 +63,20 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\dashboard\src\components\dashboard" />
+      <recent name="C:\dashboard\src\components\dashboardBS" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dashboard\src\components\taxReceipts" />
       <recent name="C:\dashboard\src\components\project" />
       <recent name="C:\dashboard\src\components\dashboardMobile" />
       <recent name="C:\dashboard\src\components\dashboardBorne" />
       <recent name="C:\dashboard\src\components\dashboard" />
-      <recent name="C:\dashboard\src\components" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\dashboard\src\components\dashboard" />
-      <recent name="C:\dashboard\src\components\dashboardBS" />
     </key>
   </component>
   <component name="RunManager">
@@ -188,7 +179,17 @@
       <workItem from="1584712328500" duration="15542000" />
       <workItem from="1584952023564" duration="24378000" />
       <workItem from="1585056232822" duration="1457000" />
-      <workItem from="1585058373635" duration="7983000" />
+      <workItem from="1585058373635" duration="8585000" />
+      <workItem from="1585129671721" duration="1962000" />
+      <workItem from="1585212551131" duration="600000" />
+      <workItem from="1585240197581" duration="601000" />
+      <workItem from="1585554656615" duration="3000" />
+      <workItem from="1585555542703" duration="5038000" />
+      <workItem from="1585644973353" duration="26963000" />
+      <workItem from="1585726552944" duration="605000" />
+      <workItem from="1586452087567" duration="38215000" />
+      <workItem from="1586899678896" duration="85000" />
+      <workItem from="1587064858337" duration="5856000" />
     </task>
     <servers />
   </component>
@@ -288,18 +289,22 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="220" y="94" key="IDE.errors.dialog/0.0.1280.720@0.0.1280.720" timestamp="1582727625455" />
-    <state x="125" y="0" width="1015" height="680" key="SettingsEditor" timestamp="1583424053082">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="125" y="6" width="1015" height="680" key="SettingsEditor" timestamp="1585557021887">
+      <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="125" y="0" width="1015" height="680" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1583424053082" />
-    <state x="125" y="6" width="1015" height="714" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1582727698885" />
+    <state x="125" y="6" width="1015" height="714" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1585557021887" />
     <state x="489" y="269" key="VCS.ChangelistChooser" timestamp="1582916989653">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="489" y="269" key="VCS.ChangelistChooser/0.0.1280.720@0.0.1280.720" timestamp="1582916989653" />
-    <state x="0" y="0" width="760" height="720" key="find.popup" timestamp="1584962585443">
+    <state x="93" y="93" width="1095" height="535" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1585652114744">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
-    <state x="0" y="0" width="760" height="720" key="find.popup/0.0.1280.720@0.0.1280.720" timestamp="1584962585443" />
+    <state x="93" y="93" width="1095" height="535" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/0.0.1280.720@0.0.1280.720" timestamp="1585652114744" />
+    <state x="0" y="0" width="760" height="720" key="find.popup" timestamp="1586878231265">
+      <screen x="0" y="0" width="1280" height="720" />
+    </state>
+    <state x="0" y="0" width="760" height="720" key="find.popup/0.0.1280.720@0.0.1280.720" timestamp="1586878231265" />
   </component>
 </project>

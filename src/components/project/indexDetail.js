@@ -60,7 +60,6 @@ class DetailProject extends React.Component {
                                         bénéfice</h5>
                                 </div>
                                 <div className="gauge-custom mx-auto">
-                                    <h5>La JAUGE</h5>
                                     < Gauge />
                                 </div>
                                 <div className="row mx-auto mb-0 mt-0 justify-content-center text-center">
