@@ -1,29 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e564fbf9-1fd1-4d70-a36c-58014a607924" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/Download.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/taxReceipts/indexForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/preview/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/gauge/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gauge/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/parameters/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/parameters/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/payment/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/payment/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/project/indexDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/project/indexDetail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/project/indexDetailAdd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/project/indexDetailAdd.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/project/indexDetailUpdate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/project/indexDetailUpdate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/taxReceipts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taxReceipts/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="dashboard" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -47,15 +57,15 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/taxReceipts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -63,7 +73,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
@@ -88,18 +98,6 @@
         <item itemvalue="Node.js.index.js" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -190,11 +188,26 @@
       <workItem from="1586452087567" duration="38215000" />
       <workItem from="1586899678896" duration="85000" />
       <workItem from="1587064858337" duration="5856000" />
+      <workItem from="1588442992195" duration="302000" />
+      <workItem from="1588689167975" duration="10778000" />
+      <workItem from="1588764563083" duration="599000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -237,63 +250,16 @@
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state width="1259" height="176" key="GridCell.Tab.0.right/0.0.1280.720@0.0.1280.720" timestamp="1581016068415" />
-    <state width="1259" height="220" key="GridCell.Tab.1.bottom" timestamp="1579544314966">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1259" height="220" key="GridCell.Tab.1.bottom/0.0.1280.720@0.0.1280.720" timestamp="1579544314966" />
-    <state width="1259" height="220" key="GridCell.Tab.1.center" timestamp="1579544314965">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1259" height="220" key="GridCell.Tab.1.center/0.0.1280.720@0.0.1280.720" timestamp="1579544314965" />
-    <state width="1259" height="220" key="GridCell.Tab.1.left" timestamp="1579544314965">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1259" height="220" key="GridCell.Tab.1.left/0.0.1280.720@0.0.1280.720" timestamp="1579544314965" />
-    <state width="1259" height="220" key="GridCell.Tab.1.right" timestamp="1579544314966">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1259" height="220" key="GridCell.Tab.1.right/0.0.1280.720@0.0.1280.720" timestamp="1579544314966" />
-    <state width="1259" height="220" key="GridCell.Tab.2.bottom" timestamp="1579544314966">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1259" height="220" key="GridCell.Tab.2.bottom/0.0.1280.720@0.0.1280.720" timestamp="1579544314966" />
-    <state width="1259" height="220" key="GridCell.Tab.2.center" timestamp="1579544314966">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1259" height="220" key="GridCell.Tab.2.center/0.0.1280.720@0.0.1280.720" timestamp="1579544314966" />
-    <state width="1259" height="220" key="GridCell.Tab.2.left" timestamp="1579544314966">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1259" height="220" key="GridCell.Tab.2.left/0.0.1280.720@0.0.1280.720" timestamp="1579544314966" />
-    <state width="1259" height="220" key="GridCell.Tab.2.right" timestamp="1579544314966">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1259" height="220" key="GridCell.Tab.2.right/0.0.1280.720@0.0.1280.720" timestamp="1579544314966" />
-    <state width="1259" height="220" key="GridCell.Tab.3.bottom" timestamp="1579544314966">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1259" height="220" key="GridCell.Tab.3.bottom/0.0.1280.720@0.0.1280.720" timestamp="1579544314966" />
-    <state width="1259" height="220" key="GridCell.Tab.3.center" timestamp="1579544314966">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1259" height="220" key="GridCell.Tab.3.center/0.0.1280.720@0.0.1280.720" timestamp="1579544314966" />
-    <state width="1259" height="220" key="GridCell.Tab.3.left" timestamp="1579544314966">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1259" height="220" key="GridCell.Tab.3.left/0.0.1280.720@0.0.1280.720" timestamp="1579544314966" />
-    <state width="1259" height="220" key="GridCell.Tab.3.right" timestamp="1579544314966">
-      <screen x="0" y="0" width="1280" height="720" />
-    </state>
-    <state width="1259" height="220" key="GridCell.Tab.3.right/0.0.1280.720@0.0.1280.720" timestamp="1579544314966" />
     <state x="220" y="94" key="IDE.errors.dialog" timestamp="1582727625455">
       <screen x="0" y="0" width="1280" height="720" />
     </state>
     <state x="220" y="94" key="IDE.errors.dialog/0.0.1280.720@0.0.1280.720" timestamp="1582727625455" />
-    <state x="125" y="6" width="1015" height="680" key="SettingsEditor" timestamp="1585557021887">
-      <screen x="0" y="0" width="1280" height="720" />
+    <state x="150" y="7" width="1015" height="680" key="SettingsEditor" timestamp="1588443283111">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="125" y="0" width="1015" height="680" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1583424053082" />
     <state x="125" y="6" width="1015" height="714" key="SettingsEditor/0.0.1280.720@0.0.1280.720" timestamp="1585557021887" />
+    <state x="150" y="7" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1588443283111" />
     <state x="489" y="269" key="VCS.ChangelistChooser" timestamp="1582916989653">
       <screen x="0" y="0" width="1280" height="720" />
     </state>

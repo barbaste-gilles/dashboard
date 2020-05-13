@@ -90,19 +90,11 @@ class DetailProjectUpdate extends React.Component {
                             <div className="container-fluid text-center">
                                 <strong><h4 className="h4-custom3">Jauge de don</h4></strong>
                                 <div className="mx-auto">
-                                    <h5>Cliquez sur les points puis changer<br/>la valeur du don et le message du
+                                    <h5>Cliquez sur les valeurs puis changer<br/>le montant du don et le message du
                                         bénéfice</h5>
                                 </div>
                                 <div className="gauge-custom mx-auto">
                                     < Gauge />
-                                </div>
-                                <div className="row mx-auto mb-0 mt-0 justify-content-center text-center">
-                                    <div className="the-gift">
-                                        <strong><h1>3</h1></strong>
-                                    </div>
-                                    <div className="the-gift2">
-                                        <strong><h1>€</h1></strong>
-                                    </div>
                                 </div>
                                 <div className="the-gift3 mx-auto">
                                     <p>Doit être suppérieur au palier précédent</p>
