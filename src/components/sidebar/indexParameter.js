@@ -37,7 +37,6 @@
                              type="submit"
                              size="sm"
                              color="#003135"
-                             active
                      >
                          <strong>Revenus</strong>
                      </Button>
@@ -81,7 +80,7 @@
 
                              />
                          </div>
-                         <a className="link-custom text-custom"
+                         <a className="link-custom text-custom parameter2"
                             id="v-pills-profil-tab"
                             data-toggle="pill"
                             href="/parameters"

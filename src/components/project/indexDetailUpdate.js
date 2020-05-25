@@ -2,7 +2,7 @@ import React from "react";
 import logohandidanse from "../../assets/Logo_Handidanse.png";
 import hedge from "../../assets/haie.png";
 import plantation from "../../assets/Plantation.jpg"
-import Sidebar from "../sidebar";
+import SidebarProject from "../sidebar/indexProject";
 import Gauge from "../gauge";
 
 class DetailProjectUpdate extends React.Component {
@@ -60,7 +60,7 @@ class DetailProjectUpdate extends React.Component {
 
                 <div className="row">
 
-                    <Sidebar/>
+                    <SidebarProject/>
 {/* ---------------------------------------- End Vertical navigation bar ------------------------------------------- */}
 
 {/* -------------------------------- Displays the Dashboard to the right of the navigation bar --------------------- */}

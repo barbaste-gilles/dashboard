@@ -12,47 +12,14 @@ import Sidebar from "../sidebar";
 
 const ExcelFile = ReactExport.ExcelFile;
 const ExcelSheet = ReactExport.ExcelFile.ExcelSheet;
-// const ExcelColumn = ReactExport.ExcelFile.ExcelColumn;
 
-// ----------------------------------------- DataSet ------------------------------------------------
-// const dataSet = [
-//     {
-//         project: "Plantations arbres",
-//         collect: "Loka'Borne",
-//         date: "02/10/2019",
-//         amount: "2€",
-//         email: "doom.elegant@hell.com",
-//     },
-//     {
-//         project: "Biscuits solidaire",
-//         collect: "Loka'Mobile",
-//         date: "01/10/2019",
-//         amount: "20€",
-//         email: "",
-//     },
-//     {
-//         project: "Biscuits solidaire",
-//         collect: "Loka'Borne",
-//         date: "20/09/2019",
-//         amount: "5€",
-//         email: "limo.zenit@gmail.com",
-//     },
-//     {
-//         project: "Handidanse",
-//         collect: "Loka'Mobile",
-//         date: "03/09/2019",
-//         amount: "10€",
-//         email: "",
-//     },
-// ];
-// ----------------------------------------- End DataSet ------------------------------------------------
 const multiDataSet = [
     {
-        columns: ["Projet", "Collecteur", "Date", "Montant", "Email"],
+        columns: ["Projet", "Date", "Montant", "Email"],
         data: [
             [
                 {value: "Handidanse"},
-                {value: "LOKA'Mobile"},
+                // {value: "LOKA'Mobile"},
                 {value: "03/09/2019"},
                 {value: "10€"},
                 {value: ""},
@@ -64,24 +31,6 @@ const multiDataSet = [
 // ----------------------------------------- Data + Dynamic graphics  -------------------------------------------------
 
 const data = [
-    // {
-    //     name: 'Mars 2019', Nombre: 113, Montant: 450,
-    // },
-    // {
-    //     name: 'Avr. 2019', Nombre: 68, Montant: 675,
-    // },
-    // {
-    //     name: 'Mai 2019', Nombre: 32, Montant: 315,
-    // },
-    // {
-    //     name: 'Juin 2019', Nombre: 45, Montant: 360,
-    // },
-    // {
-    //     name: 'Juil. 2019', Nombre: 150, Montant: 1052,
-    // },
-    // {
-    //     name: 'Août 2019', Nombre: 2, Montant: 27,
-    // },
     {
         name: 'Sept. 2019', Nombre: 71, Montant: 853,
     },
@@ -169,62 +118,25 @@ render() {
         return (
         <div>
 
-{/* ----------------------------------------- Horizontal navigation bar ---------------------------------------------*/}
-
-          {/*< Navigation />*/}
-
-
 {/* ----------------------------------------- Vertical navigation bar -----------------------------------------------*/}
 
             <div className="row">
 
                 <Sidebar />
 {/* ---------------------------------------- End Vertical navigation bar ------------------------------------------- */}
+
 {/* -------------------------------- Displays the Dashboard to the right of the navigation bar --------------------- */}
 
                 <div className="col-md-9">
 
                     <header>
 
-                        {/*<div className="row mb-5 mt-4 justify-content-center text-center">*/}
-                        {/*    <div className="col-lg-2">*/}
-                        {/*        <div className="form-control form-control-lg custom-gradient justify-content-xl-around shadow">*/}
-                        {/*            <h4>Filtre projet</h4>*/}
-                        {/*        </div>*/}
-                        {/*    </div>*/}
-                        {/*</div>*/}
-
                         {/*  -------------------------- Call up the selected page ------------------------------*/}
                         <div className="row">
-                            <div className="col-sm-10 text-center h4-custom2">
-                                <h4>
-                                    Handidanse
-                                </h4>
-                            </div>
+
                             <div className="col-sm-10">
                                 <ButtonToolbar className="justify-content-center">
-                                    <Button href="/dashboard"
-                                            variant="outline-warning"
-                                            size="sm"
-                                            active
-                                    >
-                                        Ensemble
-                                    </Button>
-                                    <Button href="/dashboardMobile"
-                                            variant="outline-warning"
-                                            size="sm"
-                                    >
-                                        LOKA'Mobile
-                                    </Button>
-                                    <Button href="/dashboardBorne"
-                                            variant="outline-warning"
-                                            size="sm"
-                                    >
-                                        LOKA'Borne
-                                    </Button>
 
-                                    <div className="col-sm-1">
-                                    </div>
                                     <Dropdown as={ButtonGroup}>
                                         <Button variant="outline-warning"
                                                 size="sm"
@@ -257,6 +169,17 @@ render() {
                                             </Dropdown.Item>
                                         </Dropdown.Menu>
                                     </Dropdown>
+                                    <div className="col-sm-1 h4-custom2">
+                                    </div>
+                                    <Button href="/dashboardH"
+                                            variant="outline-warning"
+                                            size="sm"
+                                            active
+                                    >
+                                        <h5>
+                                            Handidanse
+                                        </h5>
+                                    </Button>
 
                                 </ButtonToolbar>
                             </div>
@@ -283,7 +206,7 @@ render() {
                             </div>
                             <div className="col-sm-3">
                                 <div className="form-control border-0">
-                                    <p>Répartition par dispositif</p>
+                                    <p>Répartition par projet</p>
                                 </div>
                             </div>
                             <div className="col-sm-2">
@@ -363,9 +286,7 @@ render() {
 
                                 <div className="card container-fluid border-0 shadow-none">
                                     <div className="col-sm-12 card-body card-graphic">
-                                        {/*<h6 className="card-title">*/}
-                                        {/*    Répartition des dons en nombre et montant*/}
-                                        {/*</h6>*/}
+
                                         <ResponsiveContainer>
                                             <AreaChart
                                                 data={data}
@@ -405,15 +326,12 @@ render() {
                                                        height={60}
                                                        tick={<CustomizedAxisTick />}
                                                 />
-                                                {/*<YAxis />*/}
-                                                {/*<YAxis yAxisId="left" />*/}
                                                 <YAxis yAxisId="right"
                                                        orientation="right" />
                                                 <Tooltip />
                                                 <Legend onMouseEnter={this.handleMouseEnter}
                                                         onMouseLeave={this.handleMouseLeave} />
 
-                                                {/*<Line yAxisId="left" type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />*/}
                                                 <Line yAxisId="right"
                                                       type="monotone"
                                                       stroke="#003135" />
@@ -468,10 +386,10 @@ render() {
                                     <tbody>
                                         <tr className="line2-custom">
                                             <td>Handidanse</td>
-                                            <td>Loka'Mobile</td>
+                                            {/*<td>Loka'Mobile</td>*/}
                                             <td>03/09/2019</td>
                                             <td>10€</td>
-                                            <td></td>
+                                            <td> </td>
                                         </tr>
                                     </tbody>
                                 </table>

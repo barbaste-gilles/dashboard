@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Sidebar from "../sidebar";
+import SidebarTaxReceipts from "../sidebar/indexTaxReceipts";
 import {Modal, ModalBody, ModalFooter} from 'react-bootstrap';
 import ModalHeader from "react-bootstrap/ModalHeader";
 
@@ -23,7 +23,7 @@ function TaxReceipts() {
 
                 <div className="row">
 
-                    <Sidebar/>
+                    <SidebarTaxReceipts/>
 {/* ---------------------------------------- End Vertical navigation bar ------------------------------------------- */}
 
 {/* -------------------------------- Displays the Dashboard to the right of the navigation bar --------------------- */}

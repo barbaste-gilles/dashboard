@@ -4,7 +4,7 @@
  import React from "react";
  import {Button} from 'react-bootstrap';
 
- class Sidebar extends React.Component {
+ class SidebarPayment extends React.Component {
 
      render() {
 
@@ -37,7 +37,6 @@
                              type="submit"
                              size="sm"
                              color="#003135"
-                             active
                      >
                          <strong>Revenus</strong>
                      </Button>
@@ -56,10 +55,10 @@
                              type="submit"
                              size="sm"
                              color="#003135"
+                             active
                      >
                          <strong>Versements</strong>
                      </Button>
-
                      {/*Gestion du reçu fiscal mis en attente*/}
                      {/*<Button className="link-custom round"*/}
                      {/*        href="/taxReceipts"*/}
@@ -144,4 +143,4 @@
      }
  }
 
- export default Sidebar
+ export default SidebarPayment

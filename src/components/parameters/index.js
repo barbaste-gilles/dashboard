@@ -7,7 +7,7 @@ import cercle from '../../assets/cercle.png';
 import bankingCard from '../../assets/banking-card.png';
 // import logohandidanse from "../../assets/Logo_Handidanse.png";
 
-import Sidebar from "../sidebar";
+import SidebarParameter from "../sidebar/indexParameter";
 
 class Profil extends React.Component {
 
@@ -50,7 +50,7 @@ class Profil extends React.Component {
 
                 <div className="row">
 
-                    <Sidebar/>
+                    <SidebarParameter/>
 {/* ---------------------------------------- End Vertical navigation bar ------------------------------------------- */}
 
 {/* -------------------------------- Displays the Dashboard to the right of the navigation bar --------------------- */}
@@ -85,7 +85,7 @@ class Profil extends React.Component {
                                     {/*Background blue*/}
                                 </div>
                                 <div className="the-gift16  position-absolute">
-                                {/*Background blue*/}
+                                    {/*Background blue*/}
                             </div>
                                 <div className="form-group the-gift9 position-relative mx-auto mt-5 mb-5">
                                     <textarea

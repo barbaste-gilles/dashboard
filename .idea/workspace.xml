@@ -20,15 +20,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e564fbf9-1fd1-4d70-a36c-58014a607924" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/preview/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/sidebar/indexParameter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/sidebar/indexPayment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/sidebar/indexProject.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/sidebar/indexTaxReceipts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboard/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboard/indexBS.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/indexBS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboard/indexH.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/indexH.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboard/indexPA.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/indexPA.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/gauge/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gauge/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/parameters/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/parameters/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/payment/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/payment/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/project/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/project/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/project/indexDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/project/indexDetail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/project/indexDetailAdd.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/project/indexDetailAdd.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/project/indexDetailUpdate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/project/indexDetailUpdate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/sidebar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sidebar/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/taxReceipts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taxReceipts/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/taxReceipts/indexForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/taxReceipts/indexForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +77,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/sidebar" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -82,11 +94,11 @@
       <recent name="C:\dashboard\src\components\dashboardBS" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\dashboard\src\components\sidebar" />
       <recent name="C:\dashboard\src\components\taxReceipts" />
       <recent name="C:\dashboard\src\components\project" />
       <recent name="C:\dashboard\src\components\dashboardMobile" />
       <recent name="C:\dashboard\src\components\dashboardBorne" />
-      <recent name="C:\dashboard\src\components\dashboard" />
     </key>
   </component>
   <component name="RunManager">
@@ -191,6 +203,10 @@
       <workItem from="1588442992195" duration="302000" />
       <workItem from="1588689167975" duration="10778000" />
       <workItem from="1588764563083" duration="599000" />
+      <workItem from="1589879925981" duration="6952000" />
+      <workItem from="1589894733469" duration="6952000" />
+      <workItem from="1589908054257" duration="8606000" />
+      <workItem from="1590142661348" duration="13750000" />
     </task>
     <servers />
   </component>

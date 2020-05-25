@@ -11,68 +11,35 @@ import Sidebar from "../sidebar";
 
 const ExcelFile = ReactExport.ExcelFile;
 const ExcelSheet = ReactExport.ExcelFile.ExcelSheet;
-// const ExcelColumn = ReactExport.ExcelFile.ExcelColumn;
 
-// ----------------------------------------- DataSet ------------------------------------------------
-// const dataSet = [
-//     {
-//         project: "Plantations arbres",
-//         collect: "Loka'Borne",
-//         date: "02/10/2019",
-//         amount: "2€",
-//         email: "doom.elegant@hell.com",
-//     },
-//     {
-//         project: "Biscuits solidaire",
-//         collect: "Loka'Mobile",
-//         date: "01/10/2019",
-//         amount: "20€",
-//         email: "",
-//     },
-//     {
-//         project: "Biscuits solidaire",
-//         collect: "Loka'Borne",
-//         date: "20/09/2019",
-//         amount: "5€",
-//         email: "limo.zenit@gmail.com",
-//     },
-//     {
-//         project: "Handidanse",
-//         collect: "Loka'Mobile",
-//         date: "03/09/2019",
-//         amount: "10€",
-//         email: "",
-//     },
-// ];
-// ----------------------------------------- End DataSet ------------------------------------------------
 const multiDataSet = [
     {
-        columns: ["Projet", "Collecteur", "Date", "Montant", "Email"],
+        columns: ["Projet", "Date", "Montant", "Email"],
         data: [
             [
                 {value: "Plantations arbres", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
-                {value: "Loka'Borne", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
+                // {value: "Loka'Borne", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
                 {value: "02/10/2019", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
                 {value: "2€", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
                 {value: "doom.elegant@hell.com", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
             ],
             [
                 {value: "Biscuits solidaire"},
-                {value: "LOKA'Mobile"},
+                // {value: "LOKA'Mobile"},
                 {value: "01/10/2019"},
                 {value: "20€"},
                 {value: ""},
             ],
             [
                 {value: "Biscuits solidaire", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
-                {value: "Loka'Borne", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
+                // {value: "Loka'Borne", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
                 {value: "20/09/2019", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
                 {value: "5€", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
                 {value: "limo.zenit@gmail.com", style: {fill: {fgColor: {rgb: "FFEADC"}}}},
             ],
             [
                 {value: "Handidanse"},
-                {value: "LOKA'Mobile"},
+                // {value: "LOKA'Mobile"},
                 {value: "03/09/2019"},
                 {value: "10€"},
                 {value: ""},
@@ -84,24 +51,6 @@ const multiDataSet = [
 // ----------------------------------------- Data + Dynamic graphics  -------------------------------------------------
 
 const data = [
-    // {
-    //     name: 'Mars 2019', Nombre: 250, Montant: 1000,
-    // },
-    // {
-    //     name: 'Avr. 2019', Nombre: 150, Montant: 1500,
-    // },
-    // {
-    //     name: 'Mai 2019', Nombre: 70, Montant: 700,
-    // },
-    // {
-    //     name: 'Juin 2019', Nombre: 100, Montant: 800,
-    // },
-    // {
-    //     name: 'Juil. 2019', Nombre: 334, Montant: 2338,
-    // },
-    // {
-    //     name: 'Août 2019', Nombre: 4, Montant: 60,
-    // },
     {
         name: 'Sept. 2019', Nombre: 158, Montant: 1896,
     },
@@ -189,11 +138,6 @@ render() {
         return (
         <div>
 
-{/* ----------------------------------------- Horizontal navigation bar ---------------------------------------------*/}
-
-          {/*< Navigation />*/}
-
-
 {/* ----------------------------------------- Vertical navigation bar -----------------------------------------------*/}
 
             <div className="row">
@@ -207,45 +151,12 @@ render() {
 
                     <header>
 
-                        {/*<div className="row mb-5 mt-4 justify-content-center text-center">*/}
-                        {/*    <div className="col-lg-2">*/}
-                        {/*        <div className="form-control form-control-lg custom-gradient justify-content-xl-around shadow">*/}
-                        {/*            <h4>Filtre projet</h4>*/}
-                        {/*        </div>*/}
-                        {/*    </div>*/}
-                        {/*</div>*/}
-
                         {/*  -------------------------- Call up the selected page ------------------------------*/}
                         <div className="row">
-                            <div className="col-sm-10 text-center h4-custom2">
-                                <h4>
-                                    Tous les projets
-                                </h4>
-                            </div>
+
                             <div className="col-sm-10">
                                 <ButtonToolbar className="justify-content-center">
-                                    <Button href="/dashboard"
-                                            variant="outline-warning"
-                                            size="sm"
-                                            active
-                                    >
-                                        Ensemble
-                                    </Button>
-                                    <Button href="/dashboardMobile"
-                                            variant="outline-warning"
-                                            size="sm"
-                                    >
-                                        LOKA'Mobile
-                                    </Button>
-                                    <Button href="/dashboardBorne"
-                                            variant="outline-warning"
-                                            size="sm"
-                                    >
-                                        LOKA'Borne
-                                    </Button>
 
-                                    <div className="col-sm-1">
-                                    </div>
                                     <Dropdown as={ButtonGroup}>
                                         <Button variant="outline-warning"
                                                 size="sm"
@@ -278,6 +189,19 @@ render() {
                                             </Dropdown.Item>
                                         </Dropdown.Menu>
                                     </Dropdown>
+                                    <div className="col-sm-1 h4-custom2">
+                                    </div>
+                                    <Button href="/dashboard"
+                                            variant="outline-warning"
+                                            size="sm"
+                                            active
+                                    >
+                                        <h5>
+                                            Tous les projets
+                                        </h5>
+                                        {/*Ensemble*/}
+                                    </Button>
+
 
                                 </ButtonToolbar>
                             </div>
@@ -304,7 +228,7 @@ render() {
                             </div>
                             <div className="col-sm-3">
                                 <div className="form-control border-0">
-                                    <p>Répartition par dispositif</p>
+                                    <p>Répartition par projet</p>
                                 </div>
                             </div>
                             <div className="col-sm-2">
@@ -423,15 +347,12 @@ render() {
                                                        height={60}
                                                        tick={<CustomizedAxisTick />}
                                                 />
-                                                {/*<YAxis />*/}
-                                                {/*<YAxis yAxisId="left" />*/}
                                                 <YAxis yAxisId="right"
                                                        orientation="right" />
                                                 <Tooltip />
                                                 <Legend onMouseEnter={this.handleMouseEnter}
                                                         onMouseLeave={this.handleMouseLeave} />
 
-                                                {/*<Line yAxisId="left" type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />*/}
                                                 <Line yAxisId="right"
                                                       type="monotone"
                                                       stroke="#003135" />
@@ -470,18 +391,6 @@ render() {
                                 </div>
                                 <div className="col-lg-3">
 
-{/*--------------------------------------------------------- DataSet ------------------------------------------------*/}
-{/*                                    <ExcelFile element={<button className="btn btn-warning">Export</button>}>*/}
-{/*                                        <ExcelSheet data={dataSet} name="Dons récents">*/}
-{/*                                            <ExcelColumn label="Projet" value="project"/>*/}
-{/*                                            <ExcelColumn label="Collecteur" value="collect"/>*/}
-{/*                                            <ExcelColumn label="Montant" value="amount"/>*/}
-{/*                                            <ExcelColumn label="Email" value="email"/>*/}
-{/*                                        </ExcelSheet>*/}
-{/*                                    </ExcelFile>*/}
-{/*--------------------------------------------------------- End DataSet --------------------------------------------*/}
-
-{/*-------------------------------------  Export Data multiDataSet --------------------------------------------------*/}
                                     <div>
                                         <ExcelFile element={<button className="btn btn-warning">Export</button>}>
                                             <ExcelSheet dataSet={multiDataSet} name="Dons récents"/>
@@ -497,28 +406,28 @@ render() {
                                     <tbody>
                                         <tr className="line-custom">
                                             <td>Plantations arbres</td>
-                                            <td>Loka'Borne</td>
+                                            {/*<td>Loka'Borne</td>*/}
                                             <td>02/10/2019</td>
                                             <td>2€</td>
                                             <td>doom.elegant@hell.com</td>
                                         </tr>
                                         <tr className="line2-custom">
                                             <td>Biscuits solidaire</td>
-                                            <td>Loka'Mobile</td>
+                                            {/*<td>Loka'Mobile</td>*/}
                                             <td>01/10/2019</td>
                                             <td>20€</td>
                                             <td></td>
                                         </tr>
                                         <tr className="line-custom">
                                             <td>Biscuits solidaire</td>
-                                            <td>Loka'Borne</td>
+                                            {/*<td>Loka'Borne</td>*/}
                                             <td>20/09/2019</td>
                                             <td>5€</td>
                                             <td>limo.zenit@gmail.com</td>
                                         </tr>
                                         <tr className="line2-custom">
                                             <td>Handidanse</td>
-                                            <td>Loka'Mobile</td>
+                                            {/*<td>Loka'Mobile</td>*/}
                                             <td>03/09/2019</td>
                                             <td>10€</td>
                                             <td></td>

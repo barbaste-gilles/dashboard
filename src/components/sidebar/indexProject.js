@@ -4,7 +4,7 @@
  import React from "react";
  import {Button} from 'react-bootstrap';
 
- class Sidebar extends React.Component {
+ class SidebarProject extends React.Component {
 
      render() {
 
@@ -25,7 +25,7 @@
                         aria-controls="v-pills-profil"
                         aria-selected="false">
                          <img
-                             className="logohandidanse center-block"
+                             className="logohandidanse3 center-block"
                              src={logohandidanse}
                              alt="Logo Handidanse"
                          />
@@ -37,7 +37,6 @@
                              type="submit"
                              size="sm"
                              color="#003135"
-                             active
                      >
                          <strong>Revenus</strong>
                      </Button>
@@ -47,6 +46,7 @@
                              type="submit"
                              size="sm"
                              color="#003135"
+                             active
                      >
                          <strong>Projets</strong>
                      </Button>
@@ -144,4 +144,4 @@
      }
  }
 
- export default Sidebar
+ export default SidebarProject

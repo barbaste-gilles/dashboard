@@ -1,5 +1,5 @@
 import React from 'react';
-import Sidebar from "../sidebar";
+import SidebarTaxReceipts from "../sidebar/indexTaxReceipts";
 
 class TaxReceiptsForm extends React.Component {
     render() {
@@ -16,7 +16,7 @@ class TaxReceiptsForm extends React.Component {
 
                 <div className="row">
 
-                    <Sidebar/>
+                    <SidebarTaxReceipts/>
 {/* ---------------------------------------- End Vertical navigation bar ------------------------------------------- */}
 
 {/* -------------------------------- Displays the Dashboard to the right of the navigation bar --------------------- */}

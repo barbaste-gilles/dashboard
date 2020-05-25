@@ -2,7 +2,7 @@ import React from "react";
 import logohandidanse from "../../assets/Logo_Handidanse.png";
 import hedge from "../../assets/haie.png";
 import plantation from "../../assets/Plantation.jpg"
-import Sidebar from "../sidebar";
+import SidebarProject from "../sidebar/indexProject";
 import Gauge from "../gauge";
 
 class DetailProject extends React.Component {
@@ -26,7 +26,7 @@ class DetailProject extends React.Component {
 
                 <div className="row">
 
-                    <Sidebar/>
+                    <SidebarProject/>
 {/* ---------------------------------------- End Vertical navigation bar ------------------------------------------- */}
 
 {/* -------------------------------- Displays the Dashboard to the right of the navigation bar --------------------- */}
@@ -85,7 +85,7 @@ class DetailProject extends React.Component {
                                             <div className="p-custom4 mx-auto my-auto position-absolute">
                                             </div>
                                             <div className="card card-custom4 shadow-none mx-auto my-auto">
-                                                <p className="card-text p-custom5">
+                                                <textarea className="card-text p-custom5 " disabled>
                                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi in
                                                     laborum
                                                     nobis sed voluptates. Atque cum fuga nobis quod voluptatibus.
@@ -105,8 +105,7 @@ class DetailProject extends React.Component {
                                                     voluptate.
                                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cupiditate et eveniet impedit, inventore ipsam magni minus molestiae officia perspiciatis porro quibusdam. Autem id in, molestiae neque omnis reiciendis sit!
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequuntur cum deleniti dicta eius eos, eum eveniet excepturi id in iusto nobis numquam omnis optio perspiciatis reiciendis, repellat ut velit.
-                                                 </p>
+                                                 </textarea>
                                             </div>
                                         </div>
                                         <div className="the-gift4 mx-auto my-auto position-absolute">
@@ -124,10 +123,10 @@ class DetailProject extends React.Component {
                                 </div>
 
                                 <div className="position-relative">
-                                    <div className="img-custom position-absolute">
+                                    <div className="img-custom">
                                     </div>
                                     <div className="position-custom2 position-absolute">
-                                        <h5 className="h5-custom4">Loka'Mobile</h5>
+                                        <h5>Loka'Mobile</h5>
                                         <hr className="highlighted"/>
                                     </div>
                                     <div className="img-custom2 position-absolute">
@@ -136,7 +135,7 @@ class DetailProject extends React.Component {
                                              alt="Haie"/>
                                     </div>
                                     <div className="position-custom3 position-absolute">
-                                        <h5 className="h5-custom4">Loka'Borne</h5>
+                                        <h5>Loka'Borne</h5>
                                         <hr className="highlighted2"/>
                                     </div>
                                     <div className="img-custom3 position-absolute">
@@ -147,27 +146,27 @@ class DetailProject extends React.Component {
                                 </div>
                             </div>
 
-                            < div className="container-fluid text-center position-custom4">
+                            < div className="container-fluid text-center position-custom5">
                                 <div className="row mx-auto mb-0 mt-0 justify-content-center text-center">
                                     <div className="the-gift5">
                                         <strong>1</strong>
                                     </div>
                                     <div className="the-gift6">
-                                        <p className="p-custom5">Protéger les cultures contre les vents séchants grâce à un réseau de haies et des plants.
+                                        <p className="p-custom10">Protéger les cultures contre les vents séchants grâce à un réseau de haies et des plants.
                                         </p>
                                     </div>
                                     <div className="the-gift5">
                                         <strong>2</strong>
                                     </div>
                                     <div className="the-gift6">
-                                        <p className="p-custom5">Préserver la fertilité des sols en construisant une haie à proximité d'une future rizière.
+                                        <p className="p-custom10">Préserver la fertilité des sols en construisant une haie à proximité d'une future rizière.
                                         </p>
                                     </div>
                                     <div className="the-gift5">
                                         <strong>3</strong>
                                     </div>
                                     <div className="the-gift6">
-                                        <p className="p-custom5">Continuer la plantation de 3000 plantes entamée en 2018.
+                                        <p className="p-custom10">Continuer la plantation de 3000 plantes entamée en 2018.
                                         </p>
                                     </div>
                                 </div>
@@ -197,10 +196,10 @@ class DetailProject extends React.Component {
                                 <button className="btn-return waves-effect z-depth-0"  type="submit">
                                     <a href="/Project">Retour</a>
                                 </button>
-                                <form className="col-2"></form>
-                                <button className="btn-custom waves-effect z-depth-0"  type="submit">
-                                    <a href="/detailprojectUpdate">Modifier</a>
-                                </button>
+                                {/*<form className="col-2"></form>*/}
+                                {/*<button className="btn-custom waves-effect z-depth-0"  type="submit">*/}
+                                {/*    <a href="/detailprojectUpdate">Modifier</a>*/}
+                                {/*</button>*/}
                             </div>
 
 

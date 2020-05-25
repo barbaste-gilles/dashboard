@@ -65,10 +65,19 @@ export default function InputSlider() {
         ];
 
     return (
-        <div className={classes.root}>
-            <Grid container spacing={2} alignItems="center">
-                <Grid item xs>
+        <div className={classes.root}
+        >
+            <Grid container
+                  spacing={2}
+                  alignItems="center"
+            >
+                <Grid item
+                      xs
+                >
                     <Slider
+                        // Désactive le Slider
+                        disabled={classes.root}
+
                         value={typeof value === 'number' ? value : 0}
                         onChange={handleSliderChange}
                         min={2}
@@ -81,13 +90,25 @@ export default function InputSlider() {
                     />
                 </Grid>
             </Grid>
-            <Grid container spacing={2} alignItems="center">
-                <Grid item>
+            <Grid container
+                  spacing={2}
+                  alignItems="center"
+            >
+                <Grid item
+                >
                 </Grid>
             </Grid>
-            <Grid container spacing={1} justify="center" alignItems="center">
-                <Grid item>
+            <Grid container
+                  spacing={1}
+                  justify="center"
+                  alignItems="center"
+            >
+                <Grid item
+                >
                     <Input
+                        // Déactive l'input
+                        disabled={classes.input}
+
                         className={classes.input}
                         value={value}
                         margin="dense"
@@ -102,8 +123,13 @@ export default function InputSlider() {
                         }}
                     />
                 </Grid>
-                <Grid item >
-                    <strong><h1>€</h1></strong>
+                <Grid item
+                >
+                    <strong>
+                        <h1>
+                            €
+                        </h1>
+                    </strong>
                 </Grid>
             </Grid>
         </div>

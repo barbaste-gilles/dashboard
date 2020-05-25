@@ -4,7 +4,16 @@
  import React from "react";
  import {Button} from 'react-bootstrap';
 
- class Sidebar extends React.Component {
+ class SidebarTaxReceipts extends React.Component {
+
+     constructor(props) {
+         super(props);
+         this.state = {
+             MontantTotal: 25458,
+             DonMoyen: 25458 / 2082,
+             TotalDon: 2082,
+         };
+     }
 
      render() {
 
@@ -17,6 +26,18 @@
                      role="tablist"
                      aria-orientation="vertical">
 
+                     {/*<a className="nav-link link-custom"*/}
+                     {/*   id="v-pills-profil-tab"*/}
+                     {/*   data-toggle="pill"*/}
+                     {/*   href="/dashboard"*/}
+                     {/*   role="tab"*/}
+                     {/*   aria-controls="v-pills-profil"*/}
+                     {/*   aria-selected="false">*/}
+                     {/*    <img className="logo2 center-block"*/}
+                     {/*         src={logo}*/}
+                     {/*         alt="Logo Lokalero"*/}
+                     {/*    />*/}
+                     {/*</a>*/}
                      <a className="nav-link link-custom"
                         id="v-pills-profil-tab"
                         data-toggle="pill"
@@ -37,7 +58,6 @@
                              type="submit"
                              size="sm"
                              color="#003135"
-                             active
                      >
                          <strong>Revenus</strong>
                      </Button>
@@ -59,18 +79,16 @@
                      >
                          <strong>Versements</strong>
                      </Button>
-
-                     {/*Gestion du reçu fiscal mis en attente*/}
-                     {/*<Button className="link-custom round"*/}
-                     {/*        href="/taxReceipts"*/}
-                     {/*        variant="outline-warning"*/}
-                     {/*        type="submit"*/}
-                     {/*        size="sm"*/}
-                     {/*        color="#003135"*/}
-                     {/*>*/}
-                     {/*    <strong>Reçus fiscaux</strong>*/}
-                     {/*</Button>*/}
-
+                     <Button className="link-custom round"
+                             href="/taxReceipts"
+                             variant="outline-warning"
+                             type="submit"
+                             size="sm"
+                             color="#003135"
+                             active
+                     >
+                         <strong>Reçus fiscaux</strong>
+                     </Button>
                      <br/><br/>
                      <div className="row container-fluid justify-content-center">
                          <div className="flotte">
@@ -144,4 +162,4 @@
      }
  }
 
- export default Sidebar
+ export default SidebarTaxReceipts
